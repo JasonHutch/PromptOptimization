@@ -1,0 +1,67 @@
+label,element,arg1,arg2
+C,Vehicle,,
+A,manufacturer,,
+A,price class,,
+A,price,,
+A,available,,
+A,rented out,,
+A,status,,
+V,purchase,status,
+V,repair,status,
+V,maintenance,status,
+V,disposed,status,
+C,Passenger Car,,
+A,make,,
+A,model,,
+A,transmission,,
+V,automatic,transmission,
+V,manual,transmission,
+A,number of doors,,
+V,2,number of doors,
+V,4,number of doors,
+A,body style,,
+V,sedan,body style,
+V,hatchback,body style,
+A,additional charge,,
+A,depreciation,,
+C,Location,,
+AS,taken from,Vehicle,Location
+AS,returned to,Vehicle,Location
+C,Customer,,
+AS,select,Customer,Vehicle
+C,Rental Plan,,
+C,Daily unlimited Miles Plan,,
+C,Weekend Savings Plan,,
+AS,reserve,Customer,Vehicle
+AC,Reservation,,
+A,time of reservation,,
+A,grace period,,
+A,means,,
+V,in person,means,
+V,by phone,means,
+A,void,,
+C,Salesperson,,
+AS,process,Salesperson,Reservation
+AS,archive,Salesperson,Reservation
+AS,sign,Customer,Contract
+C,Contract,,
+C,Block Reservation,,
+AS,make,Customer,Block Reservation
+C,Invoice,,
+A,opened,,
+AS,bill for,Invoice,Contract
+AS,check out,Customer,Vehicle
+AS,pay,Customer,Invoice
+AS,sent to,Invoice,Company
+C,Company,,
+AC,Payment,,
+A,rental charge,,
+AC,Pay by Credit Card,,
+AS,processed by,Pay by Credit Card,Credit Card Company
+C,Credit Card Company,,
+I,ISA,Credit Card Company,Company
+I,ISA,Pay by Credit Card,Payment
+I,ISA,Daily unlimited Miles Plan,Rental Plan
+I,ISA,Weekend Savings Plan,Rental Plan
+I,ISA,Passenger Car,Vehicle
+AG,Part-of,Reservation,Block Reservation

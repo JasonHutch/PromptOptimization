@@ -1,0 +1,54 @@
+label,element,arg1,arg2
+C,Customer,,
+AS,create,NTSS,Trade Show
+AS,promote,NTSS,Trade Show
+AS,organize,NTSS,Trade Show
+AS,run,NTSS,Trade Show
+AS,has,Customer,Account
+C,Account,,
+A,charges,,
+A,payment,,
+A,balance,,
+C,Event,,
+A,contact information,,
+A,website,,
+C,Domain,,
+C,Organizer,,
+AS,has,Event,Organizer
+I,ISA,Trade Show,Event
+C,Trade Show,,
+A,type,,
+A,theme,,
+A,slogan,,
+A,location,,
+A,duration,,
+AC,Registration,,
+A,fee,,
+AS,attend,Participant,Event
+AS,register,Participant,Event
+C,Participant,,
+C,Exhibitor,,
+C,Observer,,
+C,Speaker,,
+A,Keynote address,,
+I,ISA,Exhibitor,Participant
+I,ISA,Speaker,Participant
+I,ISA,Observer,Participant
+AS,setup-with,Event,Seminar
+C,Seminar,,
+A,conference room,,
+AS,setup-with,Event,Booth
+AS,submit,Speaker,Proposal
+C,Proposal,,
+A,evaluation,,
+A,status,,
+C,Committee,,
+C,Reviewer,,
+A,domain,,
+AG,Part-of,Reviewer,Committee
+AS,reviewed-by,Proposal,Committee
+AC,Review,,
+C,Booth,,
+A,price,,
+A,size,,
+AS,rent,Exhibitor,Booth

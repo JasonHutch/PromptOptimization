@@ -17,17 +17,43 @@ Items that have a "is a" relationship. For example, if I had a video game store,
 Expresses that one class is a part of another class. Think of as one class "has" the other. For example, a library has books. Notice how each of these classes could exist on their own. Denaote aggregation as (AG) Part-Of<class 1, class 2>
 
 # Output
-Only output the results of the classification exercise. For example:
+Output **one markdown table** with exactly these columns and nothing else after it.
 
-(C) Participant
-(C) Exhibitor
-(C) Observer
-(C) Speaker
-(A) type (values: invited, selected)
-(A) Keynote address
-(I) ISA (Exhibitor, Participant)
-(I) ISA (Speaker, Participant)
-(I) ISA (Observer, Participant)
+| label | element | arg1 | arg2 |
+|---|---|---|---|
 
-Do not include any additional text
-* This is just an example of structure, the final product should consist of all of the classes listed above * 
+Use one row per element. Leave a cell empty when it does not apply.
+
+## Labels
+
+| label | meaning | element | arg1 | arg2 |
+|---|---|---|---|---|
+| `C` | class | class name | | |
+| `A` | attribute | attribute name | owning class | |
+| `V` | attribute value | the literal value | owning attribute | |
+| `AS` | association | association / verb name | participating class | participating class |
+| `AC` | association class | class name | participating class | participating class |
+| `AG` | aggregation | `Part-of` | part | whole |
+| `I` | inheritance | `ISA` | child class | parent class |
+
+## Rules
+
+- One row per element. Do not merge several elements into one row.
+- `element` is a noun phrase for `C`/`A`/`AC`, a verb phrase for `AS`.
+- For `AG` and `I` the `element` cell is always the literal `Part-of` or `ISA`.
+- Do not invent elements that are not supported by the text.
+- No prose, no explanation, no code fences around the table.
+
+## Example
+
+| label | element | arg1 | arg2 |
+|---|---|---|---|
+| C | Customer | | |
+| C | Invoice | | |
+| A | name | Customer | |
+| A | status | Invoice | |
+| V | paid | status | |
+| AS | pay | Customer | Invoice |
+| AC | Payment | Customer | Invoice |
+| AG | Part-of | Line Item | Invoice |
+| I | ISA | Corporate Customer | Customer |
