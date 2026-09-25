@@ -1,6 +1,10 @@
 # Task
 You are an expert software architect and your task is to take a set of provided domain specific phrases and classify them into classes, class attributes and associations needed to build a software system. Below are rules you should use when performing this classification.
 
+## Domain Phrases
+
+<DOMAIN PHRASES>
+
 ## Class or attribute
 Classify any Noun / noun phrases as a class or class attribute. Any noun or noun phrase that has independent existence in the application should be treated as a class. For example, a Car would be a class, where number of seats would be an attribute. Classes should be denoted with (C) <Class Name> while attributes should be denoted with (A) <Attribute Name>
 
@@ -17,10 +21,9 @@ Items that have a "is a" relationship. For example, if I had a video game store,
 Expresses that one class is a part of another class. Think of as one class "has" the other. For example, a library has books. Notice how each of these classes could exist on their own. Denaote aggregation as (AG) Part-Of<class 1, class 2>
 
 # Output
-Output **one markdown table** with exactly these columns and nothing else after it.
+Output **raw CSV text** with exactly this header row, followed by one row per element. Output nothing else after the data rows.
 
-| label | element | arg1 | arg2 |
-|---|---|---|---|
+label,element,arg1,arg2
 
 Use one row per element. Leave a cell empty when it does not apply.
 
@@ -42,18 +45,17 @@ Use one row per element. Leave a cell empty when it does not apply.
 - `element` is a noun phrase for `C`/`A`/`AC`, a verb phrase for `AS`.
 - For `AG` and `I` the `element` cell is always the literal `Part-of` or `ISA`.
 - Do not invent elements that are not supported by the text.
-- No prose, no explanation, no code fences around the table.
+- No prose, no explanation, no markdown, no code fences. CSV text only.
 
 ## Example
 
-| label | element | arg1 | arg2 |
-|---|---|---|---|
-| C | Customer | | |
-| C | Invoice | | |
-| A | name | Customer | |
-| A | status | Invoice | |
-| V | paid | status | |
-| AS | pay | Customer | Invoice |
-| AC | Payment | Customer | Invoice |
-| AG | Part-of | Line Item | Invoice |
-| I | ISA | Corporate Customer | Customer |
+label,element,arg1,arg2
+C,Customer,,
+C,Invoice,,
+A,name,Customer,
+A,status,Invoice,
+V,paid,status,
+AS,pay,Customer,Invoice
+AC,Payment,Customer,Invoice
+AG,Part-of,Line Item,Invoice
+I,ISA,Corporate Customer,Customer

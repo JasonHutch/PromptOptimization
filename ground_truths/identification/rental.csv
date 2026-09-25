@@ -1,0 +1,64 @@
+rule,phrase
+1,vehicle
+1,manufacturer
+1,price class
+1,rental price
+4,available / not available
+4,rented out
+4,purchase
+4,repair
+4,maintenance
+4,disposal
+1,car / passenger car
+2,makes of car
+2,model of car
+1,transmission
+4,automatic
+4,manual
+5,two
+5,four
+1,doors
+1,sedan
+1,hatchback
+1,options
+1,additional charge
+2,depreciation of the rental cars
+1,location
+3,taken from
+3,returned to
+1,other forms of vehicle
+1,customer
+3,select
+1,rental plan
+1,daily unlimited miles plan
+1,weekend savings plan
+3,reserving
+1,reservation
+2,time of reservation
+2,period of time
+4,in person
+4,by phone
+4,voided
+1,salesperson
+3,process
+3,archive
+1,reservation form
+1,file cabinet
+3,sign
+1,contract
+1,block reservation
+3,make
+1,invoice
+4,opened
+3,cover
+5,one or more
+1,rentals
+3,checked out
+3,pay
+3,sent to
+1,company
+1,rental charge
+1,credit card
+3,processed
+1,credit card processing company
+5,several

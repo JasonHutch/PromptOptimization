@@ -21,7 +21,7 @@ def build_classification_graph(model, phrases, truths,  max_trials):
         path = f"../prompts/auto_prompt_evo/classification/t{state['current_trial']}"
         os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
-        with open(f"{path}/lib.md", 'w', encoding='utf-8') as f:
+        with open(f"{path}/lib.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
 
         return {
@@ -44,7 +44,7 @@ def build_classification_graph(model, phrases, truths,  max_trials):
         path = f"../prompts/auto_prompt_evo/classification/t{state['current_trial']}"
         os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
-        with open(f"{path}/rental.md", 'w', encoding='utf-8') as f:
+        with open(f"{path}/rental.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
 
         return {
@@ -67,7 +67,7 @@ def build_classification_graph(model, phrases, truths,  max_trials):
         path = f"../prompts/auto_prompt_evo/classification/t{state['current_trial']}"
         os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
-        with open(f"{path}/ntss.md", 'w', encoding='utf-8') as f:
+        with open(f"{path}/ntss.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
 
         return {

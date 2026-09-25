@@ -1,5 +1,5 @@
 import pandas as pd
-from src.helpers.MarkdownParser import parse_llm_response
+from src.helpers.ResponseParser import parse_llm_response
 
 def score_response(response: str, ground_truth: pd.DataFrame) -> dict:
     """
