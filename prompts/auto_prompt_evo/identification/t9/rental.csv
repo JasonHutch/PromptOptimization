@@ -1,0 +1,114 @@
+rule,phrase
+1,rental location
+1,metropolitan area
+1,business model
+1,customer-friendly service
+1,operating cost
+1,job market
+1,labor cost
+1,vehicle
+1,passenger car
+1,reservation system
+1,rental fleet
+1,make
+1,manufacturer
+1,model
+1,price class
+1,rental plan
+1,daily unlimited miles plan
+1,weekend 10% discount plan
+1,gear change
+1,automatic
+1,manual
+1,two doors
+1,four doors
+1,sedan
+1,hatchback
+1,rental price
+1,option
+1,reservation
+1,salesperson
+1,reservation form
+1,file cabinet
+1,deposit
+1,contract
+1,period of time
+1,block reservation
+1,invoice
+1,rental
+1,company
+1,employer
+1,credit card
+1,credit card processing company
+1,preventive maintenance
+1,damage
+1,repair
+1,car purchase
+1,car disposal
+1,depreciation
+1,business purpose
+1,tax purpose
+2,number of rental locations
+2,number of rental plans
+2,number of makes
+2,number of models
+2,number of price classes
+2,number of cars
+2,number of rentals
+2,number of invoices
+3,rent
+3,reserve
+3,check out
+3,return to
+3,take from
+3,charge
+3,branch out into
+3,select
+3,display
+3,suggest
+3,process
+3,archive
+3,void
+3,honor
+3,open
+3,settle
+3,send to
+3,pay by
+3,process through
+3,keep track
+3,repair
+3,maintain
+3,purchase
+3,dispose
+4,daily
+4,unlimited
+4,weekend
+4,10% discount
+4,available
+4,rented out
+4,voided
+4,block
+4,additional
+4,frequent
+4,preventive
+5,several years
+5,several
+5,small number
+5,more than a given period of time
+5,one or more
+6,has several different makes
+6,has several models
+6,has a number of different rental plans
+6,has information available
+6,has frequent preventive maintenance
+6,has damage
+6,has rental car purchase information
+6,has repair information
+6,has maintenance information
+6,has disposal information
+7,grouped into
+7,consists of
+7,includes
+8,archives them in the file cabinet
+9,is a kind of
+9,including

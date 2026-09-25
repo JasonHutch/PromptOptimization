@@ -1,0 +1,80 @@
+label,element,arg1,arg2
+C,vehicle
+C,manufacturer
+C,price class
+C,rental price
+C,customer
+C,car
+C,passenger car
+C,makes of car
+C,model of car
+C,transmission
+C,automatic
+C,manual
+C,doors
+C,sedan
+C,hatchback
+C,options
+C,additional charge
+C,depreciation of the rental cars
+C,location
+C,rental plan
+C,daily unlimited miles plan
+C,weekend savings plan
+C,reservation
+C,time of reservation
+C,period of time
+C,salesperson
+C,reservation form
+C,file cabinet
+C,contract
+C,block reservation
+C,invoice
+C,rentals
+C,company
+C,rental charge
+C,credit card
+C,credit card processing company
+A,available,vehicle
+A,not available,vehicle
+A,rented out,vehicle
+A,price class,vehicle
+A,rental price,vehicle
+A,manufacturer,car
+A,makes of car,car
+A,model of car,car
+A,transmission,car
+A,doors,car
+A,options,car
+A,additional charge,car
+A,depreciation of the rental cars,car
+V,automatic,transmission
+V,manual,transmission
+V,two,doors
+V,four,doors
+V,sedan,model of car
+V,hatchback,model of car
+AS,manufacture,manufacturer,car
+AS,select,customer,rental plan
+AS,reserve,customer,reservation
+AS,process,salesperson,reservation
+AS,archive,salesperson,reservation form
+AS,sign,customer,contract
+AS,block reservation,customer,reservation
+AS,make,invoice,customer
+AS,cover,invoice,rentals
+AS,check out,customer,vehicle
+AS,pay,customer,rental charge
+AS,send to,invoice,company
+AS,process,credit card processing company,credit card
+AS,take from,customer,location
+AS,return to,customer,location
+I,car,vehicle
+I,passenger car,car
+I,sedan,passenger car
+I,hatchback,passenger car
+I,automatic,transmission
+I,manual,transmission
+I,daily unlimited miles plan,rental plan
+I,weekend savings plan,rental plan
+AG,car,vehicle

@@ -1,0 +1,176 @@
+I'll systematically extract every domain-specific phrase from the business description, applying each rule carefully.
+
+---
+
+## Rule 1 — Nouns / Noun Phrases
+
+| # | Phrase |
+|---|--------|
+| 1 | rental location |
+| 2 | vehicle |
+| 3 | passenger car |
+| 4 | car |
+| 5 | make |
+| 6 | model |
+| 7 | manufacturer |
+| 8 | price class |
+| 9 | rental fleet |
+| 10 | rental plan |
+| 11 | daily unlimited miles plan |
+| 12 | weekend 10% discount plan |
+| 13 | gear change |
+| 14 | doors |
+| 15 | reservation |
+| 16 | reservation form |
+| 17 | file cabinet |
+| 18 | deposit |
+| 19 | contract |
+| 20 | block reservation |
+| 21 | invoice |
+| 22 | rental |
+| 23 | rental charge |
+| 24 | credit card |
+| 25 | credit card processing company |
+| 26 | preventive maintenance |
+| 27 | damage |
+| 28 | repair |
+| 29 | purchase |
+| 30 | disposal |
+| 31 | depreciation |
+| 32 | salesperson |
+| 33 | customer |
+| 34 | company |
+| 35 | location |
+| 36 | additional charge |
+| 37 | rental price |
+| 38 | options |
+| 39 | other forms of vehicle |
+| 40 | maintenance |
+
+---
+
+## Rule 2 — "X of Y" Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | number of rental locations |
+| 2 | forms of vehicle rentals |
+| 3 | makes of cars |
+| 4 | models of car |
+| 5 | number of price classes |
+| 6 | model of car |
+| 7 | number of different rental plans |
+| 8 | time of reservation |
+| 9 | depreciation of the rental cars |
+| 10 | invoices for all rentals |
+
+---
+
+## Rule 3 — Transitive Verbs
+
+| # | Phrase |
+|---|--------|
+| 1 | taken from |
+| 2 | returned to |
+| 3 | branch out into |
+| 4 | group into |
+| 5 | select |
+| 6 | rent |
+| 7 | rented out *(see rule 4)* — excluded here |
+| 8 | process |
+| 9 | archive |
+| 10 | void |
+| 11 | honor |
+| 12 | make |
+| 13 | check out |
+| 14 | open |
+| 15 | settle |
+| 16 | send to |
+| 17 | pay |
+| 18 | repair |
+| 19 | keep track of |
+| 20 | purchase |
+| 21 | sign |
+| 22 | reserve |
+| 23 | cover |
+| 24 | satisfy |
+| 25 | show up |
+| 26 | handle |
+
+---
+
+## Rule 4 — Adjectives / Enumerations / States
+
+| # | Phrase |
+|---|--------|
+| 1 | available |
+| 2 | not available |
+| 3 | rented out |
+| 4 | voided |
+| 5 | opened |
+| 6 | automatic |
+| 7 | manual |
+| 8 | two doors |
+| 9 | four doors |
+| 10 | sedan |
+| 11 | hatchback |
+| 12 | in person |
+| 13 | by phone |
+| 14 | daily |
+| 15 | purchase *(lifecycle state)* |
+| 16 | repair *(lifecycle state)* |
+| 17 | maintenance *(lifecycle state)* |
+| 18 | disposal *(lifecycle state)* |
+
+---
+
+## Rule 5 — Numeric / Quantity Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | a number of |
+| 2 | several |
+| 3 | each |
+| 4 | one or more |
+| 5 | two |
+| 6 | four |
+| 7 | a small number of |
+| 8 | a given period of time |
+
+---
+
+## Rule 6 — Possession Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | make has models |
+| 2 | invoice has rentals |
+| 3 | car has options |
+
+---
+
+## Rule 7 — Consist-of / Part-of Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | grouped into |
+| 2 | including |
+
+---
+
+## Rule 8 — Containment / Containing Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | *(none found in text)* |
+
+---
+
+## Rule 9 — "X is a Y" Generalization / Specialization
+
+| # | Phrase |
+|---|--------|
+| 1 | passenger car is a kind of vehicle |
+| 2 | other forms of vehicle rentals is a kind of vehicle |
+| 3 | Corolla is a model of Toyota |
+| 4 | Camry is a model of Toyota |

@@ -1,0 +1,96 @@
+rule,phrase
+1,rental location
+1,vehicle
+1,passenger car
+1,make
+1,model
+1,price class
+1,rental fleet
+1,rental plan
+1,reservation
+1,reservation form
+1,contract
+1,deposit
+1,invoice
+1,rental
+1,rental charge
+1,credit card
+1,credit card processing company
+1,customer
+1,salesperson
+1,company
+1,employer
+1,block reservation
+1,additional charge
+1,rental price
+1,gear change
+1,doors
+1,purchase
+1,repair
+1,maintenance
+1,disposal
+1,depreciation
+1,damage
+1,file cabinet
+1,transmission
+2,forms of vehicle rentals
+2,makes of cars
+2,models of car
+2,number of rental plans
+2,number of price classes
+2,period of time
+2,time of reservation
+2,models of a different make
+2,costs of running
+2,information on the models of car
+2,depreciation of the rental cars
+3,operate
+3,taken from
+3,returned to
+3,branch out into
+3,group into
+3,select
+3,rent
+3,reserve
+3,process
+3,archive
+3,void
+3,honor
+3,check out
+3,open
+3,settle
+3,send
+3,pay
+3,charge
+3,repair
+3,maintain
+3,keep track of
+3,purchase
+3,dispose
+3,sign
+3,make
+3,satisfy
+4,available
+4,not available
+4,rented out
+4,voided
+4,opened
+4,daily unlimited miles plan
+4,weekend 10% discount plan
+4,automatic
+4,manual
+4,two doors
+4,four doors
+4,sedan
+4,hatchback
+4,in person
+4,by phone
+4,preventive
+5,several
+5,a number of
+5,one or more
+5,each
+6,make has several models
+6,reservation has a period of time
+6,invoice covers one or more rentals
+9,passenger car is a kind of vehicle

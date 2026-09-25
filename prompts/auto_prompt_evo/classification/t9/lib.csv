@@ -1,0 +1,194 @@
+label,element,arg1,arg2
+C,library,
+C,loan item,
+C,customer,
+C,member,
+C,membership card,
+C,member number,
+C,details,
+C,name,
+C,address,
+C,date of birth,
+C,subject section,
+C,classification mark,
+C,bar code,
+C,language tape,
+C,book,
+C,title language,
+C,level,
+C,title,
+C,author,
+C,current loan,
+C,bar code reader,
+C,membership,
+C,book bar code,
+C,records,
+C,number of subject sections,
+C,types of loan items,
+C,number of items,
+C,update of records,
+C,issues,
+C,shows,
+C,kept,
+C,denoted,
+C,borrow,
+C,reserved,
+C,renewed,
+C,extend,
+C,scanned,
+C,entered,
+C,read,
+C,stamped,
+C,searched,
+C,identified,
+C,French,
+C,beginner,
+C,daily,
+C,valid,
+C,two,
+C,maximum of 8,
+C,less than 8,
+C,a number of,
+C,has a title language,
+C,has a title and author,
+C,made up of,
+C,customer is known as a member,
+C,language tapes and books are two types of loan items
+A,bar code,loan item,
+A,classification mark,loan item,
+A,title language,loan item,
+A,level,loan item,
+A,title,loan item,
+A,author,loan item,
+A,name,customer,
+A,address,customer,
+A,date of birth,customer,
+A,member number,customer,
+A,details,customer,
+A,bar code,membership card,
+A,title language,language tape,
+A,level,language tape,
+A,title,book,
+A,author,book,
+A,book bar code,book,
+A,number of subject sections,subject section,
+A,number of items,loan item,
+A,types of loan items,library,
+A,name,library,
+A,records,library,
+A,update of records,library,
+A,issues,library,
+A,shows,library,
+A,kept,library,
+A,denoted,library,
+A,borrow,library,
+A,reserved,library,
+A,renewed,library,
+A,extend,library,
+A,scanned,library,
+A,entered,library,
+A,read,library,
+A,stamped,library,
+A,searched,library,
+A,identified,library,
+A,French,title language,
+A,beginner,level,
+A,daily,membership,
+A,valid,membership,
+A,two,types of loan items,
+A,maximum of 8,loan items constraint,
+A,less than 8,loan items constraint,
+A,a number of,number of items,
+A,has a title language,loan item,
+A,has a title and author,loan item,
+A,made up of,library,
+A,customer is known as a member,customer,
+A,language tapes and books are two types of loan items,library
+V,French,title language,
+V,beginner,level,
+V,daily,membership,
+V,valid,membership,
+V,two,types of loan items,
+V,maximum of 8,loan items constraint,
+V,less than 8,loan items constraint,
+V,a number of,number of items
+AS,borrow,member,loan item
+AS,reserve,member,loan item
+AS,renew,member,loan item
+AS,issue,library,loan item
+AS,scan,bar code reader,bar code
+AS,read,bar code reader,bar code
+AS,enter,library,records
+AS,stamp,library,membership card
+AS,search,library,records
+AS,identify,library,loan item
+AS,setup-with,library,subject section
+AS,comprise,library,loan item
+AG,Part-of,subject section,library
+AG,Part-of,loan item,library
+AG,Part-of,membership card,customer
+AG,Part-of,book,loan item
+AG,Part-of,language tape,loan item
+AG,Part-of,book bar code,book
+AG,Part-of,bar code,loan item
+AG,Part-of,title,loan item
+AG,Part-of,author,loan item
+AG,Part-of,title language,loan item
+AG,Part-of,level,loan item
+AG,Part-of,classification mark,loan item
+AG,Part-of,member number,customer
+AG,Part-of,name,customer
+AG,Part-of,address,customer
+AG,Part-of,date of birth,customer
+AG,Part-of,details,customer
+AG,Part-of,number of subject sections,subject section
+AG,Part-of,types of loan items,library
+AG,Part-of,number of items,loan item
+AG,Part-of,update of records,library
+AG,Part-of,issues,library
+AG,Part-of,shows,library
+AG,Part-of,kept,library
+AG,Part-of,denoted,library
+AG,Part-of,borrow,library
+AG,Part-of,reserved,library
+AG,Part-of,renewed,library
+AG,Part-of,extend,library
+AG,Part-of,scanned,library
+AG,Part-of,entered,library
+AG,Part-of,read,library
+AG,Part-of,stamped,library
+AG,Part-of,searched,library
+AG,Part-of,identified,library
+AG,Part-of,French,title language
+AG,Part-of,beginner,level
+AG,Part-of,daily,membership
+AG,Part-of,valid,membership
+AG,Part-of,two,types of loan items
+AG,Part-of,maximum of 8,loan items constraint
+AG,Part-of,less than 8,loan items constraint
+AG,Part-of,a number of,number of items
+AG,Part-of,has a title language,loan item
+AG,Part-of,has a title and author,loan item
+AG,Part-of,made up of,library
+AG,Part-of,customer is known as a member,customer
+AG,Part-of,language tapes and books are two types of loan items,library
+I,ISA,member,customer
+I,ISA,language tape,loan item
+I,ISA,book,loan item
+I,ISA,book bar code,bar code
+I,ISA,membership card,bar code
+I,ISA,current loan,loan item
+I,ISA,issues,update of records
+I,ISA,shows,update of records
+I,ISA,kept,update of records
+I,ISA,denoted,update of records
+I,ISA,borrow,update of records
+I,ISA,reserved,update of records
+I,ISA,renewed,update of records
+I,ISA,extend,update of records
+I,ISA,scanned,update of records
+I,ISA,entered,update of records
+I,ISA,read,update of records
+I,ISA,stamped,update of records
+I,ISA,searched,update of records
+I,ISA,identified,update of records

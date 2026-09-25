@@ -1,0 +1,107 @@
+label,element,arg1,arg2
+C,ntss
+C,service provider
+C,business customer
+C,trade show
+C,event
+C,organizer
+C,person
+C,organization
+C,domain
+C,account
+C,staff
+C,observer
+C,keynote speaker
+C,reviewer
+C,committee
+C,proposal
+C,exhibitor
+C,product
+C,booth
+C,conference room
+C,seminar
+C,reception
+C,trade show material
+C,registration
+A,theme,trade show
+A,slogan,trade show
+A,location,trade show
+A,duration,trade show
+A,contact information,organizer
+A,website,organizer
+A,service charges,account
+A,payments received,account
+A,account balances,account
+A,fee,registration
+A,size,booth
+A,proposal status,proposal
+A,keynote address,keynote speaker
+V,large,size
+V,medium,size
+V,small,size
+V,pending,proposal status
+V,review,proposal status
+V,accepted,proposal status
+V,rejected,proposal status
+AS,create,ntss,trade show
+AS,promote,ntss,trade show
+AS,organize,ntss,trade show
+AS,run,ntss,trade show
+AS,contact,ntss,business customer
+AS,provide,ntss,service
+AS,involves,trade show,design
+AS,promoting,trade show,advertisement
+AS,organizing,trade show,creation
+AS,inviting,trade show,speaker
+AS,registering,trade show,participant
+AS,registering,trade show,exhibitor
+AS,running,trade show,registration
+AS,setting up,trade show,booth
+AS,setting up,trade show,conference room
+AS,setting up,trade show,seminar
+AS,setting up,trade show,reception
+AS,distributing,trade show,trade show material
+AS,creates,ntss,account
+AS,record,account,service charge
+AS,record,account,payment received
+AS,record,account,account balance
+AS,regarded as,trade show,event
+AS,has,event,organizer
+AS,belong to,trade show,domain
+AS,added,domain,trade show
+AS,removed,domain,trade show
+AS,attended by,trade show,staff
+AS,attended by,trade show,observer
+AS,register,participant,trade show
+AS,register,exhibitor,trade show
+AS,pay,exhibitor,fee
+AS,prepares,staff,trade show
+AS,runs,staff,trade show
+AS,invite,trade show,keynote speaker
+AS,give,keynote speaker,keynote address
+AS,selected,exhibitor,evaluation
+AS,selected,exhibitor,proposal
+AS,reviewed by,proposal,committee
+AS,reviewed by,proposal,reviewer
+AS,exhibit,exhibitor,product
+AS,pay,exhibitor,booth
+AS,requested,booth,size
+AS,rented,booth,trade show
+AS,visit,observer,trade show
+AG,Part-of,staff,organization
+AG,Part-of,observer,organization
+AG,Part-of,reviewer,committee
+AG,Part-of,booth,trade show
+AG,Part-of,conference room,trade show
+AG,Part-of,seminar,trade show
+AG,Part-of,reception,trade show
+AG,Part-of,proposal,trade show
+AG,Part-of,registration,trade show
+I,ISA,person,organizer
+I,ISA,organization,organizer
+I,ISA,keynote speaker,speaker
+I,ISA,staff,person
+I,ISA,observer,person
+I,ISA,reviewer,person
+I,ISA,exhibitor,business customer
+I,ISA,participant,business customer

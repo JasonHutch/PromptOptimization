@@ -1,0 +1,169 @@
+I'll systematically read the business description and extract every domain-specific phrase, applying the rules carefully.
+
+---
+
+## Extracted Domain-Specific Phrases
+
+### Rule 1 — Nouns / Noun Phrases
+
+| # | Phrase |
+|---|--------|
+| 1 | trade show |
+| 2 | service provider |
+| 3 | business customer |
+| 4 | service |
+| 5 | design |
+| 6 | theme |
+| 7 | slogan |
+| 8 | location |
+| 9 | duration |
+| 10 | advertisement |
+| 11 | speaker |
+| 12 | participant |
+| 13 | exhibitor |
+| 14 | observer |
+| 15 | booth |
+| 16 | conference room |
+| 17 | seminar |
+| 18 | reception |
+| 19 | trade show materials |
+| 20 | account |
+| 21 | service charge |
+| 22 | payment |
+| 23 | account balance |
+| 24 | event |
+| 25 | organizer |
+| 26 | person |
+| 27 | organization |
+| 28 | contact information |
+| 29 | website |
+| 30 | domain |
+| 31 | organization staff |
+| 32 | keynote address |
+| 33 | proposal |
+| 34 | committee |
+| 35 | reviewer |
+| 36 | product |
+| 37 | registration |
+| 38 | fee |
+| 39 | creation |
+| 40 | promotion |
+| 41 | status |
+| 42 | evaluation |
+| 43 | payments received |
+| 44 | professional services |
+
+---
+
+### Rule 2 — "X of Y" Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | selection of a theme |
+| 2 | selection of a slogan |
+| 3 | duration of the event |
+| 4 | types of participants |
+| 5 | status of a proposal |
+| 6 | size of the booth |
+| 7 | committee of reviewers |
+| 8 | evaluation of their proposals |
+
+---
+
+### Rule 3 — Transitive Verbs
+
+| # | Phrase |
+|---|--------|
+| 1 | create |
+| 2 | promote |
+| 3 | organize |
+| 4 | run |
+| 5 | contact |
+| 6 | design |
+| 7 | invite |
+| 8 | register |
+| 9 | set up |
+| 10 | distribute |
+| 11 | record |
+| 12 | maintain |
+| 13 | attend |
+| 14 | exhibit |
+| 15 | pay |
+| 16 | request |
+| 17 | rent |
+| 18 | review |
+| 19 | give |
+| 20 | select |
+| 21 | add |
+| 22 | remove |
+| 23 | belong to |
+| 24 | charge |
+| 25 | prepare |
+
+---
+
+### Rule 4 — Adjectives / Enumerations / States
+
+| # | Phrase |
+|---|--------|
+| 1 | national |
+| 2 | international |
+| 3 | on site |
+| 4 | large |
+| 5 | medium |
+| 6 | small |
+| 7 | pending review |
+| 8 | accepted |
+| 9 | rejected |
+| 10 | invited |
+| 11 | selected |
+| 12 | predefined |
+
+---
+
+### Rule 5 — Numeric / Quantity Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | one or more |
+| 2 | each |
+
+---
+
+### Rule 6 — Possession Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | event has an organizer |
+| 2 | event has contact information |
+| 3 | event has a website |
+
+---
+
+### Rule 7 — "Consist of / Part of" Expressions
+
+| # | Phrase |
+|---|--------|
+| 1 | including |
+| 2 | involves |
+
+---
+
+### Rule 8 — Containment / Containing Expressions
+
+*(None found in the text.)*
+
+---
+
+### Rule 9 — "X is a Y" Generalization / Specialization
+
+| # | Phrase |
+|---|--------|
+| 1 | a trade show can be regarded as an event |
+| 2 | organizer can be a person or an organization |
+| 3 | invited speakers are participants |
+| 4 | selected speakers are participants |
+| 5 | exhibitors are participants |
+| 6 | observers are participants |
+| 7 | NTSS staff are participants |
+| 8 | event organizer is a participant |

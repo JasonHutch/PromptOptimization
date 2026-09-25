@@ -1,0 +1,64 @@
+rule,phrase
+1,library
+1,loan item
+1,customer
+1,member
+1,membership card
+1,member number
+1,membership number
+1,name
+1,address
+1,date of birth
+1,subject section
+1,classification mark
+1,bar code
+1,language tape
+1,book
+1,title
+1,language
+1,level
+1,author
+1,loan
+1,membership
+1,details
+1,records
+1,update
+1,current loan
+2,date of birth
+2,number of items
+2,types of loan items
+2,number of subject sections
+3,issues
+3,show
+3,keep
+3,borrow
+3,reserve
+3,renew
+3,extend
+3,issued
+3,scanned
+3,entered
+3,stamped
+3,read
+3,searched
+3,denoted
+3,identified
+4,valid
+4,borrowed
+4,reserved
+4,renewed
+4,beginner
+4,French
+4,daily
+5,up to a maximum of 8
+5,less than 8
+5,maximum of 8
+5,a number of
+6,membership card has member number
+6,language tape has title language
+6,language tape has level
+6,book has title
+6,book has author
+7,made up of
+9,customer is known as a member
+9,language tapes and books are two types of loan items

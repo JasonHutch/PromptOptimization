@@ -1,0 +1,64 @@
+label,element,arg1,arg2
+C,library
+C,loan item
+C,customer
+C,member
+C,membership card
+C,subject section
+C,classification mark
+C,bar code
+C,language tape
+C,book
+C,author
+C,title
+C,current loan
+C,bar code reader
+C,membership
+C,record
+A,member number,member
+A,details,member
+A,name,member
+A,address,member
+A,date of birth,member
+A,classification mark,subject section
+A,bar code,loan item
+A,title language,loan item
+A,level,loan item
+A,title,loan item
+A,author,loan item
+A,current loan,loan item
+A,book bar code,record
+A,number of subject sections,library
+A,number of items,library
+A,title language,language tape
+A,level,language tape
+A,title,book
+A,author,book
+V,French,title language
+V,beginner,level
+V,daily,loan period
+V,valid,membership status
+V,two,maximum loan items
+V,maximum of 8,maximum loan items
+V,less than 8,loan items constraint
+AS,borrow,member,loan item
+AS,reserve,member,loan item
+AS,renew,member,loan item
+AS,extend,member,loan item
+AS,scan,bar code reader,bar code
+AS,enter,bar code reader,bar code
+AS,read,bar code reader,bar code
+AS,stamp,membership card,bar code
+AS,search,bar code reader,bar code
+AS,identify,bar code reader,bar code
+AS,update,current loan,record
+AS,issue,library,loan item
+AS,show,library,loan item
+AS,keep,library,record
+AS,denote,classification mark,subject section
+AG,Part-of,subject section,library
+AG,Part-of,loan item,library
+AG,Part-of,record,library
+I,ISA,member,customer
+I,ISA,language tape,loan item
+I,ISA,book,loan item

@@ -1,0 +1,95 @@
+rule,phrase
+1,trade show
+1,trade show services
+1,service
+1,design
+1,theme
+1,slogan
+1,location
+1,duration
+1,advertisement
+1,activity
+1,organizer
+1,person
+1,organization
+1,contact information
+1,website
+1,domain
+1,event
+1,staff
+1,speaker
+1,participant
+1,exhibitor
+1,observer
+1,registration
+1,fee
+1,proposal
+1,reviewer
+1,committee
+1,status
+1,pending review
+1,accepted
+1,rejected
+1,product
+1,service
+1,booth
+1,size
+1,large
+1,medium
+1,small
+1,consumer electronics show
+1,macworld conference
+1,convention center
+1,address
+1,date
+1,account
+1,service charge
+1,payment
+1,balance
+2,selection of a theme
+2,selection of a slogan
+2,location of the trade show
+2,duration of the trade show
+2,design for the trade show
+2,organizer of an event
+2,contact information of an event
+2,website of an event
+2,domain of an event
+2,staff of the event
+2,speaker of the event
+2,participant of the event
+2,exhibitor of the event
+2,observer of the event
+2,registration of a participant
+2,fee of a registration
+2,proposal of a speaker
+2,reviewer of a proposal
+2,committee of reviewers
+2,status of a proposal
+2,product of an exhibitor
+2,service of an exhibitor
+2,booth of an exhibitor
+2,size of the booth
+3,create
+3,promote
+3,organize
+3,run
+3,design
+3,select
+3,advertise
+3,invite
+3,register
+3,review
+3,evaluate
+3,pay
+3,rent
+3,request
+3,exhibit
+3,attend
+3,visit
+3,create account
+3,record
+3,maintain
+9,trade show can be regarded as an event
+9,organizer can be a person or an organization
+9,event can belong to one or more predefined domains

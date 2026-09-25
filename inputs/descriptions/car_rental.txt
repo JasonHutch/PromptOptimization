@@ -1,0 +1,44 @@
+A car rental company operates a number of rental locations throughout the metropoli-
+tan area. Since the company has a great business model and provides customer-friendly
+service, its business has boomed over the last several years. As the business has grown
+rapidly, the costs of running its business has also increased. In particular, as the job
+market becomes hot, the labor cost has doubled over the last several years. The com-
+pany wants to find a solution to reduce its operating cost. The business operation of
+the company is described as follows. The description is not meant to be complete,
+and the company is flexible enough to consider any good improvement proposals.
+Vehicles can be taken from one location and returned to the same location or to
+a different location with an additional charge. Although the company is, at present,
+concerned only with passenger cars, it may branch out into other forms of vehicle
+rentals in the future and would like to be able to use the same reservation system.
+The company has several different makes of cars in its rental fleet, from different
+manufacturers. Each make may have several models. For example, Toyota has Corolla,
+Camry, and more. The models are grouped into a small number of price classes. The
+customer must be able to select the make and the model he or she wants to rent. If the
+selected car is not available, the system should display a message telling the customer
+that the car is rented out and let the customer select another make and model, or have
+the system suggest similar models of a different make.
+The company has a number of different rental plans available to customers.
+For example, there is a “daily unlimited miles plan” and a “weekend 10% discount
+plan.” The company finds it important to have information available on the models
+of car, such as automatic or manual gear change, two or four doors, and sedan or
+hatchback. The rental prices may be different for different options and a customer
+will want to know such information when reserving a car. Currently, customers make
+reservations directly with the car rental company either in person or through the
+phone. The salespersons process the reservations manually using a reservation form
+and archive them in the file cabinet. No deposit is required at the time of reservation.
+The reservation is voided if the customer does not show up to sign the contract for
+more than a given period of time. Such reservation is honored only if there are still
+cars available to satisfy the request.
+Sometimes a customer wishes to make a block reservation for several cars and
+to have the invoices for all rentals on the reservation handled together. As soon as a
+
+car is checked out to a customer, an invoice is opened. A single invoice may cover
+one or more rentals. Normally a customer will settle the invoice when the car is
+returned but, in some cases, the invoice must be sent to a company (such as the
+customer’s employer). When the customer pays by a credit card, the rental charge
+will be processed through a credit card processing company.
+A car may or may not be available for rental on a given day. Rental cars need
+frequent preventive maintenance and, in addition, any damage to a car has to be
+repaired as soon as possible. The company wants to keep track of the rental car
+purchase, repair, maintenance, and disposal information for business and tax purposes
+(e.g., depreciation of the rental cars).
