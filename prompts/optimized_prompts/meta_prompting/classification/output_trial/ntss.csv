@@ -1,0 +1,69 @@
+label,element,arg1,arg2
+C,service provider,,
+C,business customer,,
+C,trade show,,
+C,service,,
+C,advertisement,,
+C,speaker,,
+C,participant,,
+C,exhibitor,,
+C,booth,,
+C,conference room,,
+C,seminar,,
+C,reception,,
+C,account,,
+C,event,,
+C,organizer,,
+C,person,,
+C,organization,,
+C,domain,,
+C,organization staff,,
+C,observer,,
+C,proposal,,
+C,committee,,
+C,reviewer,,
+A,theme,trade show,
+A,slogan,trade show,
+A,location,trade show,
+A,duration,trade show,
+A,service charge,account,
+A,payment received,account,
+A,account balance,account,
+A,contact information,organizer,
+A,website,organizer,
+A,fee,observer,
+A,status,proposal,
+A,booth size,booth,
+V,pending,status,
+V,review,status,
+V,accepted,status,
+V,rejected,status,
+V,large,booth size,
+V,medium,booth size,
+V,small,booth size,
+AS,create,service provider,trade show
+AS,promote,service provider,trade show
+AS,organize,service provider,trade show
+AS,run,service provider,trade show
+AS,create,service provider,account
+AS,belong to,organizer,domain
+AS,attended by,trade show,organization staff
+AS,invited,trade show,observer
+AS,selected,trade show,observer
+AS,register,observer,trade show
+AS,give keynote address,speaker,trade show
+AS,prepares,reviewer,proposal
+AS,runs,reviewer,proposal
+AS,reviewed by,proposal,committee
+AS,exhibit products,exhibitor,trade show
+AS,pay,exhibitor,trade show
+AS,request,exhibitor,booth
+AS,rent,exhibitor,booth
+AS,visit,participant,trade show
+I,trade show,event,
+I,organizer,person,
+I,organizer,organization,
+AG,Part-of,trade show,booth
+AG,Part-of,trade show,conference room
+AG,Part-of,trade show,seminar
+AG,Part-of,trade show,reception

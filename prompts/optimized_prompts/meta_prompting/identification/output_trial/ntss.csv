@@ -1,0 +1,93 @@
+rule,phrase
+1,National Trade Show Services
+1,service provider
+1,business customer
+1,trade show
+1,design
+1,professional service
+1,theme
+1,slogan
+1,location
+1,duration
+1,advertisement activity
+1,speaker
+1,participant
+1,exhibitor
+1,on site registration
+1,booth
+1,conference room
+1,seminar
+1,reception
+1,trade show material
+1,account
+1,service charge
+1,payment
+1,account balance
+1,event
+1,organizer
+1,person
+1,organization
+1,contact information
+1,website
+1,domain
+1,event organization staff
+1,observer
+1,registration fee
+1,NTSS staff
+1,keynote address
+1,proposal
+1,committee
+1,reviewer
+1,expert
+1,status
+1,product
+1,service
+2,selection of a theme
+2,selection of a slogan
+2,duration of the event
+2,types of participants
+2,evaluation of their proposals
+2,size of the booth
+3,create
+3,promote
+3,organize
+3,run
+3,contact
+3,invite
+3,register
+3,set up
+3,distribute
+3,record
+3,maintain
+3,belong to
+3,change
+3,add
+3,remove
+3,attend
+3,charge
+3,prepare
+3,give
+3,review
+3,exhibit
+3,pay
+3,request
+3,rent
+3,visit
+4,national
+4,international
+4,pending review
+4,accepted
+4,rejected
+4,large
+4,medium
+4,small
+5,one or more
+5,each
+6,has an organizer
+6,has contact information
+6,has a website
+7,involve
+7,include
+9,regarded as
+9,is a
+9,type of

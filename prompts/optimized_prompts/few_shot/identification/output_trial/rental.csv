@@ -1,0 +1,72 @@
+rule,phrase
+1,rental location
+1,business model
+1,labor cost
+1,vehicle
+2,forms of vehicle rentals
+1,reservation system
+1,make
+1,rental fleet
+1,manufacturer
+1,model
+2,number of price classes
+1,price class
+1,rental plan
+1,gear change
+1,door
+1,sedan
+1,hatchback
+1,option
+1,reservation
+1,salesperson
+1,reservation form
+1,file cabinet
+1,deposit
+1,contract
+1,block reservation
+1,invoice
+1,rental
+1,credit card
+1,credit card processing company
+1,preventive maintenance
+1,damage
+1,tax
+1,depreciation
+3,taken
+3,returned
+3,branch out
+3,select
+3,display
+3,suggest
+3,reserve
+3,process
+3,archive
+3,void
+3,sign
+3,honor
+3,handle
+3,checked out
+3,settle
+3,send
+3,keep track of
+4,customer-friendly
+4,available
+4,rented out
+4,automatic
+4,manual
+4,two
+4,four
+4,in person
+4,voided
+4,purchase
+4,repair
+4,maintenance
+4,disposal
+5,number of
+5,several
+5,small number of
+5,10%
+5,one or more
+6,has
+7,grouped into
+9,models are grouped into a small number of price classes
