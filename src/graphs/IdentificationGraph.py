@@ -2,8 +2,10 @@ import os
 
 from langgraph.graph import StateGraph, START, END
 from src.models.GraphState import IdentificationState
-from src.helpers.PromptHelpers import extract_prompt, build_identification_eval_prompt
+from src.helpers.PromptHelpers import (extract_prompt, extract_changelog,
+                                       build_identification_eval_prompt, resolve_strategy)
 from src.helpers.IdentificationScoring import score_identification_response
+from src.helpers.ScorecardHelpers import build_scorecard
 from datetime import datetime
 
 def build_identification_graph(model, descriptions, truths, max_trials):
@@ -12,14 +14,14 @@ def build_identification_graph(model, descriptions, truths, max_trials):
 
         prompt_template = state["current_prompt"]
         full_prompt = str(prompt_template).replace("<DESCRIPTION>", descriptions["lib_desc"])
+        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
+        os.makedirs(path, exist_ok=True)
         print(f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | lib: identifying domain phrases...")
         model_response = model.invoke(full_prompt)
         print(
             f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | lib: done ({len(str(model_response.content))} chars)")
 
         # Save response to trial folder
-        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
-        os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
         with open(f"{path}/lib.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
@@ -35,14 +37,14 @@ def build_identification_graph(model, descriptions, truths, max_trials):
 
         prompt_template = state["current_prompt"]
         full_prompt = str(prompt_template).replace("<DESCRIPTION>", descriptions["rental_desc"])
+        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
+        os.makedirs(path, exist_ok=True)
         print(f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | rental: identifying domain phrases...")
         model_response = model.invoke(full_prompt)
         print(
             f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | rental: done ({len(str(model_response.content))} chars)")
 
         # Save response to trial folder
-        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
-        os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
         with open(f"{path}/rental.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
@@ -58,14 +60,14 @@ def build_identification_graph(model, descriptions, truths, max_trials):
 
         prompt_template = state["current_prompt"]
         full_prompt = str(prompt_template).replace("<DESCRIPTION>", descriptions["ntss_desc"])
+        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
+        os.makedirs(path, exist_ok=True)
         print(f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | ntss: identifying domain phrases...")
         model_response = model.invoke(full_prompt)
         print(
             f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | ntss: done ({len(str(model_response.content))} chars)")
 
         # Save response to trial folder
-        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
-        os.makedirs(path, exist_ok=True)
         response_text = model_response.content if hasattr(model_response, 'content') else str(model_response)
         with open(f"{path}/ntss.csv", 'w', encoding='utf-8') as f:
             f.write(response_text)
@@ -97,6 +99,16 @@ def build_identification_graph(model, descriptions, truths, max_trials):
         print(fmt("Rent", rent_scores))
         print(fmt("Ntss", ntss_scores))
 
+        strategy_name, _ = resolve_strategy(state.get("optimization_strategy"))
+        scorecard = build_scorecard(state["current_trial"], lib_scores, rent_scores, ntss_scores,
+                                    strategy=strategy_name)
+        path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
+        os.makedirs(path, exist_ok=True)
+        with open(f"{path}/scorecard.md", 'w', encoding='utf-8') as f:
+            f.write(scorecard)
+        print(
+            f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | score: wrote scorecard to {path}/scorecard.md")
+
         return {
             "lib_eval": {**state["lib_eval"], **lib_scores},
             "rental_eval": {**state["rental_eval"], **rent_scores},
@@ -105,9 +117,10 @@ def build_identification_graph(model, descriptions, truths, max_trials):
 
     def _optimize(state: dict):
         """Read eval data, prompt, and ground truths and optimize prompt"""
-        eval_prompt = build_identification_eval_prompt(state, truths)
+        eval_prompt = build_identification_eval_prompt(state, truths, strategy=state.get("optimization_strategy"))
+        strategy_name, _ = resolve_strategy(state.get("optimization_strategy"))
         print(
-            f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | optimize: asking model to improve the prompt...")
+            f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | optimize: strategy '{strategy_name}'; asking model to improve the prompt...")
         improved_prompt = model.invoke(eval_prompt)
         print(f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | optimize: done")
 
@@ -118,12 +131,13 @@ def build_identification_graph(model, descriptions, truths, max_trials):
         }
 
     def _checkpoint(state: dict):
-        """Write optimized prompt to identification folder and advance to the new prompt"""
+        """Write optimized prompt and change log to identification folder and advance to the new prompt"""
         path = f"../prompts/auto_prompt_evo/identification/t{state['current_trial']}"
         os.makedirs(path, exist_ok=True)
 
         raw = state["optimized_prompt"]
         new_prompt = extract_prompt(raw)
+        changelog = extract_changelog(raw)
         print(
             f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | checkpoint: saving optimized prompt to {path}/prompt.md")
 
@@ -135,9 +149,19 @@ def build_identification_graph(model, descriptions, truths, max_trials):
         with open(f"{path}/prompt.md", 'w', encoding='utf-8') as f:
             f.write(new_prompt)
 
+        if changelog:
+            print(
+                f"[{datetime.now():%H:%M:%S}] Trial {state['current_trial']} | checkpoint: saving change log to {path}/changelog.md")
+            with open(f"{path}/changelog.md", 'w', encoding='utf-8') as f:
+                f.write(f"# Change Log (trial {state['current_trial']})\n\n{changelog}\n")
+        else:
+            print(f"WARNING: no ```changelog block found in optimizer response for trial "
+                  f"{state['current_trial']}; no change log written.")
+
         return {
             "current_trial": state["current_trial"] + 1,
             "current_prompt": new_prompt,
+            "changelog": changelog,
         }
 
     def _should_continue(state: dict):

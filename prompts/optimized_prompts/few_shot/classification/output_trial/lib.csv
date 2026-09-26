@@ -1,0 +1,41 @@
+label,element,arg1,arg2
+C,library,,
+C,loan item,,
+C,customer,,
+C,member,,
+C,membership card,,
+A,member number,membership card,
+A,details,customer,
+A,name,customer,
+A,address,customer,
+A,date of birth,customer,
+C,subject section,,
+A,classification mark,subject section,
+A,bar code,loan item,
+C,language tape,,
+C,book,,
+A,title language,language tape,
+A,level,language tape,
+A,title,book,
+A,author,book,
+C,current loan,,
+C,bar code reader,,
+C,membership,,
+A,book bar code,book,
+C,record,,
+A,number of subject sections,library,
+A,number of items,library,
+AS,borrow,member,loan item
+AS,reserved,member,loan item
+AS,renewed,member,loan item
+AS,extend,member,loan item
+V,French,title language,
+V,beginner,level,
+V,daily,valid,
+V,two,number of items,
+V,maximum of 8,number of items,
+V,less than 8,number of items,
+I,ISA,member,customer
+AG,Part-of,subject section,library
+I,ISA,language tape,loan item
+I,ISA,book,loan item

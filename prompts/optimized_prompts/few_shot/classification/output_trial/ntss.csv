@@ -1,0 +1,67 @@
+label,element,arg1,arg2
+C,service provider,,
+C,business customer,,
+C,trade show,,
+V,national,trade show,
+V,international,trade show,
+C,service,,
+C,theme,,
+A,theme,service,
+C,slogan,,
+A,slogan,service,
+C,location,,
+A,location,service,
+C,duration,,
+A,duration,service,
+C,advertisement,,
+C,speaker,,
+C,participant,,
+C,exhibitor,,
+C,registration,,
+C,booth,,
+C,conference room,,
+C,seminar,,
+C,reception,,
+C,trade show material,,
+C,account,,
+AS,creates,business customer,account
+C,customer,,
+A,record,customer,
+A,service charge,account,
+A,payment received,account,
+A,account balance,account,
+I,ISA,trade show,event
+C,event,,
+AS,has,trade show,organizer
+C,organizer,,
+I,ISA,person,organizer
+I,ISA,organization,organizer
+A,contact information,organizer,
+A,website,organizer,
+C,domain,,
+AS,belong to,organizer,domain
+AS,attended by,trade show,organization staff
+C,organization staff,,
+C,observer,,
+AS,register,observer,trade show
+A,fee,registration,
+C,keynote address,,
+AS,give,speaker,keynote address
+C,proposal,,
+C,evaluation,,
+AS,reviewed by,proposal,committee
+C,committee,,
+C,reviewer,,
+AG,Part-of,reviewer,committee
+A,status,proposal,
+V,pending,status,
+V,review,status,
+V,accepted,status,
+V,rejected,status,
+C,product,,
+AS,exhibit,exhibitor,product
+A,size of the booth,booth,
+V,large,size of the booth,
+V,medium,size of the booth,
+V,small,size of the booth,
+A,duration of the event,event,

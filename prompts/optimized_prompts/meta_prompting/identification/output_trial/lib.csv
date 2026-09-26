@@ -1,0 +1,45 @@
+rule,phrase
+1,library
+3,issue
+1,loan item
+1,customer
+9,known as
+1,member
+1,membership card
+1,member number
+1,name
+1,address
+1,date of birth
+1,subject section
+2,number of subject sections
+1,classification mark
+3,identify
+1,bar code
+9,type of
+1,language tape
+1,book
+6,has a title language
+4,French
+6,has a level
+4,beginner
+6,has a title
+6,has a author
+5,maximum of 8
+3,borrow
+3,reserve
+3,renew
+3,extend
+1,loan
+3,scan
+1,bar code reader
+3,enter
+4,valid
+5,less than 8
+3,read
+4,reserved
+3,stamp
+3,support
+1,facility
+3,search
+2,update of records
+4,daily

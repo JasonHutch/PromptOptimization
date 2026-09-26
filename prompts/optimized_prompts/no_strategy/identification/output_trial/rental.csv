@@ -1,0 +1,72 @@
+rule,phrase
+1,rental location
+1,vehicle
+1,passenger car
+1,make
+1,manufacturer
+1,model
+1,price class
+1,customer
+1,rental plan
+1,gear change
+1,door
+1,sedan
+1,hatchback
+1,rental price
+1,option
+1,reservation
+1,salesperson
+1,reservation form
+1,file cabinet
+1,deposit
+1,contract
+1,block reservation
+1,invoice
+1,rental
+1,credit card
+1,credit card processing company
+1,preventive maintenance
+1,damage
+1,purchase
+1,repair
+1,maintenance
+1,disposal
+1,depreciation
+2,makes of cars
+2,models of car
+2,costs of running its business
+3,take
+3,return
+3,branch out
+3,select
+3,display
+3,suggest
+3,process
+3,archive
+3,void
+3,sign
+3,honor
+3,handle
+3,check out
+3,settle
+3,send
+4,available
+4,automatic
+4,manual
+4,two
+4,four
+4,voided
+4,passenger
+4,daily unlimited miles
+4,weekend 10% discount
+5,a number of
+5,several
+5,one
+5,different
+5,small number of
+5,two
+5,four
+5,one or more
+6,has
+7,grouped into
+9,reservation is voided

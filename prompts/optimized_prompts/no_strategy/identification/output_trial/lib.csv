@@ -1,0 +1,39 @@
+rule,phrase
+1,library
+3,issue
+1,loan item
+1,customer
+9,customer is known as a member
+1,membership card
+1,member number
+1,name
+1,address
+1,date of birth
+7,made up of
+1,subject section
+1,classification mark
+1,bar code
+5,two
+1,language tape
+1,title language
+1,level
+1,book
+1,title
+1,author
+3,borrow
+5,maximum of 8
+3,reserve
+3,renew
+3,extend
+3,scan
+1,bar code reader
+4,manual
+4,valid
+3,read
+4,reserved
+3,stamp
+3,search
+2,update of records
+5,daily
+5,each
+5,a number of

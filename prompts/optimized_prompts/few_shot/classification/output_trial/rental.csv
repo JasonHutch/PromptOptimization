@@ -1,0 +1,70 @@
+label,element,arg1,arg2
+C,vehicle,,
+A,manufacturer,vehicle,
+A,price class,vehicle,
+A,rental price,vehicle,
+A,available,status,
+V,available,status,
+V,not available,status,
+V,rented out,status,
+V,purchase,status,
+V,repair,status,
+V,maintenance,status,
+V,disposal,status,
+C,car,,
+I,ISA,car,vehicle
+C,passenger car,,
+I,ISA,passenger car,car
+A,makes of car,car,
+A,model of car,car,
+A,transmission,car,
+V,automatic,transmission,
+V,manual,transmission,
+V,two,doors,
+V,four,doors,
+A,doors,car,
+I,ISA,sedan,car
+I,ISA,hatchback,car
+C,options,,
+A,additional charge,options,
+A,depreciation of the rental cars,vehicle,
+C,location,,
+AS,taken from,vehicle,location
+AS,returned to,vehicle,location
+C,other forms of vehicle,,
+I,ISA,other forms of vehicle,vehicle
+C,customer,,
+AS,select,customer,rental plan
+C,rental plan,,
+I,ISA,daily unlimited miles plan,rental plan
+I,ISA,weekend savings plan,rental plan
+AS,reserving,customer,reservation
+AC,reservation,customer,vehicle
+A,time of reservation,reservation,
+A,period of time,reservation,
+V,in person,reservation method,
+V,by phone,reservation method,
+V,voided,reservation status,
+C,salesperson,,
+AS,process,salesperson,reservation
+AS,archive,salesperson,reservation
+C,reservation form,,
+AG,Part-of,reservation form,reservation
+C,file cabinet,,
+AS,sign,customer,contract
+C,contract,,
+AS,block reservation,salesperson,reservation
+AS,make,salesperson,invoice
+C,invoice,,
+A,opened,invoice,
+A,cover,invoice,
+AS,one or more,invoice,rentals
+C,rentals,,
+AS,checked out,customer,rentals
+AS,pay,customer,invoice
+AS,sent to,invoice,company
+C,company,,
+A,rental charge,invoice,
+C,credit card,,
+AS,processed,credit card,credit card processing company
+C,credit card processing company,,

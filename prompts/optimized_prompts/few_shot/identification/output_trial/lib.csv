@@ -1,0 +1,42 @@
+rule,phrase
+1,library
+3,issue
+1,loan item
+1,customer
+9,customer is known as a member
+1,member
+1,membership card
+1,member number
+1,name
+1,address
+1,date of birth
+7,made up of
+1,subject section
+2,number of subject sections
+1,classification mark
+1,bar code
+2,types of loan items
+1,language tape
+1,title language
+1,level
+1,book
+1,title
+1,author
+5,maximum of 8
+3,borrow
+4,borrowed
+4,reserved
+4,renewed
+3,extend
+3,issue
+3,scanned
+1,bar code reader
+3,entered
+4,valid
+2,number of items on loan
+5,8
+3,read
+3,stamped
+3,search
+2,update of records
+4,daily
