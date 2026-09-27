@@ -38,10 +38,10 @@ relationships, ensuring no functional entity mentioned in the text is omitted.
 
 | Domain | Precision | Recall | F1 Score |
 |---|---|---|---|
-| library | `<fill>` | `<fill>` | `<fill>` |
-| rental | `<fill>` | `<fill>` | `<fill>` |
-| ntss | `<fill>` | `<fill>` | `<fill>` |
-| **Overall** | **92.59%** | **89.29%** | **90.91%** |
+| library | `85.71` | `96.00` | `90.57` |
+| rental | `88.89` | `91.43` | `90.14` |
+| ntss | `85.71` | `96.00` | `90.57` |
+| **Overall** | **87.77%** | **94.48%** | **90.43** |
 
 ### Per-Domain Responses
 
