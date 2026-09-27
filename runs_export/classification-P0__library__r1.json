@@ -1,0 +1,121 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-23T22:13:10.479Z",
+  "n": 1,
+  "prompt_id": "classification-P0",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | Library | | |\n| C | LoanItem | | |\n| C | Member | | |\n| C | MembershipCard | | |\n| C | SubjectSection | | |\n| C | LanguageTape | | |\n| C | Book | | |\n| C | BarCodeReader | | |\n| C | CurrentLoan | | |\n| C | Record | | |\n| A | member number | Member | |\n| A | details | Member | |\n| A | name | Member | |\n| A | address | Member | |\n| A | date of birth | Member | |\n| A | classification mark | LoanItem | |\n| A | bar code | LoanItem | |\n| A | title language | LoanItem | |\n| A | level | LanguageTape | |\n| A | title | LoanItem | |\n| A | author(s) | Book | |\n| A | book bar code | Book | |\n| A | number of subject sections | Library | |\n| A | types of loan items | LoanItem | |\n| A | number of items | CurrentLoan | |\n| A | update of records | Record | |\n| A | membership | Member | |\n| V | French | title language | |\n| V | beginner | level | |\n| V | daily | update of records | |\n| V | valid | membership | |\n| V | two | types of loan items | |\n| V | 8 | number of items | |\n| V | less than 8 | number of items | |\n| AS | issues | Library | LoanItem |\n| AS | borrow | Member | LoanItem |\n| AS | reserved | Member | LoanItem |\n| AS | renewed | Member | CurrentLoan |\n| AS | extend | Member | CurrentLoan |\n| AS | scanned | BarCodeReader | LoanItem |\n| AS | entered | Member | Record |\n| AS | read | BarCodeReader | LoanItem |\n| AS | stamped | Library | LoanItem |\n| AS | searched | Member | Record |\n| AS | identified | BarCodeReader | Member |\n| AS | shows | MembershipCard | Member |\n| AS | kept | Library | Record |\n| AG | Part-of | SubjectSection | Library |\n| AG | Part-of | LoanItem | Library |\n| AG | Part-of | CurrentLoan | Member |\n| I | ISA | LanguageTape | LoanItem |\n| I | ISA | Book | LoanItem |",
+  "score": {
+    "f1": 0.30379746835443033,
+    "fn": 15,
+    "fp": 40,
+    "missed": [
+      "A|name|customer",
+      "A|address|customer",
+      "A|date of birth|customer",
+      "A|subject|book",
+      "A|language|language tape",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "C|customer"
+    ],
+    "n_gold": 27,
+    "n_pred": 52,
+    "per_label": {
+      "A": {
+        "fn": 9,
+        "fp": 14,
+        "tp": 3
+      },
+      "AC": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 0
+      },
+      "AG": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 1
+      },
+      "AS": {
+        "fn": 4,
+        "fp": 13,
+        "tp": 0
+      },
+      "C": {
+        "fn": 1,
+        "fp": 4,
+        "tp": 6
+      },
+      "I": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "V": {
+        "fn": 0,
+        "fp": 7,
+        "tp": 0
+      }
+    },
+    "precision": 0.23076923076923078,
+    "recall": 0.4444444444444444,
+    "spurious": [
+      "A|member number|member",
+      "A|details|member",
+      "A|name|member",
+      "A|address|member",
+      "A|date of birth|member",
+      "A|classification mark|loan item",
+      "A|title language|loan item",
+      "A|author s|book",
+      "A|book bar code|book",
+      "A|number of subject sections|library",
+      "A|types of loan items|loan item",
+      "A|number of items|current loan",
+      "A|update of records|record",
+      "A|membership|member",
+      "AG|part of|loan item|library",
+      "AG|part of|current loan|member",
+      "AS|issues|library|loan item",
+      "AS|borrow|member|loan item",
+      "AS|reserved|member|loan item",
+      "AS|renewed|member|current loan",
+      "AS|extend|member|current loan",
+      "AS|scanned|bar code reader|loan item",
+      "AS|entered|member|record",
+      "AS|read|bar code reader|loan item",
+      "AS|stamped|library|loan item",
+      "AS|searched|member|record",
+      "AS|identified|bar code reader|member",
+      "AS|shows|membership card|member",
+      "AS|kept|library|record",
+      "C|member",
+      "C|bar code reader",
+      "C|current loan",
+      "C|record",
+      "V|french|title language",
+      "V|beginner|level",
+      "V|daily|update of records",
+      "V|valid|membership",
+      "V|two|types of loan items",
+      "V|8|number of items",
+      "V|less than 8|number of items"
+    ],
+    "tp": 12
+  },
+  "started_at": "2026-09-23T22:12:52.737Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P0"
+}

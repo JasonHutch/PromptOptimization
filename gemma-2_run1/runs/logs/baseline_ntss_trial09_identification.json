@@ -1,0 +1,153 @@
+{
+  "strategy": "baseline",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 9,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "9cb752ce6934e05474483cf8f5283bc45338d020f65b8e118812b0b183b903bd",
+  "prompt_path": "prompts/identification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/identification/ntss_trial09_gemma-2.md",
+  "score": {
+    "precision": 0.5263157894736842,
+    "recall": 0.6976744186046512,
+    "f1": 0.6,
+    "tp": 60,
+    "fp": 54,
+    "fn": 26,
+    "missed": [
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|evaluation",
+      "1|proposals / proposal",
+      "1|reviewers / reviewer",
+      "1|status",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "3|set up / setting up",
+      "3|add / added",
+      "3|remove / removed",
+      "3|give",
+      "4|invited",
+      "4|selected",
+      "4|pending",
+      "4|accepted",
+      "4|rejected",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|trade show",
+      "1|professional services",
+      "1|activities",
+      "1|Consumer Electronics Show (CES)",
+      "1|Las Vegas Convention Center",
+      "1|January 7-10, 2008",
+      "1|MacWorld Conference",
+      "1|Moscone Center",
+      "1|Howard Street",
+      "1|January 14-18, 2008",
+      "1|Consumer Electronics Association",
+      "1|Apple, Inc.",
+      "1|Technology",
+      "1|Consumer Electronics",
+      "1|list",
+      "1|domains",
+      "1|invited and/or selected speakers",
+      "1|registration charges",
+      "1|trade show event",
+      "1|experts",
+      "1|domain",
+      "1|services",
+      "1|booths",
+      "1|duration",
+      "1|observers",
+      "2|whole duration of the event",
+      "3|design",
+      "3|including",
+      "3|ranging",
+      "3|promoting",
+      "3|organizing",
+      "3|running",
+      "3|creates",
+      "3|maintain",
+      "3|regard",
+      "3|took place",
+      "3|organized",
+      "3|provides",
+      "3|register",
+      "3|charges",
+      "3|creates",
+      "3|invited",
+      "3|selected",
+      "3|evaluated",
+      "3|accepted",
+      "3|rejected",
+      "4|business",
+      "4|professional",
+      "5|2008",
+      "5|2008",
+      "5|7",
+      "5|10",
+      "5|14",
+      "5|18"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 35,
+        "fp": 25,
+        "fn": 9
+      },
+      "X of Y": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1
+      },
+      "verb": {
+        "tp": 18,
+        "fp": 20,
+        "fn": 4
+      },
+      "adj/enum": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 5
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 6,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 114
+  },
+  "usage": {
+    "elapsed_seconds": 27.134,
+    "prompt_eval_count": 762,
+    "eval_count": 941,
+    "total_duration_ns": 27126652312
+  }
+}

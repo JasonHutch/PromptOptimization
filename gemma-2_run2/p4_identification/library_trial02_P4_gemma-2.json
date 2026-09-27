@@ -1,0 +1,103 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "library",
+  "trial": 2,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/library_trial02_P4_gemma-2.md",
+  "score": {
+    "precision": 0.6808510638297872,
+    "recall": 0.5714285714285714,
+    "f1": 0.6213592233009708,
+    "tp": 32,
+    "fp": 15,
+    "fn": 24,
+    "missed": [
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|types of loan items",
+      "2|update of records",
+      "3|reserved / reserve",
+      "3|renewed / renew",
+      "3|extend",
+      "3|scanned / scan",
+      "3|entered / enter",
+      "3|read",
+      "4|French",
+      "4|beginner",
+      "5|two",
+      "5|8 / maximum of 8 / up to a maximum of 8",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "1|type",
+      "1|number",
+      "1|item",
+      "2|number of loan items",
+      "3|is known as",
+      "3|is made up of",
+      "3|can be issued",
+      "3|is issued",
+      "3|must support",
+      "3|is updated",
+      "4|maximum",
+      "4|borrowed",
+      "4|reserved",
+      "4|renewed",
+      "4|current"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 20,
+        "fp": 3,
+        "fn": 4
+      },
+      "X of Y": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 8,
+        "fp": 6,
+        "fn": 6
+      },
+      "adj/enum": {
+        "tp": 2,
+        "fp": 5,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 47
+  }
+}

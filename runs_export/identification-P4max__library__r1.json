@@ -1,0 +1,15 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-24T18:17:52.430Z",
+  "n": 1,
+  "prompt_id": "identification-P4max",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | library |\n| 1 | loan item / loan items |\n| 1 | customer / customers |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number |\n| 1 | membership number |\n| 1 | membership |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject sections |\n| 1 | section |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape / language tapes |\n| 1 | book / books |\n| 1 | title language |\n| 1 | level |\n| 1 | title |\n| 1 | author(s) |\n| 1 | item / items |\n| 1 | loan |\n| 1 | bar code reader |\n| 1 | book bar code |\n| 1 | update |\n| 1 | records |\n| 2 | date of birth |\n| 2 | types of loan items |\n| 2 | number of items |\n| 2 | update of records |\n| 3 | issues / is issued |\n| 3 | shows |\n| 3 | kept |\n| 3 | is denoted by |\n| 3 | is identified by |\n| 3 | borrow / be borrowed |\n| 3 | reserved |\n| 3 | renewed |\n| 3 | extend |\n| 3 | is scanned |\n| 3 | entered |\n| 3 | is read |\n| 3 | is stamped |\n| 3 | be searched |\n| 4 | unique |\n| 4 | French |\n| 4 | beginner |\n| 4 | valid |\n| 4 | on loan |\n| 4 | manually |\n| 4 | daily |\n| 5 | a number of |\n| 5 | two |\n| 5 | up to a maximum of 8 |\n| 5 | less than 8 |\n| 6 | has a title language, and level |\n| 6 | has a title, and author(s) |\n| 7 | is made up of |\n| 9 | customer is known as a member |\n| 9 | language tapes and books are two types of loan items |",
+  "started_at": "2026-09-24T18:17:34.270Z",
+  "status": "done",
+  "tier_applied": "complex",
+  "tier_requested": "complex",
+  "truncated": false,
+  "version": "P4max"
+}

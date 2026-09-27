@@ -1,0 +1,91 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "library",
+  "trial": 4,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/library_trial04_P4_gemma-2.md",
+  "score": {
+    "precision": 0.7543859649122807,
+    "recall": 0.7678571428571429,
+    "f1": 0.7610619469026548,
+    "tp": 43,
+    "fp": 14,
+    "fn": 13,
+    "missed": [
+      "1|current loan",
+      "2|date of birth",
+      "2|types of loan items",
+      "2|number of items",
+      "2|update of records",
+      "3|extend",
+      "4|daily",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member"
+    ],
+    "spurious": [
+      "1|types",
+      "1|items",
+      "1|item",
+      "2|number of loan items",
+      "3|is known as",
+      "3|is issued",
+      "3|is made up of",
+      "3|is valid",
+      "3|issued",
+      "3|updated",
+      "4|maximum",
+      "4|current",
+      "4|reserved",
+      "9|language tapes are two types of loan items"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 23,
+        "fp": 3,
+        "fn": 1
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 4
+      },
+      "verb": {
+        "tp": 13,
+        "fp": 6,
+        "fn": 1
+      },
+      "adj/enum": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 1
+      },
+      "numeric": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 57
+  }
+}

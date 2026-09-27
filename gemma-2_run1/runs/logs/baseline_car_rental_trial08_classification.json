@@ -1,0 +1,142 @@
+{
+  "strategy": "baseline",
+  "activity": "classification",
+  "domain": "car_rental",
+  "trial": 8,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "65e4fd007e82ff6db8df117710e5f05c57f0002e86eb88b0d8442194435c3555",
+  "prompt_path": "prompts/classification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/classification/car_rental_trial08_gemma-2.md",
+  "score": {
+    "precision": 0.38235294117647056,
+    "recall": 0.19696969696969696,
+    "f1": 0.25999999999999995,
+    "tp": 13,
+    "fp": 21,
+    "fn": 53,
+    "missed": [
+      "A|manufacturer",
+      "A|price",
+      "A|available",
+      "A|rented out",
+      "A|transmission",
+      "A|number of doors",
+      "A|body style",
+      "A|additional charge",
+      "A|depreciation",
+      "A|means",
+      "A|void",
+      "A|opened",
+      "AC|reservation",
+      "AC|payment",
+      "AC|pay by credit card",
+      "AG|part of|reservation|block reservation",
+      "AS|taken from|vehicle|location",
+      "AS|returned to|vehicle|location",
+      "AS|select|customer|vehicle",
+      "AS|reserve|customer|vehicle",
+      "AS|process|salesperson|reservation",
+      "AS|archive|salesperson|reservation",
+      "AS|sign|customer|contract",
+      "AS|make|customer|block reservation",
+      "AS|bill for|invoice|contract",
+      "AS|check out|customer|vehicle",
+      "AS|sent to|invoice|company",
+      "AS|processed by|pay by credit card|credit card company",
+      "C|vehicle",
+      "C|passenger car",
+      "C|location",
+      "C|daily unlimited miles plan",
+      "C|weekend savings plan",
+      "C|salesperson",
+      "C|contract",
+      "C|credit card company",
+      "I|isa|credit card company|company",
+      "I|isa|pay by credit card|payment",
+      "I|isa|daily unlimited miles plan|rental plan",
+      "I|isa|weekend savings plan|rental plan",
+      "I|isa|passenger car|vehicle",
+      "V|purchase|status",
+      "V|repair|status",
+      "V|maintenance|status",
+      "V|disposed|status",
+      "V|automatic|transmission",
+      "V|manual|transmission",
+      "V|2|number of doors",
+      "V|4|number of doors",
+      "V|sedan|body style",
+      "V|hatchback|body style",
+      "V|in person|means",
+      "V|by phone|means"
+    ],
+    "spurious": [
+      "A|name|customer|car rental company",
+      "A|rental locations|car rental company",
+      "A|type|rental car",
+      "A|contract|reservation",
+      "A|car|reservation",
+      "A|deposit|reservation",
+      "A|customer|reservation",
+      "A|company|invoice",
+      "AS|operates|car rental company",
+      "AS|provides|car rental company|rental car",
+      "AS|make|rental car",
+      "AS|model|rental car",
+      "AS|rent|customer|rental car",
+      "AS|return|customer|rental car",
+      "AS|settle|invoice|car rental company",
+      "AS|process|invoice|credit card processing company",
+      "AS|request|customer|car rental company",
+      "AS|block|customer|reservation",
+      "AS|has|car rental company|rental location",
+      "C|business",
+      "C|rental car"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 7,
+        "fp": 8,
+        "fn": 12
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 1,
+        "fp": 11,
+        "fn": 12
+      },
+      "C": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 8
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "V": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 12
+      }
+    },
+    "n_gold": 66,
+    "n_pred": 34
+  },
+  "usage": {
+    "elapsed_seconds": 13.002,
+    "prompt_eval_count": 2438,
+    "eval_count": 363,
+    "total_duration_ns": 12993105474
+  }
+}

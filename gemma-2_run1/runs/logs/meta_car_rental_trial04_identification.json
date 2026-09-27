@@ -1,0 +1,159 @@
+{
+  "strategy": "meta",
+  "activity": "identification",
+  "domain": "car_rental",
+  "trial": 4,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "d25bba08717b8e0e0e2a2b2fd639b1f170ada191f373e2c289ecc93906666962",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/identification/car_rental_trial04_gemma-2.md",
+  "score": {
+    "precision": 0.4,
+    "recall": 0.49230769230769234,
+    "f1": 0.44137931034482764,
+    "tp": 32,
+    "fp": 48,
+    "fn": 33,
+    "missed": [
+      "1|manufacturer / manufacturers",
+      "1|sedan",
+      "1|hatchback",
+      "1|options / option",
+      "1|additional charge",
+      "1|daily unlimited miles plan",
+      "1|weekend 10% discount plan / weekend savings plan",
+      "1|company",
+      "1|rental charge",
+      "2|makes of cars / makes of car",
+      "2|models of car / model of car",
+      "2|depreciation of the rental cars / depreciation",
+      "2|time of reservation",
+      "2|period of time",
+      "3|taken from",
+      "3|returned to / returned",
+      "3|reserving / reserve",
+      "3|sign",
+      "3|checked out / check out",
+      "3|pay / pays",
+      "3|sent to",
+      "4|purchase",
+      "4|repair",
+      "4|maintenance / preventive maintenance",
+      "4|disposal",
+      "4|automatic",
+      "4|in person",
+      "4|by phone / through the phone / phone",
+      "4|voided / void",
+      "4|opened / open",
+      "5|two",
+      "5|four",
+      "5|one or more"
+    ],
+    "spurious": [
+      "1|business model",
+      "1|business",
+      "1|costs",
+      "1|job market",
+      "1|labor cost",
+      "1|solution",
+      "1|operating cost",
+      "1|business operation",
+      "1|improvement proposals",
+      "1|reservation system",
+      "1|make",
+      "1|model",
+      "1|deposit",
+      "1|period",
+      "1|preventive maintenance",
+      "1|damage",
+      "1|repair",
+      "1|rental car purchase",
+      "1|disposal",
+      "1|depreciation",
+      "2|10% of",
+      "3|track",
+      "3|operate",
+      "3|apply",
+      "3|reduce",
+      "3|branch out",
+      "3|display",
+      "3|let",
+      "3|suggest",
+      "3|void",
+      "3|honor",
+      "3|satisfy",
+      "3|handle",
+      "3|open",
+      "3|settle",
+      "3|send",
+      "3|keep track",
+      "3|need",
+      "3|has to be",
+      "3|want",
+      "4|valid",
+      "4|active",
+      "4|satisfied",
+      "5|a number of",
+      "6|has",
+      "7|consists of",
+      "8|contains",
+      "9|car rental is"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 21,
+        "fp": 20,
+        "fn": 9
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5
+      },
+      "verb": {
+        "tp": 6,
+        "fp": 19,
+        "fn": 7
+      },
+      "adj/enum": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 9
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "n_gold": 65,
+    "n_pred": 80
+  },
+  "usage": {
+    "elapsed_seconds": 18.327,
+    "prompt_eval_count": 1191,
+    "eval_count": 610,
+    "total_duration_ns": 18318772008
+  }
+}

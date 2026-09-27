@@ -1,0 +1,152 @@
+{
+  "strategy": "meta",
+  "activity": "identification",
+  "domain": "car_rental",
+  "trial": 9,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "d25bba08717b8e0e0e2a2b2fd639b1f170ada191f373e2c289ecc93906666962",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/identification/car_rental_trial09_gemma-2.md",
+  "score": {
+    "precision": 0.43283582089552236,
+    "recall": 0.4461538461538462,
+    "f1": 0.4393939393939394,
+    "tp": 29,
+    "fp": 38,
+    "fn": 36,
+    "missed": [
+      "1|manufacturer / manufacturers",
+      "1|doors / door",
+      "1|sedan",
+      "1|hatchback",
+      "1|options / option",
+      "1|additional charge",
+      "1|other forms of vehicle rentals / other forms of vehicle",
+      "1|daily unlimited miles plan",
+      "1|weekend 10% discount plan / weekend savings plan",
+      "1|reservation form",
+      "1|file cabinet",
+      "1|company",
+      "1|rental charge",
+      "1|credit card",
+      "2|makes of cars / makes of car",
+      "2|models of car / model of car",
+      "2|depreciation of the rental cars / depreciation",
+      "2|time of reservation",
+      "2|period of time",
+      "3|taken from",
+      "3|reserving / reserve",
+      "3|checked out / check out",
+      "3|pay / pays",
+      "3|sent to",
+      "4|not available",
+      "4|purchase",
+      "4|repair",
+      "4|maintenance / preventive maintenance",
+      "4|disposal",
+      "4|in person",
+      "4|by phone / through the phone / phone",
+      "4|voided / void",
+      "4|opened / open",
+      "5|two",
+      "5|four",
+      "5|one or more"
+    ],
+    "spurious": [
+      "1|business model",
+      "1|job market",
+      "1|operating cost",
+      "1|make",
+      "1|model",
+      "1|repair",
+      "1|maintenance",
+      "1|disposal",
+      "2|10% of",
+      "3|take",
+      "3|branch out into",
+      "3|use",
+      "3|have",
+      "3|display",
+      "3|telling",
+      "3|select",
+      "3|suggest",
+      "3|find",
+      "3|have",
+      "3|require",
+      "3|void",
+      "3|show up",
+      "3|satisfy",
+      "3|handle",
+      "3|open",
+      "3|settle",
+      "3|send",
+      "3|keep track of",
+      "4|similar",
+      "4|daily",
+      "4|given",
+      "5|a number of",
+      "5|a number of",
+      "6|has",
+      "6|have",
+      "7|consists of",
+      "8|contains",
+      "9|X is a Y"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 16,
+        "fp": 8,
+        "fn": 14
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5
+      },
+      "verb": {
+        "tp": 8,
+        "fp": 19,
+        "fn": 5
+      },
+      "adj/enum": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 9
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "n_gold": 65,
+    "n_pred": 67
+  },
+  "usage": {
+    "elapsed_seconds": 15.572,
+    "prompt_eval_count": 1191,
+    "eval_count": 516,
+    "total_duration_ns": 15563608929
+  }
+}

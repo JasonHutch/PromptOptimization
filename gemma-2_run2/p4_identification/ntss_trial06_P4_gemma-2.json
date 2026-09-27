@@ -1,0 +1,137 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "ntss",
+  "trial": 6,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/ntss_trial06_P4_gemma-2.md",
+  "score": {
+    "precision": 0.552,
+    "recall": 0.8023255813953488,
+    "f1": 0.6540284360189573,
+    "tp": 69,
+    "fp": 56,
+    "fn": 17,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|fee",
+      "1|evaluation",
+      "2|types of participants / types of",
+      "2|duration of the event",
+      "3|visit",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activities",
+      "1|event organization",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|accepted",
+      "1|rejected",
+      "1|exhibitors",
+      "1|booths",
+      "1|size",
+      "1|duration",
+      "2|trade show of event",
+      "2|service charges of account",
+      "2|payments of account",
+      "2|account balances of account",
+      "2|contact information of event",
+      "2|website of event",
+      "2|domain of event",
+      "3|design",
+      "3|including",
+      "3|selection",
+      "3|ranging",
+      "3|includes",
+      "3|creates",
+      "3|maintain",
+      "3|regarded",
+      "3|took place",
+      "3|organized",
+      "3|provides",
+      "3|change",
+      "3|must register",
+      "3|charges",
+      "3|creates",
+      "3|runs",
+      "3|invited",
+      "3|invited",
+      "3|speak",
+      "3|based on",
+      "3|evaluation",
+      "3|help",
+      "3|includes",
+      "3|accepted",
+      "3|rejected",
+      "3|come",
+      "3|come",
+      "4|professional",
+      "4|predefined",
+      "4|different",
+      "4|on-site",
+      "4|whole",
+      "4|active",
+      "4|various",
+      "5|two",
+      "5|two",
+      "5|one or two",
+      "5|maximum of 8",
+      "5|at least two"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 39,
+        "fp": 10,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 7,
+        "fn": 2
+      },
+      "verb": {
+        "tp": 21,
+        "fp": 27,
+        "fn": 1
+      },
+      "adj/enum": {
+        "tp": 8,
+        "fp": 7,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 125
+  }
+}

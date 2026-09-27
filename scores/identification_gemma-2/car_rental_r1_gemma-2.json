@@ -1,0 +1,369 @@
+{
+  "score": {
+    "tp": 55,
+    "fp": 33,
+    "fn": 10,
+    "precision": 0.625,
+    "recall": 0.8461538461538461,
+    "f1": 0.7189542483660131,
+    "per_rule": {
+      "noun": {
+        "tp": 25,
+        "fp": 8,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 0
+      },
+      "verb": {
+        "tp": 12,
+        "fp": 14,
+        "fn": 1
+      },
+      "adj/enum": {
+        "tp": 10,
+        "fp": 4,
+        "fn": 3
+      },
+      "numeric": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 1
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "matched": [
+      {
+        "gold": "1|vehicle / vehicles",
+        "pred": "1|vehicles",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|manufacturer / manufacturers",
+        "pred": "1|manufacturers",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|price class / price classes",
+        "pred": "1|price classes",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|rental price / rental prices",
+        "pred": "1|rental prices",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|car / cars",
+        "pred": "1|cars",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|passenger car / passenger cars",
+        "pred": "1|passenger cars",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|gear change / transmission",
+        "pred": "1|gear change",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|doors / door",
+        "pred": "1|doors",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|options / option",
+        "pred": "1|options",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|additional charge",
+        "pred": "1|additional charge",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|location / locations / rental location / rental locations",
+        "pred": "1|rental locations / location",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|other forms of vehicle rentals / other forms of vehicle",
+        "pred": "1|vehicle rentals",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|customer / customers",
+        "pred": "1|customer",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|rental plan / rental plans",
+        "pred": "1|rentals",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|reservation / reservations",
+        "pred": "1|reservations",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|salesperson / salespersons",
+        "pred": "1|salespersons",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|reservation form",
+        "pred": "1|reservation form",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|file cabinet",
+        "pred": "1|file cabinet",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|contract",
+        "pred": "1|contract",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|block reservation",
+        "pred": "1|block reservation",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|invoice / invoices",
+        "pred": "1|invoices",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|rentals / rental",
+        "pred": "1|rental fleet",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|rental charge",
+        "pred": "1|rental charge",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|credit card",
+        "pred": "1|credit card",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|credit card processing company",
+        "pred": "1|credit card processing company",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|makes of cars / makes of car",
+        "pred": "2|makes of cars",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|models of car / model of car",
+        "pred": "2|models of car",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|depreciation of the rental cars / depreciation",
+        "pred": "2|depreciation of the rental cars",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|time of reservation",
+        "pred": "2|time of reservation",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|period of time",
+        "pred": "2|period of time",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|taken from",
+        "pred": "3|taken from",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|returned to / returned",
+        "pred": "3|returned to",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|select",
+        "pred": "3|select",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|reserving / reserve",
+        "pred": "3|reserve",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|process",
+        "pred": "3|process",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|archive",
+        "pred": "3|archive",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|sign",
+        "pred": "3|sign",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|make",
+        "pred": "3|make",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|cover",
+        "pred": "3|cover",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|checked out / check out",
+        "pred": "3|check out",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|pay / pays",
+        "pred": "3|pay",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|processed / processed through",
+        "pred": "3|process through",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|available",
+        "pred": "4|available",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|rented out",
+        "pred": "4|rented out",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|purchase",
+        "pred": "4|purchase",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|repair",
+        "pred": "4|repair",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|maintenance / preventive maintenance",
+        "pred": "4|maintenance",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|disposal",
+        "pred": "4|disposal",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|automatic",
+        "pred": "4|automatic",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|manual",
+        "pred": "4|manual",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|in person",
+        "pred": "4|in person",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|by phone / through the phone / phone",
+        "pred": "4|through the phone",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|two",
+        "pred": "5|two",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|four",
+        "pred": "5|four",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|one or more",
+        "pred": "5|one or more",
+        "kind": "exact"
+      }
+    ],
+    "missed": [
+      "1|sedan",
+      "1|hatchback",
+      "1|daily unlimited miles plan",
+      "1|weekend 10% discount plan / weekend savings plan",
+      "1|company",
+      "3|sent to",
+      "4|not available",
+      "4|voided / void",
+      "4|opened / open",
+      "5|several"
+    ],
+    "spurious": [
+      "1|makes",
+      "1|models",
+      "1|deposit",
+      "1|request",
+      "1|employer",
+      "1|preventive maintenance",
+      "1|damage",
+      "1|depreciation",
+      "2|models of a different make",
+      "3|rent",
+      "3|grouped into",
+      "3|require",
+      "3|void",
+      "3|show up",
+      "3|honor",
+      "3|satisfy",
+      "3|handle",
+      "3|open",
+      "3|settle",
+      "3|send to",
+      "3|repair",
+      "3|need",
+      "3|keep track of",
+      "4|daily unlimited miles plan",
+      "4|weekend 10% discount plan",
+      "4|sedan",
+      "4|hatchback",
+      "5|a number of",
+      "5|a small number of",
+      "5|10%",
+      "6|has several different makes of cars",
+      "6|have several models",
+      "6|has a number of different rental plans"
+    ],
+    "n_gold": 65,
+    "n_pred": 88
+  },
+  "source_fixture": "responses/identification/P4/car_rental_r1.md"
+}

@@ -1,0 +1,116 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "ntss",
+  "trial": 9,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/ntss_trial09_P4_gemma-2.md",
+  "score": {
+    "precision": 0.7236842105263158,
+    "recall": 0.6395348837209303,
+    "f1": 0.6790123456790124,
+    "tp": 55,
+    "fp": 21,
+    "fn": 31,
+    "missed": [
+      "1|creation",
+      "1|promotion",
+      "1|conference rooms / conference room",
+      "1|seminars / seminar",
+      "1|reception",
+      "1|trade show materials",
+      "1|evaluation",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "3|promote / promoting",
+      "3|organize / organizing",
+      "3|contact",
+      "3|register / registering",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|record",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|attended by / attend",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|visit",
+      "4|invited",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activities",
+      "1|Technology",
+      "1|Consumer Electronics",
+      "1|event",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|accepted",
+      "1|rejected",
+      "1|exhibitors",
+      "1|size",
+      "3|invited",
+      "3|speak",
+      "3|evaluated",
+      "3|help",
+      "3|includes",
+      "4|different",
+      "4|professional",
+      "4|registered",
+      "4|on site",
+      "4|famous",
+      "4|keynote"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 37,
+        "fp": 10,
+        "fn": 7
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2
+      },
+      "verb": {
+        "tp": 8,
+        "fp": 5,
+        "fn": 14
+      },
+      "adj/enum": {
+        "tp": 9,
+        "fp": 6,
+        "fn": 1
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 76
+  }
+}

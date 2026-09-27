@@ -1,0 +1,10 @@
+{
+  "activity": "identification",
+  "domain": "car_rental",
+  "n": 2,
+  "prompt_id": "identification-P0",
+  "started_at": "2026-09-23T22:10:59.322Z",
+  "status": "running",
+  "tier_requested": "default",
+  "version": "P0"
+}

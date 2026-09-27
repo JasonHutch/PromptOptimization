@@ -1,0 +1,96 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "library",
+  "trial": 9,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/library_trial09_P4_gemma-2.md",
+  "score": {
+    "precision": 0.7857142857142857,
+    "recall": 0.5892857142857143,
+    "f1": 0.6734693877551021,
+    "tp": 33,
+    "fp": 9,
+    "fn": 23,
+    "missed": [
+      "1|details",
+      "1|title language",
+      "1|current loan",
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "2|update of records",
+      "3|shows / show",
+      "3|read",
+      "4|French",
+      "4|beginner",
+      "5|two",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "1|type",
+      "1|number",
+      "2|number of sections",
+      "3|issued",
+      "3|support",
+      "4|maximum",
+      "4|current",
+      "9|language tape is a type of loan item",
+      "9|book is a type of loan item"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 17,
+        "fp": 2,
+        "fn": 7
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 4
+      },
+      "verb": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 2
+      },
+      "adj/enum": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 42
+  }
+}

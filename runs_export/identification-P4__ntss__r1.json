@@ -1,0 +1,90 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-24T14:03:05.615Z",
+  "n": 1,
+  "prompt_id": "identification-P4",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | business customers |\n| 1 | trade shows |\n| 1 | design |\n| 1 | professional services |\n| 1 | selection |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | activities |\n| 1 | creation |\n| 1 | promotion |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | on site registration |\n| 1 | booths |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | person |\n| 1 | organization |\n| 1 | contact information |\n| 1 | website |\n| 1 | domains |\n| 1 | event organization staff |\n| 1 | observers |\n| 1 | NTSS staff |\n| 1 | fee |\n| 1 | registration |\n| 1 | keynote address |\n| 1 | evaluation |\n| 1 | proposals |\n| 1 | committee |\n| 1 | reviewers |\n| 1 | status |\n| 1 | products |\n| 1 | services |\n| 1 | size |\n| 1 | booth |\n| 2 | selection of a theme |\n| 2 | types of participants |\n| 2 | evaluation of proposals |\n| 2 | status of a proposal |\n| 2 | size of the booth |\n| 2 | duration of the event |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | invite |\n| 3 | register |\n| 3 | set up |\n| 3 | distribute |\n| 3 | record |\n| 3 | maintain |\n| 3 | belong to |\n| 3 | add |\n| 3 | remove |\n| 3 | attend |\n| 3 | charges |\n| 3 | give |\n| 3 | speak at |\n| 3 | reviewed by |\n| 3 | exhibit |\n| 3 | pay for |\n| 3 | request |\n| 3 | rent |\n| 3 | visit |\n| 3 | prepare |\n| 4 | national |\n| 4 | international |\n| 4 | new |\n| 4 | outdated |\n| 4 | invited |\n| 4 | selected |\n| 4 | pending review |\n| 4 | accepted |\n| 4 | rejected |\n| 4 | large |\n| 4 | medium |\n| 4 | small |\n| 5 | one or more |\n| 6 | an event has an organizer, which can be a person or an organization |\n| 6 | an event has contact information and possibly a website |\n| 9 | a trade show can be regarded as an event |\n| 9 | an organizer can be a person or an organization |\n| 9 | the event organization staff, the invited and/or selected speakers, exhibitors, and observers are different types of participants |",
+  "score": {
+    "f1": 0.8961748633879781,
+    "fn": 4,
+    "fp": 15,
+    "missed": [
+      "1|review / pending review",
+      "5|each",
+      "7|involves",
+      "7|including"
+    ],
+    "n_gold": 86,
+    "n_pred": 97,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 3
+      },
+      "adj/enum": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 10
+      },
+      "noun": {
+        "fn": 1,
+        "fp": 5,
+        "tp": 43
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 2,
+        "fp": 0,
+        "tp": 0
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 22
+      }
+    },
+    "precision": 0.845360824742268,
+    "recall": 0.9534883720930233,
+    "spurious": [
+      "1|selection",
+      "1|activities",
+      "1|registration",
+      "1|size",
+      "1|booth",
+      "2|selection of a theme",
+      "2|evaluation of proposals",
+      "2|status of a proposal",
+      "3|maintain",
+      "3|charges",
+      "3|speak at",
+      "4|new",
+      "4|outdated",
+      "9|an organizer can be a person or an organization",
+      "9|the event organization staff, the invited and/or selected speakers, exhibitors, and observers are different types of participants"
+    ],
+    "tp": 82
+  },
+  "started_at": "2026-09-24T14:02:13.869Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P4"
+}

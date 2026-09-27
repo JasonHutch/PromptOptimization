@@ -1,0 +1,129 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:30:24.763Z",
+  "n": 3,
+  "prompt_id": "identification-P0",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | National Trade Show Services (NTSS) |\n| 1 | service provider |\n| 1 | business customers |\n| 1 | trade show |\n| 1 | services |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | on site registration |\n| 1 | booths |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | contact information |\n| 1 | website |\n| 1 | predefined domains |\n| 1 | event organization staff |\n| 1 | invited speakers |\n| 1 | selected speakers |\n| 1 | observers |\n| 1 | registration |\n| 1 | fee |\n| 1 | keynote address |\n| 1 | proposals |\n| 1 | committee of reviewers |\n| 1 | reviewers |\n| 1 | status of a proposal |\n| 1 | products or services |\n| 1 | size of the booth |\n| 2 | selection of a theme |\n| 2 | design for the trade show |\n| 2 | location and duration (of trade show) |\n| 2 | list of predefined domains |\n| 2 | status of a proposal |\n| 2 | size of the booth |\n| 2 | evaluation of their proposals |\n| 2 | duration of the event |\n| 2 | committee of reviewers |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | design |\n| 3 | select |\n| 3 | advertise |\n| 3 | invite |\n| 3 | register |\n| 3 | set up |\n| 3 | distribute |\n| 3 | record |\n| 3 | maintain |\n| 3 | attend |\n| 3 | review |\n| 3 | pay |\n| 3 | exhibit |\n| 3 | rent |\n| 3 | request |\n| 3 | visit |\n| 3 | organized by |\n| 4 | national and international (trade shows) |\n| 4 | large, medium, or small (booth sizes) |\n| 4 | pending review, accepted, rejected (proposal status) |\n| 4 | invited and/or selected (speakers) |\n| 4 | famous (figures) |\n| 4 | professional (services) |\n| 5 | 2008 (Consumer Electronics Show) |\n| 5 | January 7-10, 2008 |\n| 5 | January 14-18, 2008 |\n| 5 | one or more (predefined domains) |\n| 6 | event has an organizer |\n| 6 | event has contact information |\n| 6 | event has a website |\n| 6 | exhibitors have to pay for the booths |\n| 7 | Creating a trade show involves the design for the trade show |\n| 7 | Organizing a trade show includes all activities before the trade show except creation and promotion |\n| 7 | Running a trade show is the activity of on site registration, setting up booths... |\n| 7 | Promoting a trade show includes advertisement activities |\n| 8 | trade show can belong to one or more predefined domains |\n| 8 | CES and MacWorld belong to Technology and Consumer Electronics |\n| 9 | A trade show can be regarded as an event |\n| 9 | organizer, which can be a person or an organization |\n| 9 | The invited speakers are famous figures in the domain |\n| 9 | The selected speakers are invited to speak at the event based on the evaluation of their proposals |\n| 9 | The exhibitors come to the trade show to exhibit their products or services |\n| 9 | The observers come to visit the trade show |\n| 9 | reviewers, who are experts in the domain |",
+  "score": {
+    "f1": 0.7135135135135136,
+    "fn": 20,
+    "fp": 33,
+    "missed": [
+      "1|design",
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|evaluation",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|prepare / prepares",
+      "3|give",
+      "4|international",
+      "4|selected",
+      "4|accepted",
+      "4|rejected",
+      "4|medium",
+      "4|small",
+      "5|each"
+    ],
+    "n_gold": 86,
+    "n_pred": 99,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 6,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 1,
+        "fp": 7,
+        "tp": 2
+      },
+      "adj/enum": {
+        "fn": 6,
+        "fp": 2,
+        "tp": 4
+      },
+      "containment": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 0
+      },
+      "noun": {
+        "fn": 7,
+        "fp": 4,
+        "tp": 37
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 3,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 2
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 5,
+        "fp": 5,
+        "tp": 17
+      }
+    },
+    "precision": 0.6666666666666666,
+    "recall": 0.7674418604651163,
+    "spurious": [
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|registration",
+      "1|size of the booth",
+      "2|selection of a theme",
+      "2|design for the trade show",
+      "2|location and duration (of trade show)",
+      "2|list of predefined domains",
+      "2|status of a proposal",
+      "2|evaluation of their proposals",
+      "2|committee of reviewers",
+      "3|design",
+      "3|select",
+      "3|advertise",
+      "3|maintain",
+      "3|organized by",
+      "4|famous (figures)",
+      "4|professional (services)",
+      "5|2008 (Consumer Electronics Show)",
+      "5|January 7-10, 2008",
+      "5|January 14-18, 2008",
+      "6|event has a website",
+      "6|exhibitors have to pay for the booths",
+      "7|Running a trade show is the activity of on site registration, setting up booths...",
+      "7|Promoting a trade show includes advertisement activities",
+      "8|trade show can belong to one or more predefined domains",
+      "8|CES and MacWorld belong to Technology and Consumer Electronics",
+      "9|organizer, which can be a person or an organization",
+      "9|The invited speakers are famous figures in the domain",
+      "9|The selected speakers are invited to speak at the event based on the evaluation of their proposals",
+      "9|The exhibitors come to the trade show to exhibit their products or services",
+      "9|The observers come to visit the trade show",
+      "9|reviewers, who are experts in the domain"
+    ],
+    "tp": 66
+  },
+  "started_at": "2026-09-23T22:30:14.118Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P0"
+}

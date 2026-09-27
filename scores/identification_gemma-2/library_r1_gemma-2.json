@@ -1,0 +1,331 @@
+{
+  "score": {
+    "tp": 53,
+    "fp": 2,
+    "fn": 3,
+    "precision": 0.9636363636363636,
+    "recall": 0.9464285714285714,
+    "f1": 0.9549549549549549,
+    "per_rule": {
+      "noun": {
+        "tp": 22,
+        "fp": 1,
+        "fn": 2
+      },
+      "X of Y": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "verb": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      "adj/enum": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 0
+      },
+      "numeric": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "possession": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "matched": [
+      {
+        "gold": "1|library",
+        "pred": "1|library",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|loan items / loan item / item / items",
+        "pred": "1|loan item / loan items",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|customers / customer",
+        "pred": "1|customer",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|member",
+        "pred": "1|member",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|membership card",
+        "pred": "1|membership card",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|member number / membership number",
+        "pred": "1|member number / membership number",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|details",
+        "pred": "1|details",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|name",
+        "pred": "1|name",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|address",
+        "pred": "1|address",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|date of birth",
+        "pred": "1|date of birth",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|subject sections / subject section / section / sections",
+        "pred": "1|subject section",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|classification mark",
+        "pred": "1|classification mark",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|bar code",
+        "pred": "1|bar code",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|language tapes / language tape",
+        "pred": "1|language tape",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|books / book",
+        "pred": "1|book",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|title language",
+        "pred": "1|title language",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|level",
+        "pred": "1|level",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|title",
+        "pred": "1|title",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|author(s) / author / authors",
+        "pred": "1|author(s)",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|current loan",
+        "pred": "1|loan",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|bar code reader",
+        "pred": "1|bar code reader",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|records / record",
+        "pred": "1|records",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|date of birth",
+        "pred": "2|date of birth",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|types of loan items",
+        "pred": "2|types of loan items",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|number of items",
+        "pred": "2|number of items",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|update of records",
+        "pred": "2|update of records",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|issues / issued / issue",
+        "pred": "3|issue / issued",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|shows / show",
+        "pred": "3|shows",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|kept / keep",
+        "pred": "3|kept",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|denoted / denote",
+        "pred": "3|denoted by",
+        "kind": "partial"
+      },
+      {
+        "gold": "3|borrow / borrowed",
+        "pred": "3|borrow",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|reserved / reserve",
+        "pred": "3|reserved",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|renewed / renew",
+        "pred": "3|renewed",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|extend",
+        "pred": "3|extend",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|scanned / scan",
+        "pred": "3|scanned",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|entered / enter",
+        "pred": "3|entered",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|read",
+        "pred": "3|read",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|stamped / stamp",
+        "pred": "3|stamped",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|searched / search",
+        "pred": "3|searched",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|identified / identify / identified by",
+        "pred": "3|identified by",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|French",
+        "pred": "4|French",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|beginner",
+        "pred": "4|beginner",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|daily",
+        "pred": "4|daily",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|valid",
+        "pred": "4|valid",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|two",
+        "pred": "5|two",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|8 / maximum of 8 / up to a maximum of 8",
+        "pred": "5|maximum of 8",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|less than 8",
+        "pred": "5|less than 8",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|a number of",
+        "pred": "5|a number of",
+        "kind": "exact"
+      },
+      {
+        "gold": "6|has a title language",
+        "pred": "6|has a title language, and level",
+        "kind": "partial"
+      },
+      {
+        "gold": "6|has a title, and author(s)",
+        "pred": "6|has a title, and author(s)",
+        "kind": "exact"
+      },
+      {
+        "gold": "7|made up of",
+        "pred": "7|is made up of",
+        "kind": "partial"
+      },
+      {
+        "gold": "9|customer is known as a member",
+        "pred": "9|customer is known as a member",
+        "kind": "exact"
+      },
+      {
+        "gold": "9|language tapes, and books [are] two types of loan items",
+        "pred": "9|language tapes and books are two types of loan items",
+        "kind": "exact"
+      }
+    ],
+    "missed": [
+      "1|membership",
+      "1|book bar code",
+      "2|number of subject sections"
+    ],
+    "spurious": [
+      "1|update",
+      "4|manually"
+    ],
+    "n_gold": 56,
+    "n_pred": 55
+  },
+  "source_fixture": "responses/identification/P4/library_r1.md"
+}

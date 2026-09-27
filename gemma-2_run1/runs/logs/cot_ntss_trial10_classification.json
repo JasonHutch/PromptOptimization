@@ -1,0 +1,143 @@
+{
+  "strategy": "cot",
+  "activity": "classification",
+  "domain": "ntss",
+  "trial": 10,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "8d1a5af556df885ca9402e891385dd44b4b5ededf2d78fdc2630122ed210d275",
+  "prompt_path": "prompts/classification/P4_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/cot/classification/ntss_trial10_gemma-2.md",
+  "score": {
+    "precision": 0.3620689655172414,
+    "recall": 0.3559322033898305,
+    "f1": 0.358974358974359,
+    "tp": 21,
+    "fp": 37,
+    "fn": 38,
+    "missed": [
+      "A|charges",
+      "A|payment",
+      "A|balance",
+      "A|contact information",
+      "A|website",
+      "A|type",
+      "A|theme",
+      "A|slogan",
+      "A|location",
+      "A|fee",
+      "A|keynote address",
+      "A|type|speaker",
+      "A|conference room",
+      "A|evaluation",
+      "A|status",
+      "A|domain",
+      "A|price",
+      "A|size",
+      "AC|registration",
+      "AC|review",
+      "AG|part of|reviewer|committee",
+      "AS|has|customer|account",
+      "AS|has|event|organizer",
+      "AS|attend|participant|event",
+      "AS|register|participant|event",
+      "AS|setup with|event|seminar",
+      "AS|setup with|event|booth",
+      "AS|submit|speaker|proposal",
+      "AS|reviewed by|proposal|committee",
+      "I|isa|trade show|event",
+      "I|isa|exhibitor|participant",
+      "I|isa|speaker|participant",
+      "I|isa|observer|participant",
+      "V|invited|type",
+      "V|selected|type",
+      "V|pending review|status",
+      "V|accepted|status",
+      "V|rejected|status"
+    ],
+    "spurious": [
+      "A|number of x",
+      "A|pending review|status",
+      "A|accepted|status",
+      "A|rejected|status",
+      "AG|has account|customer",
+      "AG|contains|event",
+      "AS|record x|account",
+      "AS|maintain x|account",
+      "AS|attend x|trade show",
+      "AS|register x|trade show",
+      "AS|charge x|registration",
+      "AS|prepare x|event",
+      "AS|invite x|speaker",
+      "AS|select x|speaker",
+      "AS|review x|proposal",
+      "AS|exhibit x|product",
+      "AS|pay x|booth",
+      "AS|visit x|trade show",
+      "C|service",
+      "C|design",
+      "C|theme",
+      "C|slogan",
+      "C|location",
+      "C|duration",
+      "C|advertisement",
+      "C|activity",
+      "C|registration",
+      "C|conference room",
+      "C|reception",
+      "C|person",
+      "C|organization",
+      "C|contact information",
+      "C|website",
+      "C|staff",
+      "C|keynote address",
+      "C|product",
+      "C|service"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 1,
+        "fp": 4,
+        "fn": 18
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 5,
+        "fp": 12,
+        "fn": 8
+      },
+      "C": {
+        "tp": 15,
+        "fp": 19,
+        "fn": 0
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "V": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5
+      }
+    },
+    "n_gold": 59,
+    "n_pred": 58
+  },
+  "usage": {
+    "elapsed_seconds": 19.453,
+    "prompt_eval_count": 1547,
+    "eval_count": 632,
+    "total_duration_ns": 19446129283
+  }
+}

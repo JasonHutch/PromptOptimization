@@ -1,0 +1,116 @@
+{
+  "strategy": "cot",
+  "activity": "identification",
+  "domain": "library",
+  "trial": 7,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "64c1ab9e076ab5c6bc6d04cad0685b1e6d04cd26ef149679e5f6b86225c673e6",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/cot/identification/library_trial07_gemma-2.md",
+  "score": {
+    "precision": 0.7647058823529411,
+    "recall": 0.4642857142857143,
+    "f1": 0.5777777777777777,
+    "tp": 26,
+    "fp": 8,
+    "fn": 30,
+    "missed": [
+      "1|details",
+      "1|title language",
+      "1|level",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|number of subject sections",
+      "2|number of items",
+      "2|update of records",
+      "3|shows / show",
+      "3|kept / keep",
+      "3|denoted / denote",
+      "3|borrow / borrowed",
+      "3|reserved / reserve",
+      "3|renewed / renew",
+      "3|extend",
+      "3|read",
+      "3|stamped / stamp",
+      "3|identified / identify / identified by",
+      "4|French",
+      "4|beginner",
+      "4|daily",
+      "5|two",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "1|item",
+      "1|reservation",
+      "1|renewal",
+      "3|supported",
+      "4|reserved",
+      "6|has membership number",
+      "8|contains",
+      "9|is a type of"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 18,
+        "fp": 3,
+        "fn": 6
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 4
+      },
+      "verb": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 10
+      },
+      "adj/enum": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 34
+  },
+  "usage": {
+    "elapsed_seconds": 8.045,
+    "prompt_eval_count": 777,
+    "eval_count": 268,
+    "total_duration_ns": 8038113270
+  }
+}

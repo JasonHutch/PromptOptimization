@@ -1,0 +1,21 @@
+{
+  "model": "gemma2:latest",
+  "trials": 10,
+  "temperature": 0.7,
+  "strategies": [
+    "baseline",
+    "cot",
+    "meta",
+    "few_shot"
+  ],
+  "domains": [
+    "car_rental",
+    "library",
+    "ntss"
+  ],
+  "activities": [
+    "identification",
+    "classification"
+  ],
+  "started_at": "2026-09-27T07:48:43Z"
+}

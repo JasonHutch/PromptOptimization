@@ -1,0 +1,1231 @@
+{
+  "mode": "fixture-regression",
+  "domains": {
+    "library": {
+      "identification": {
+        "tp": 53,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.9636363636363636,
+        "recall": 0.9464285714285714,
+        "f1": 0.9549549549549549,
+        "per_rule": {
+          "noun": {
+            "tp": 22,
+            "fp": 1,
+            "fn": 2
+          },
+          "X of Y": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 1
+          },
+          "verb": {
+            "tp": 14,
+            "fp": 0,
+            "fn": 0
+          },
+          "adj/enum": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 0
+          },
+          "numeric": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0
+          },
+          "possession": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "part-of": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0
+          },
+          "X is a Y": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          }
+        },
+        "matched": [
+          {
+            "gold": "1|library",
+            "pred": "1|library",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|loan items / loan item / item / items",
+            "pred": "1|loan item / loan items",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|customers / customer",
+            "pred": "1|customer",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|member",
+            "pred": "1|member",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|membership card",
+            "pred": "1|membership card",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|member number / membership number",
+            "pred": "1|member number / membership number",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|details",
+            "pred": "1|details",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|name",
+            "pred": "1|name",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|address",
+            "pred": "1|address",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|date of birth",
+            "pred": "1|date of birth",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|subject sections / subject section / section / sections",
+            "pred": "1|subject section",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|classification mark",
+            "pred": "1|classification mark",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|bar code",
+            "pred": "1|bar code",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|language tapes / language tape",
+            "pred": "1|language tape",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|books / book",
+            "pred": "1|book",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|title language",
+            "pred": "1|title language",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|level",
+            "pred": "1|level",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|title",
+            "pred": "1|title",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|author(s) / author / authors",
+            "pred": "1|author(s)",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|current loan",
+            "pred": "1|loan",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|bar code reader",
+            "pred": "1|bar code reader",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|records / record",
+            "pred": "1|records",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|date of birth",
+            "pred": "2|date of birth",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|types of loan items",
+            "pred": "2|types of loan items",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|number of items",
+            "pred": "2|number of items",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|update of records",
+            "pred": "2|update of records",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|issues / issued / issue",
+            "pred": "3|issue / issued",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|shows / show",
+            "pred": "3|shows",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|kept / keep",
+            "pred": "3|kept",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|denoted / denote",
+            "pred": "3|denoted by",
+            "kind": "partial"
+          },
+          {
+            "gold": "3|borrow / borrowed",
+            "pred": "3|borrow",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|reserved / reserve",
+            "pred": "3|reserved",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|renewed / renew",
+            "pred": "3|renewed",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|extend",
+            "pred": "3|extend",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|scanned / scan",
+            "pred": "3|scanned",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|entered / enter",
+            "pred": "3|entered",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|read",
+            "pred": "3|read",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|stamped / stamp",
+            "pred": "3|stamped",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|searched / search",
+            "pred": "3|searched",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|identified / identify / identified by",
+            "pred": "3|identified by",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|French",
+            "pred": "4|French",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|beginner",
+            "pred": "4|beginner",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|daily",
+            "pred": "4|daily",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|valid",
+            "pred": "4|valid",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|two",
+            "pred": "5|two",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|8 / maximum of 8 / up to a maximum of 8",
+            "pred": "5|maximum of 8",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|less than 8",
+            "pred": "5|less than 8",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|a number of",
+            "pred": "5|a number of",
+            "kind": "exact"
+          },
+          {
+            "gold": "6|has a title language",
+            "pred": "6|has a title language, and level",
+            "kind": "partial"
+          },
+          {
+            "gold": "6|has a title, and author(s)",
+            "pred": "6|has a title, and author(s)",
+            "kind": "exact"
+          },
+          {
+            "gold": "7|made up of",
+            "pred": "7|is made up of",
+            "kind": "partial"
+          },
+          {
+            "gold": "9|customer is known as a member",
+            "pred": "9|customer is known as a member",
+            "kind": "exact"
+          },
+          {
+            "gold": "9|language tapes, and books [are] two types of loan items",
+            "pred": "9|language tapes and books are two types of loan items",
+            "kind": "exact"
+          }
+        ],
+        "missed": [
+          "1|membership",
+          "1|book bar code",
+          "2|number of subject sections"
+        ],
+        "spurious": [
+          "1|update",
+          "4|manually"
+        ],
+        "n_gold": 56,
+        "n_pred": 55
+      },
+      "classification": {
+        "precision": 0.6785714285714286,
+        "recall": 0.7037037037037037,
+        "tp": 19,
+        "fp": 9,
+        "fn": 8,
+        "n_gold": 27,
+        "n_pred": 28,
+        "f1": 0.6909090909090909
+      },
+      "cot": {
+        "note": "CoT fixture retained for manual Step 1/Final model split."
+      }
+    },
+    "car_rental": {
+      "identification": {
+        "tp": 55,
+        "fp": 33,
+        "fn": 10,
+        "precision": 0.625,
+        "recall": 0.8461538461538461,
+        "f1": 0.7189542483660131,
+        "per_rule": {
+          "noun": {
+            "tp": 25,
+            "fp": 8,
+            "fn": 5
+          },
+          "X of Y": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 0
+          },
+          "verb": {
+            "tp": 12,
+            "fp": 14,
+            "fn": 1
+          },
+          "adj/enum": {
+            "tp": 10,
+            "fp": 4,
+            "fn": 3
+          },
+          "numeric": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 1
+          },
+          "possession": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 0
+          }
+        },
+        "matched": [
+          {
+            "gold": "1|vehicle / vehicles",
+            "pred": "1|vehicles",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|manufacturer / manufacturers",
+            "pred": "1|manufacturers",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|price class / price classes",
+            "pred": "1|price classes",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|rental price / rental prices",
+            "pred": "1|rental prices",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|car / cars",
+            "pred": "1|cars",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|passenger car / passenger cars",
+            "pred": "1|passenger cars",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|gear change / transmission",
+            "pred": "1|gear change",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|doors / door",
+            "pred": "1|doors",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|options / option",
+            "pred": "1|options",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|additional charge",
+            "pred": "1|additional charge",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|location / locations / rental location / rental locations",
+            "pred": "1|rental locations / location",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|other forms of vehicle rentals / other forms of vehicle",
+            "pred": "1|vehicle rentals",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|customer / customers",
+            "pred": "1|customer",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|rental plan / rental plans",
+            "pred": "1|rentals",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|reservation / reservations",
+            "pred": "1|reservations",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|salesperson / salespersons",
+            "pred": "1|salespersons",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|reservation form",
+            "pred": "1|reservation form",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|file cabinet",
+            "pred": "1|file cabinet",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|contract",
+            "pred": "1|contract",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|block reservation",
+            "pred": "1|block reservation",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|invoice / invoices",
+            "pred": "1|invoices",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|rentals / rental",
+            "pred": "1|rental fleet",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|rental charge",
+            "pred": "1|rental charge",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|credit card",
+            "pred": "1|credit card",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|credit card processing company",
+            "pred": "1|credit card processing company",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|makes of cars / makes of car",
+            "pred": "2|makes of cars",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|models of car / model of car",
+            "pred": "2|models of car",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|depreciation of the rental cars / depreciation",
+            "pred": "2|depreciation of the rental cars",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|time of reservation",
+            "pred": "2|time of reservation",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|period of time",
+            "pred": "2|period of time",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|taken from",
+            "pred": "3|taken from",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|returned to / returned",
+            "pred": "3|returned to",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|select",
+            "pred": "3|select",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|reserving / reserve",
+            "pred": "3|reserve",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|process",
+            "pred": "3|process",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|archive",
+            "pred": "3|archive",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|sign",
+            "pred": "3|sign",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|make",
+            "pred": "3|make",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|cover",
+            "pred": "3|cover",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|checked out / check out",
+            "pred": "3|check out",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|pay / pays",
+            "pred": "3|pay",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|processed / processed through",
+            "pred": "3|process through",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|available",
+            "pred": "4|available",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|rented out",
+            "pred": "4|rented out",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|purchase",
+            "pred": "4|purchase",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|repair",
+            "pred": "4|repair",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|maintenance / preventive maintenance",
+            "pred": "4|maintenance",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|disposal",
+            "pred": "4|disposal",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|automatic",
+            "pred": "4|automatic",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|manual",
+            "pred": "4|manual",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|in person",
+            "pred": "4|in person",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|by phone / through the phone / phone",
+            "pred": "4|through the phone",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|two",
+            "pred": "5|two",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|four",
+            "pred": "5|four",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|one or more",
+            "pred": "5|one or more",
+            "kind": "exact"
+          }
+        ],
+        "missed": [
+          "1|sedan",
+          "1|hatchback",
+          "1|daily unlimited miles plan",
+          "1|weekend 10% discount plan / weekend savings plan",
+          "1|company",
+          "3|sent to",
+          "4|not available",
+          "4|voided / void",
+          "4|opened / open",
+          "5|several"
+        ],
+        "spurious": [
+          "1|makes",
+          "1|models",
+          "1|deposit",
+          "1|request",
+          "1|employer",
+          "1|preventive maintenance",
+          "1|damage",
+          "1|depreciation",
+          "2|models of a different make",
+          "3|rent",
+          "3|grouped into",
+          "3|require",
+          "3|void",
+          "3|show up",
+          "3|honor",
+          "3|satisfy",
+          "3|handle",
+          "3|open",
+          "3|settle",
+          "3|send to",
+          "3|repair",
+          "3|need",
+          "3|keep track of",
+          "4|daily unlimited miles plan",
+          "4|weekend 10% discount plan",
+          "4|sedan",
+          "4|hatchback",
+          "5|a number of",
+          "5|a small number of",
+          "5|10%",
+          "6|has several different makes of cars",
+          "6|have several models",
+          "6|has a number of different rental plans"
+        ],
+        "n_gold": 65,
+        "n_pred": 88
+      },
+      "classification": {
+        "precision": 0.5245901639344263,
+        "recall": 0.48484848484848486,
+        "tp": 32,
+        "fp": 29,
+        "fn": 34,
+        "n_gold": 66,
+        "n_pred": 61,
+        "f1": 0.5039370078740156
+      },
+      "cot": {
+        "note": "CoT fixture retained for manual Step 1/Final model split."
+      }
+    },
+    "ntss": {
+      "identification": {
+        "tp": 82,
+        "fp": 15,
+        "fn": 4,
+        "precision": 0.845360824742268,
+        "recall": 0.9534883720930233,
+        "f1": 0.8961748633879781,
+        "per_rule": {
+          "noun": {
+            "tp": 43,
+            "fp": 5,
+            "fn": 1
+          },
+          "X of Y": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 0
+          },
+          "verb": {
+            "tp": 22,
+            "fp": 3,
+            "fn": 0
+          },
+          "adj/enum": {
+            "tp": 10,
+            "fp": 2,
+            "fn": 0
+          },
+          "numeric": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1
+          },
+          "possession": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "part-of": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2
+          },
+          "X is a Y": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0
+          }
+        },
+        "matched": [
+          {
+            "gold": "1|NTSS / National Trade Show Services",
+            "pred": "1|NTSS staff",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|service provider",
+            "pred": "1|services",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|business customers / business customer / customers / customer",
+            "pred": "1|business customers",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|trade shows / trade show",
+            "pred": "1|trade shows",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|services / service",
+            "pred": "1|professional services",
+            "kind": "partial"
+          },
+          {
+            "gold": "1|design",
+            "pred": "1|design",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|theme",
+            "pred": "1|theme",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|slogan",
+            "pred": "1|slogan",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|location",
+            "pred": "1|location",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|duration",
+            "pred": "1|duration",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|advertisement / advertisement activities",
+            "pred": "1|advertisement activities",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|creation",
+            "pred": "1|creation",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|promotion",
+            "pred": "1|promotion",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|speakers / speaker",
+            "pred": "1|speakers",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|participants / participant",
+            "pred": "1|participants",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|exhibitors / exhibitor",
+            "pred": "1|exhibitors",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|observers / observer",
+            "pred": "1|observers",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|registration / on site registration",
+            "pred": "1|on site registration",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|booths / booth",
+            "pred": "1|booths",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|conference rooms / conference room",
+            "pred": "1|conference rooms",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|seminars / seminar",
+            "pred": "1|seminars",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|reception",
+            "pred": "1|reception",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|trade show materials",
+            "pred": "1|trade show materials",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|account",
+            "pred": "1|account",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|service charges / service charge",
+            "pred": "1|service charges",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|payments received / payments / payment",
+            "pred": "1|payments",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|balances / account balances / account balance",
+            "pred": "1|account balances",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|event / events / trade show event",
+            "pred": "1|event",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|organizer / event organizer",
+            "pred": "1|organizer",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|person",
+            "pred": "1|person",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|organization",
+            "pred": "1|organization",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|contact information",
+            "pred": "1|contact information",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|website",
+            "pred": "1|website",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|domains / domain / predefined domains",
+            "pred": "1|domains",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|organization staff / event organization staff",
+            "pred": "1|event organization staff",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|fee",
+            "pred": "1|fee",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|keynote address",
+            "pred": "1|keynote address",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|evaluation",
+            "pred": "1|evaluation",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|proposals / proposal",
+            "pred": "1|proposals",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|committee",
+            "pred": "1|committee",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|reviewers / reviewer",
+            "pred": "1|reviewers",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|status",
+            "pred": "1|status",
+            "kind": "exact"
+          },
+          {
+            "gold": "1|products / product",
+            "pred": "1|products",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|types of participants / types of",
+            "pred": "2|types of participants",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|size of the booth",
+            "pred": "2|size of the booth",
+            "kind": "exact"
+          },
+          {
+            "gold": "2|duration of the event",
+            "pred": "2|duration of the event",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|create / creates / creating",
+            "pred": "3|create",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|promote / promoting",
+            "pred": "3|promote",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|organize / organizing",
+            "pred": "3|organize",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|run / runs / running",
+            "pred": "3|run",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|contact",
+            "pred": "3|contact",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|invite / inviting",
+            "pred": "3|invite",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|register / registering",
+            "pred": "3|register",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|set up / setting up",
+            "pred": "3|set up",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|distribute / distributing",
+            "pred": "3|distribute",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|record",
+            "pred": "3|record",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|belong to",
+            "pred": "3|belong to",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|add / added",
+            "pred": "3|add",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|remove / removed",
+            "pred": "3|remove",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|attended by / attend",
+            "pred": "3|attend",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|prepare / prepares",
+            "pred": "3|prepare",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|give",
+            "pred": "3|give",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|reviewed by",
+            "pred": "3|reviewed by",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|exhibit",
+            "pred": "3|exhibit",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|pay / pay for",
+            "pred": "3|pay for",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|request / requested",
+            "pred": "3|request",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|rent / rented",
+            "pred": "3|rent",
+            "kind": "exact"
+          },
+          {
+            "gold": "3|visit",
+            "pred": "3|visit",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|national",
+            "pred": "4|national",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|international",
+            "pred": "4|international",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|invited",
+            "pred": "4|invited",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|selected",
+            "pred": "4|selected",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|pending",
+            "pred": "4|pending review",
+            "kind": "partial"
+          },
+          {
+            "gold": "4|accepted",
+            "pred": "4|accepted",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|rejected",
+            "pred": "4|rejected",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|large",
+            "pred": "4|large",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|medium",
+            "pred": "4|medium",
+            "kind": "exact"
+          },
+          {
+            "gold": "4|small",
+            "pred": "4|small",
+            "kind": "exact"
+          },
+          {
+            "gold": "5|one or more",
+            "pred": "5|one or more",
+            "kind": "exact"
+          },
+          {
+            "gold": "6|event has an organizer / has an organizer",
+            "pred": "6|an event has an organizer, which can be a person or an organization",
+            "kind": "partial"
+          },
+          {
+            "gold": "6|event has contact information / has contact information",
+            "pred": "6|an event has contact information and possibly a website",
+            "kind": "partial"
+          },
+          {
+            "gold": "9|trade show can be regarded as an event / can be regarded as",
+            "pred": "9|a trade show can be regarded as an event",
+            "kind": "exact"
+          }
+        ],
+        "missed": [
+          "1|review / pending review",
+          "5|each",
+          "7|involves",
+          "7|including"
+        ],
+        "spurious": [
+          "1|selection",
+          "1|activities",
+          "1|registration",
+          "1|size",
+          "1|booth",
+          "2|selection of a theme",
+          "2|evaluation of proposals",
+          "2|status of a proposal",
+          "3|maintain",
+          "3|charges",
+          "3|speak at",
+          "4|new",
+          "4|outdated",
+          "9|an organizer can be a person or an organization",
+          "9|the event organization staff, the invited and/or selected speakers, exhibitors, and observers are different types of participants"
+        ],
+        "n_gold": 86,
+        "n_pred": 97
+      },
+      "classification": {
+        "precision": 0.581081081081081,
+        "recall": 0.7288135593220338,
+        "tp": 43,
+        "fp": 31,
+        "fn": 16,
+        "n_gold": 59,
+        "n_pred": 74,
+        "f1": 0.6466165413533834
+      },
+      "cot": {
+        "note": "CoT fixture retained for manual Step 1/Final model split."
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-23T22:30:45.661Z",
+  "n": 2,
+  "prompt_id": "identification-P1",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | library |\n| 1 | loan item(s) |\n| 1 | customer(s) |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number |\n| 1 | membership number |\n| 1 | details |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject section(s) |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape(s) |\n| 1 | book(s) |\n| 1 | title language |\n| 1 | level |\n| 1 | title |\n| 1 | author(s) |\n| 1 | current loan |\n| 1 | bar code reader |\n| 1 | records |\n| 1 | membership |\n| 2 | date of birth |\n| 2 | number of items on loan |\n| 2 | update of records |\n| 3 | issues...to (loan items to customers) |\n| 3 | is issued (a membership card) |\n| 3 | shows |\n| 3 | is denoted by |\n| 3 | is identified by |\n| 3 | borrow |\n| 3 | is scanned |\n| 3 | entered manually |\n| 3 | is read |\n| 3 | is stamped |\n| 3 | extend |\n| 3 | is searched |\n| 3 | is borrowed |\n| 3 | is reserved |\n| 3 | is renewed |\n| 3 | must be kept |\n| 4 | unique |\n| 4 | valid |\n| 4 | reserved |\n| 4 | daily |\n| 4 | beginner |\n| 4 | French |\n| 4 | current |\n| 5 | a number of |\n| 5 | maximum of 8 |\n| 5 | less than 8 |\n| 5 | two |\n| 6 | has a title language...and level |\n| 6 | has a title, and author(s) |\n| 7 | is made up of |\n| 9 | is known as a member |\n| 9 | there are two types of loan items, language tapes, and books |",
+  "score": {
+    "f1": 0.9043478260869564,
+    "fn": 4,
+    "fp": 7,
+    "missed": [
+      "1|book bar code",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "n_gold": 56,
+    "n_pred": 59,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 2,
+        "fp": 0,
+        "tp": 3
+      },
+      "adj/enum": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 4
+      },
+      "noun": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 23
+      },
+      "numeric": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 4
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 14
+      }
+    },
+    "precision": 0.8813559322033898,
+    "recall": 0.9285714285714286,
+    "spurious": [
+      "1|membership number",
+      "3|is issued (a membership card)",
+      "3|is borrowed",
+      "4|unique",
+      "4|reserved",
+      "4|current",
+      "9|there are two types of loan items, language tapes, and books"
+    ],
+    "tp": 52
+  },
+  "started_at": "2026-09-23T22:30:24.972Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P1"
+}

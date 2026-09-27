@@ -1,0 +1,111 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-23T22:10:59.140Z",
+  "n": 2,
+  "prompt_id": "identification-P0",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | library |\n| 1 | loan item |\n| 1 | customer |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject section |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape |\n| 1 | book |\n| 1 | title |\n| 1 | language |\n| 1 | level |\n| 1 | author(s) |\n| 1 | bar code reader |\n| 1 | records |\n| 2 | membership number of customer |\n| 2 | name, address, date of birth of customer |\n| 2 | classification mark of section |\n| 2 | title of book |\n| 2 | title, language, level of language tape |\n| 2 | author(s) of book |\n| 2 | bar code of loan item |\n| 2 | number of items on loan |\n| 3 | issues (loan items) |\n| 3 | kept (details) |\n| 3 | borrow (items) |\n| 3 | reserved (item) |\n| 3 | renewed (loan) |\n| 3 | scanned (membership number) |\n| 3 | entered (manually) |\n| 3 | read (bar code) |\n| 3 | stamped (item) |\n| 3 | issued (item) |\n| 3 | searched (item) |\n| 3 | updated (records) |\n| 4 | unique (member number) |\n| 4 | valid (membership) |\n| 4 | daily (update) |\n| 5 | up to a maximum of 8 items |\n| 5 | number of items on loan less than 8 |\n| 6 | customer has a name, address, date of birth |\n| 6 | customer is issued a membership card |\n| 6 | membership card shows a unique member number |\n| 7 | library is made up of a number of subject sections |\n| 8 | membership card shows a unique member number |\n| 9 | language tape is a loan item |\n| 9 | book is a loan item |\n| 9 | member is a customer |",
+  "score": {
+    "f1": 0.6788990825688073,
+    "fn": 19,
+    "fp": 16,
+    "missed": [
+      "1|details",
+      "1|current loan",
+      "1|membership",
+      "1|book bar code",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "2|update of records",
+      "3|shows / show",
+      "3|denoted / denote",
+      "3|extend",
+      "3|identified / identify / identified by",
+      "4|French",
+      "4|beginner",
+      "5|two",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "n_gold": 56,
+    "n_pred": 53,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 2,
+        "fp": 3,
+        "tp": 0
+      },
+      "X of Y": {
+        "fn": 3,
+        "fp": 6,
+        "tp": 2
+      },
+      "adj/enum": {
+        "fn": 2,
+        "fp": 1,
+        "tp": 2
+      },
+      "containment": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 0
+      },
+      "noun": {
+        "fn": 4,
+        "fp": 0,
+        "tp": 20
+      },
+      "numeric": {
+        "fn": 2,
+        "fp": 0,
+        "tp": 2
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 2,
+        "fp": 3,
+        "tp": 0
+      },
+      "verb": {
+        "fn": 4,
+        "fp": 2,
+        "tp": 10
+      }
+    },
+    "precision": 0.6981132075471698,
+    "recall": 0.6607142857142857,
+    "spurious": [
+      "2|membership number of customer",
+      "2|classification mark of section",
+      "2|title of book",
+      "2|title, language, level of language tape",
+      "2|author(s) of book",
+      "2|bar code of loan item",
+      "3|issued (item)",
+      "3|updated (records)",
+      "4|unique (member number)",
+      "6|customer has a name, address, date of birth",
+      "6|customer is issued a membership card",
+      "6|membership card shows a unique member number",
+      "8|membership card shows a unique member number",
+      "9|language tape is a loan item",
+      "9|book is a loan item",
+      "9|member is a customer"
+    ],
+    "tp": 37
+  },
+  "started_at": "2026-09-23T22:10:53.322Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P0"
+}

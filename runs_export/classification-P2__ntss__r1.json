@@ -1,0 +1,121 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:37:49.846Z",
+  "n": 1,
+  "prompt_id": "classification-P2",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | NTSS | | |\n| C | business customer | | |\n| C | event | | |\n| C | trade show | | |\n| C | organizer | | |\n| C | person | | |\n| C | organization | | |\n| C | domain | | |\n| C | participant | | |\n| C | organization staff | | |\n| C | speaker | | |\n| C | invited speaker | | |\n| C | selected speaker | | |\n| C | exhibitor | | |\n| C | observer | | |\n| C | proposal | | |\n| C | reviewer | | |\n| C | committee | | |\n| C | booth | | |\n| C | conference room | | |\n| C | reception | | |\n| C | trade show materials | | |\n| C | product | | |\n| C | account | | |\n| I | ISA | trade show | event |\n| I | ISA | organization staff | participant |\n| I | ISA | speaker | participant |\n| I | ISA | invited speaker | speaker |\n| I | ISA | selected speaker | speaker |\n| I | ISA | exhibitor | participant |\n| I | ISA | observer | participant |\n| I | ISA | person | organizer |\n| I | ISA | organization | organizer |\n| AG | Part-of | reviewer | committee |\n| A | location | event | |\n| A | duration | event | |\n| A | contact information | event | |\n| A | website | event | |\n| A | theme | trade show | |\n| A | slogan | trade show | |\n| A | scope | trade show | |\n| V | national | scope | |\n| V | international | scope | |\n| A | status | proposal | |\n| V | pending | status | |\n| V | accepted | status | |\n| V | rejected | status | |\n| A | size | booth | |\n| V | large | size | |\n| V | medium | size | |\n| V | small | size | |\n| A | balance | account | |\n| A | service charges | account | |\n| A | payments received | account | |\n| AC | registration | participant | trade show |\n| A | fee | registration | |\n| AS | create | NTSS | trade show |\n| AS | promote | NTSS | trade show |\n| AS | organize | NTSS | trade show |\n| AS | run | NTSS | trade show |\n| AS | contact | business customer | NTSS |\n| AS | has | business customer | account |\n| AS | create | NTSS | account |\n| AS | has | event | organizer |\n| AS | belong to | event | domain |\n| AS | add | NTSS | domain |\n| AS | remove | NTSS | domain |\n| AS | invite | organization staff | speaker |\n| AS | attended by | trade show | participant |\n| AS | prepare | organization staff | trade show |\n| AS | set up | organization staff | booth |\n| AS | set up | organization staff | conference room |\n| AS | set up | organization staff | reception |\n| AS | distribute | organization staff | trade show materials |\n| AS | give | invited speaker | trade show |\n| AS | has | selected speaker | proposal |\n| AS | review | committee | proposal |\n| AS | exhibit | exhibitor | product |\n| AS | pay | exhibitor | booth |\n| AS | request | exhibitor | booth |\n| AS | rent | exhibitor | booth |\n| AS | visit | observer | trade show |",
+  "score": {
+    "f1": 0.6099290780141844,
+    "fn": 16,
+    "fp": 39,
+    "missed": [
+      "A|type",
+      "A|keynote address",
+      "A|type|speaker",
+      "A|conference room",
+      "A|evaluation",
+      "A|domain",
+      "A|price",
+      "AC|review",
+      "AS|attend|participant|event",
+      "AS|register|participant|event",
+      "AS|setup with|event|seminar",
+      "AS|setup with|event|booth",
+      "AS|submit|speaker|proposal",
+      "C|seminar",
+      "V|invited|type",
+      "V|selected|type"
+    ],
+    "n_gold": 59,
+    "n_pred": 82,
+    "per_label": {
+      "A": {
+        "fn": 7,
+        "fp": 1,
+        "tp": 12
+      },
+      "AC": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "AG": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "AS": {
+        "fn": 5,
+        "fp": 18,
+        "tp": 8
+      },
+      "C": {
+        "fn": 1,
+        "fp": 10,
+        "tp": 14
+      },
+      "I": {
+        "fn": 0,
+        "fp": 5,
+        "tp": 4
+      },
+      "V": {
+        "fn": 2,
+        "fp": 5,
+        "tp": 3
+      }
+    },
+    "precision": 0.524390243902439,
+    "recall": 0.7288135593220338,
+    "spurious": [
+      "A|scope|trade show",
+      "AS|contact|business customer|ntss",
+      "AS|create|ntss|account",
+      "AS|belong to|event|domain",
+      "AS|add|ntss|domain",
+      "AS|remove|ntss|domain",
+      "AS|invite|organization staff|speaker",
+      "AS|attended by|trade show|participant",
+      "AS|prepare|organization staff|trade show",
+      "AS|set up|organization staff|booth",
+      "AS|set up|organization staff|conference room",
+      "AS|set up|organization staff|reception",
+      "AS|distribute|organization staff|trade show materials",
+      "AS|give|invited speaker|trade show",
+      "AS|has|selected speaker|proposal",
+      "AS|exhibit|exhibitor|product",
+      "AS|pay|exhibitor|booth",
+      "AS|request|exhibitor|booth",
+      "AS|visit|observer|trade show",
+      "C|ntss",
+      "C|person",
+      "C|organization",
+      "C|organization staff",
+      "C|invited speaker",
+      "C|selected speaker",
+      "C|conference room",
+      "C|reception",
+      "C|trade show materials",
+      "C|product",
+      "I|isa|organization staff|participant",
+      "I|isa|invited speaker|speaker",
+      "I|isa|selected speaker|speaker",
+      "I|isa|person|organizer",
+      "I|isa|organization|organizer",
+      "V|national|scope",
+      "V|international|scope",
+      "V|large|size",
+      "V|medium|size",
+      "V|small|size"
+    ],
+    "tp": 43
+  },
+  "started_at": "2026-09-23T22:36:02.191Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P2"
+}

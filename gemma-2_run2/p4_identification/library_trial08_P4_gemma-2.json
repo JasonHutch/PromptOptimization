@@ -1,0 +1,100 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "library",
+  "trial": 8,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/library_trial08_P4_gemma-2.md",
+  "score": {
+    "precision": 0.6923076923076923,
+    "recall": 0.6428571428571429,
+    "f1": 0.6666666666666666,
+    "tp": 36,
+    "fp": 16,
+    "fn": 20,
+    "missed": [
+      "1|title language",
+      "1|level",
+      "1|current loan",
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|types of loan items",
+      "2|number of items",
+      "2|update of records",
+      "4|French",
+      "4|beginner",
+      "5|two",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member"
+    ],
+    "spurious": [
+      "1|item",
+      "1|number",
+      "2|number of loan items",
+      "3|is known as",
+      "3|is issued",
+      "3|is made up of",
+      "3|has",
+      "3|is valid",
+      "3|can be issued",
+      "3|issued",
+      "3|supported",
+      "3|updated",
+      "4|maximum",
+      "4|current",
+      "4|reserved",
+      "9|language tapes are two types of loan items"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 17,
+        "fp": 2,
+        "fn": 7
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 4
+      },
+      "verb": {
+        "tp": 14,
+        "fp": 9,
+        "fn": 0
+      },
+      "adj/enum": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 52
+  }
+}

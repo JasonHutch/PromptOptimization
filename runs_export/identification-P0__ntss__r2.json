@@ -1,0 +1,125 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:12:13.976Z",
+  "n": 2,
+  "prompt_id": "identification-P0",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | trade show |\n| 1 | business customer |\n| 1 | service provider |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | speaker |\n| 1 | participant |\n| 1 | exhibitor |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments received |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | contact information |\n| 1 | website |\n| 1 | domain |\n| 1 | registration |\n| 1 | fee |\n| 1 | booth |\n| 1 | proposal |\n| 1 | reviewer |\n| 1 | committee |\n| 1 | observer |\n| 1 | NTSS staff |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | keynote address |\n| 2 | selection of a theme |\n| 2 | selection of a slogan |\n| 2 | duration of the event |\n| 2 | size of the booth |\n| 2 | evaluation of their proposals |\n| 2 | list of predefined domains |\n| 2 | status of a proposal |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | design |\n| 3 | include |\n| 3 | invite |\n| 3 | register |\n| 3 | distribute |\n| 3 | record |\n| 3 | maintain |\n| 3 | attend |\n| 3 | charge |\n| 3 | pay |\n| 3 | review |\n| 3 | exhibit |\n| 3 | request |\n| 3 | rent |\n| 3 | visit |\n| 4 | national and international (trade shows) |\n| 4 | large, medium, or small (booth size) |\n| 4 | pending review, accepted, rejected (proposal status) |\n| 5 | 2008 Consumer Electronics Show |\n| 5 | January 7-10, 2008 |\n| 5 | January 14-18, 2008 |\n| 5 | one or more predefined domains |\n| 6 | event has an organizer |\n| 6 | event has contact information |\n| 6 | event has a website |\n| 6 | exhibitors have to pay for the booths |\n| 7 | Organizing a trade show includes all activities before the trade show except creation and promotion |\n| 7 | Creating a trade show involves the design for the trade show, including professional services ranging from selection of a theme and a slogan to location and duration |\n| 7 | Running a trade show is the activity of on site registration, setting up the booths, conference rooms for seminars, reception, and distributing trade show materials |\n| 8 | committee of reviewers |\n| 8 | event can belong to one or more predefined domains |\n| 8 | list of predefined domains |\n| 9 | A trade show can be regarded as an event |\n| 9 | NTSS is a service provider |\n| 9 | The invited speakers are famous figures in the domain |\n| 9 | Running a trade show is the activity of on site registration... |\n| 9 | The exhibitors come to the trade show to exhibit their products or services |\n| 9 | The observers come to visit the trade show for various purposes |",
+  "score": {
+    "f1": 0.7100591715976331,
+    "fn": 26,
+    "fp": 23,
+    "missed": [
+      "1|services / service",
+      "1|design",
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|organization staff / event organization staff",
+      "1|evaluation",
+      "1|status",
+      "1|review / pending review",
+      "1|products / product",
+      "2|types of participants / types of",
+      "3|set up / setting up",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|prepare / prepares",
+      "3|give",
+      "4|international",
+      "4|invited",
+      "4|selected",
+      "4|accepted",
+      "4|rejected",
+      "4|medium",
+      "4|small",
+      "5|each"
+    ],
+    "n_gold": 86,
+    "n_pred": 83,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 5,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 1,
+        "fp": 5,
+        "tp": 2
+      },
+      "adj/enum": {
+        "fn": 7,
+        "fp": 0,
+        "tp": 3
+      },
+      "containment": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 0
+      },
+      "noun": {
+        "fn": 11,
+        "fp": 0,
+        "tp": 33
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 3,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 2
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 6,
+        "fp": 4,
+        "tp": 16
+      }
+    },
+    "precision": 0.7228915662650602,
+    "recall": 0.6976744186046512,
+    "spurious": [
+      "2|selection of a theme",
+      "2|selection of a slogan",
+      "2|evaluation of their proposals",
+      "2|list of predefined domains",
+      "2|status of a proposal",
+      "3|design",
+      "3|include",
+      "3|maintain",
+      "3|charge",
+      "5|2008 Consumer Electronics Show",
+      "5|January 7-10, 2008",
+      "5|January 14-18, 2008",
+      "6|event has a website",
+      "6|exhibitors have to pay for the booths",
+      "7|Running a trade show is the activity of on site registration, setting up the booths, conference rooms for seminars, reception, and distributing trade show materials",
+      "8|committee of reviewers",
+      "8|event can belong to one or more predefined domains",
+      "8|list of predefined domains",
+      "9|NTSS is a service provider",
+      "9|The invited speakers are famous figures in the domain",
+      "9|Running a trade show is the activity of on site registration...",
+      "9|The exhibitors come to the trade show to exhibit their products or services",
+      "9|The observers come to visit the trade show for various purposes"
+    ],
+    "tp": 60
+  },
+  "started_at": "2026-09-23T22:11:59.066Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P0"
+}

@@ -1,0 +1,108 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:31:36.212Z",
+  "n": 2,
+  "prompt_id": "identification-P1",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | trade show / trade shows |\n| 1 | business customers |\n| 1 | service provider |\n| 1 | services |\n| 1 | design |\n| 1 | professional services |\n| 1 | selection |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | activities |\n| 1 | creation |\n| 1 | promotion |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | on site registration |\n| 1 | booths |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | customer |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | person |\n| 1 | organization |\n| 1 | contact information |\n| 1 | website |\n| 1 | predefined domains |\n| 1 | event organization staff |\n| 1 | invited speakers |\n| 1 | selected speakers |\n| 1 | observers |\n| 1 | registration |\n| 1 | fee |\n| 1 | keynote address |\n| 1 | domain |\n| 1 | evaluation |\n| 1 | proposals |\n| 1 | committee |\n| 1 | reviewers |\n| 1 | experts |\n| 1 | status |\n| 1 | products |\n| 1 | size |\n| 1 | booth |\n| 1 | purposes |\n| 2 | selection of a theme |\n| 2 | list of predefined domains |\n| 2 | status of a proposal |\n| 2 | evaluation of their proposals |\n| 2 | committee of reviewers |\n| 2 | size of the booth |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | involves |\n| 3 | inviting speakers |\n| 3 | registering participants and exhibitors |\n| 3 | setting up |\n| 3 | distributing |\n| 3 | record |\n| 3 | maintain |\n| 3 | belong to |\n| 3 | is attended by |\n| 3 | register to attend |\n| 3 | charges a fee |\n| 3 | prepares |\n| 3 | invited to give |\n| 3 | invited to speak |\n| 3 | are reviewed by |\n| 3 | exhibit |\n| 3 | pay for |\n| 3 | requested |\n| 3 | rented |\n| 3 | visit |\n| 4 | national |\n| 4 | international |\n| 4 | new domains |\n| 4 | outdated domains |\n| 4 | different |\n| 4 | famous |\n| 4 | pending review |\n| 4 | accepted |\n| 4 | rejected |\n| 4 | large |\n| 4 | medium |\n| 4 | small |\n| 5 | one or more |\n| 6 | has an organizer |\n| 6 | has contact information |\n| 7 | includes advertisement activities |\n| 7 | includes all activities before the trade show |\n| 9 | can be regarded as an event |\n| 9 | can be a person or an organization |\n| 9 | different types of participants |",
+  "score": {
+    "f1": 0.8062827225130891,
+    "fn": 9,
+    "fp": 28,
+    "missed": [
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|duration of the event",
+      "3|add / added",
+      "3|remove / removed",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "7|involves"
+    ],
+    "n_gold": 86,
+    "n_pred": 105,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 2,
+        "fp": 5,
+        "tp": 1
+      },
+      "adj/enum": {
+        "fn": 2,
+        "fp": 4,
+        "tp": 8
+      },
+      "noun": {
+        "fn": 1,
+        "fp": 11,
+        "tp": 43
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 2,
+        "fp": 5,
+        "tp": 20
+      }
+    },
+    "precision": 0.7333333333333333,
+    "recall": 0.8953488372093024,
+    "spurious": [
+      "1|selection",
+      "1|activities",
+      "1|customer",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|registration",
+      "1|domain",
+      "1|experts",
+      "1|size",
+      "1|booth",
+      "1|purposes",
+      "2|selection of a theme",
+      "2|list of predefined domains",
+      "2|status of a proposal",
+      "2|evaluation of their proposals",
+      "2|committee of reviewers",
+      "3|involves",
+      "3|maintain",
+      "3|register to attend",
+      "3|charges a fee",
+      "3|invited to speak",
+      "4|new domains",
+      "4|outdated domains",
+      "4|different",
+      "4|famous",
+      "7|includes advertisement activities",
+      "9|can be a person or an organization",
+      "9|different types of participants"
+    ],
+    "tp": 77
+  },
+  "started_at": "2026-09-23T22:31:07.921Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P1"
+}

@@ -1,0 +1,129 @@
+{
+  "strategy": "cot",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 6,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "c820765f742f07226e08e9500cbdd736eeaf648f266fcf28b53a7bd8b54d6068",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/cot/identification/ntss_trial06_gemma-2.md",
+  "score": {
+    "precision": 0.7777777777777778,
+    "recall": 0.4883720930232558,
+    "f1": 0.6000000000000001,
+    "tp": 42,
+    "fp": 12,
+    "fn": 44,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|evaluation",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|create / creates / creating",
+      "3|promote / promoting",
+      "3|organize / organizing",
+      "3|run / runs / running",
+      "3|contact",
+      "3|invite / inviting",
+      "3|register / registering",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|record",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|attended by / attend",
+      "3|prepare / prepares",
+      "3|give",
+      "3|reviewed by",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|request / requested",
+      "3|rent / rented",
+      "3|visit",
+      "4|national",
+      "4|international",
+      "4|invited",
+      "4|selected",
+      "4|large",
+      "4|medium",
+      "4|small",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activities",
+      "1|figure",
+      "1|size",
+      "1|duration",
+      "2|2 of 7",
+      "2|7 of 10",
+      "2|14 of 18",
+      "5|number of participants",
+      "5|number of exhibitors",
+      "5|number of observers",
+      "6|NTSS has account",
+      "7|event consists of"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 39,
+        "fp": 4,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 22
+      },
+      "adj/enum": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 7
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 54
+  },
+  "usage": {
+    "elapsed_seconds": 12.778,
+    "prompt_eval_count": 1106,
+    "eval_count": 421,
+    "total_duration_ns": 12771947515
+  }
+}

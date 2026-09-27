@@ -1,0 +1,74 @@
+{
+ "voting": [
+  {
+   "version": "P0",
+   "domain": "car_rental",
+   "n": 3,
+   "single_f1": 52.0,
+   "best_k": 2,
+   "vote_f1": 56.1,
+   "vote_p": 47.8,
+   "vote_r": 67.7
+  },
+  {
+   "version": "P0",
+   "domain": "library",
+   "n": 4,
+   "single_f1": 68.9,
+   "best_k": 3,
+   "vote_f1": 68.0,
+   "vote_p": 74.5,
+   "vote_r": 62.5
+  },
+  {
+   "version": "P0",
+   "domain": "ntss",
+   "n": 2,
+   "single_f1": 71.2,
+   "best_k": 2,
+   "vote_f1": 71.4,
+   "vote_p": 80.9,
+   "vote_r": 64.0
+  },
+  {
+   "version": "P1",
+   "domain": "car_rental",
+   "n": 2,
+   "single_f1": 60.0,
+   "best_k": 2,
+   "vote_f1": 60.4,
+   "vote_p": 56.8,
+   "vote_r": 64.6
+  },
+  {
+   "version": "P1",
+   "domain": "library",
+   "n": 2,
+   "single_f1": 88.7,
+   "best_k": 1,
+   "vote_f1": 84.6,
+   "vote_p": 77.6,
+   "vote_r": 92.9
+  },
+  {
+   "version": "P1",
+   "domain": "ntss",
+   "n": 2,
+   "single_f1": 80.8,
+   "best_k": 2,
+   "vote_f1": 80.5,
+   "vote_p": 87.7,
+   "vote_r": 74.4
+  },
+  {
+   "version": "P4",
+   "domain": "library",
+   "n": 2,
+   "single_f1": 93.7,
+   "best_k": 1,
+   "vote_f1": 91.5,
+   "vote_p": 87.1,
+   "vote_r": 96.4
+  }
+ ]
+}

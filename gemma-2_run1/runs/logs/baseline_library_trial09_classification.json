@@ -1,0 +1,92 @@
+{
+  "strategy": "baseline",
+  "activity": "classification",
+  "domain": "library",
+  "trial": 9,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "0bf61106c4ec47f808f1f7c0962ef0de3ea901907cd07b4e687d6c77ed4b4a9a",
+  "prompt_path": "prompts/classification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/classification/library_trial09_gemma-2.md",
+  "score": {
+    "precision": 0.4583333333333333,
+    "recall": 0.4074074074074074,
+    "f1": 0.4313725490196078,
+    "tp": 11,
+    "fp": 13,
+    "fn": 16,
+    "missed": [
+      "A|title|loan item",
+      "A|subject|book",
+      "A|language|language tape",
+      "A|level|language tape",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "C|section",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|member number|member",
+      "A|subject sections|library",
+      "A|classification mark|loan item",
+      "A|title|book",
+      "A|level|book",
+      "A|author s|book",
+      "AC|membership|customer",
+      "AC|loan record|member|loan item",
+      "AG|part of|loan item|library",
+      "AS|is issued|member|loan item",
+      "AS|is identified|loan item|customer",
+      "AS|has|library|subject sections",
+      "I|isa|member|customer"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 4,
+        "fp": 6,
+        "fn": 8
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 4
+      },
+      "C": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 1
+      },
+      "I": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 24
+  },
+  "usage": {
+    "elapsed_seconds": 8.061,
+    "prompt_eval_count": 1297,
+    "eval_count": 260,
+    "total_duration_ns": 8054311053
+  }
+}

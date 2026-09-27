@@ -1,0 +1,120 @@
+{
+  "strategy": "baseline",
+  "activity": "classification",
+  "domain": "library",
+  "trial": 3,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "25238fc9a6d0eeddb518cad54b0baef84f03d89dad60604dba51af60c6285488",
+  "prompt_path": "prompts/classification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/classification/library_trial03_gemma-2.md",
+  "score": {
+    "precision": 0.2413793103448276,
+    "recall": 0.5185185185185185,
+    "f1": 0.32941176470588235,
+    "tp": 14,
+    "fp": 44,
+    "fn": 13,
+    "missed": [
+      "A|subject|book",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|member number|membership card",
+      "A|details|member",
+      "A|classification mark|section",
+      "A|title|book",
+      "A|author|book",
+      "A|maximum|maximum",
+      "A|items|library",
+      "AC|valid|customer",
+      "AC|unique|member",
+      "AC|current|membership card",
+      "AC|reserved|loan item",
+      "AG|part of|item|loan item",
+      "AG|part of|section|subject sections",
+      "AG|part of|language tapes|library",
+      "AG|part of|books|library",
+      "AG|part of|bar code|loan item",
+      "AG|part of|details|member",
+      "AS|is issued|loan item|member",
+      "AS|is kept|loan item|library",
+      "AS|is identified|loan item|bar code",
+      "AS|is searched|loan item|bar code reader",
+      "AS|may borrow|member|library",
+      "AS|can be issued|loan item|member",
+      "AS|is stamped|loan item|member",
+      "AS|is updated|records|facility",
+      "C|member",
+      "C|details",
+      "C|subject sections",
+      "C|classification mark",
+      "C|bar code",
+      "C|types",
+      "C|books",
+      "C|title",
+      "C|language",
+      "C|level",
+      "C|author",
+      "C|maximum",
+      "C|items",
+      "C|item",
+      "C|bar code reader",
+      "C|membership",
+      "C|facility",
+      "C|records",
+      "I|isa|corporate customer|customer"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 7,
+        "fp": 7,
+        "fn": 5
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 6,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 8,
+        "fn": 4
+      },
+      "C": {
+        "tp": 7,
+        "fp": 18,
+        "fn": 0
+      },
+      "I": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 58
+  },
+  "usage": {
+    "elapsed_seconds": 17.704,
+    "prompt_eval_count": 1347,
+    "eval_count": 590,
+    "total_duration_ns": 17696453632
+  }
+}

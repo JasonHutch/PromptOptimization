@@ -1,0 +1,15 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-24T18:18:49.104Z",
+  "n": 1,
+  "prompt_id": "identification-P4max",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | NTSS |\n| 1 | service provider |\n| 1 | business customers / customer |\n| 1 | trade shows / trade show |\n| 1 | services |\n| 1 | design |\n| 1 | professional services |\n| 1 | selection |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | creation |\n| 1 | promotion |\n| 1 | advertisement activities |\n| 1 | activities / activity |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | registration |\n| 1 | booths / booth |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer / event organizer |\n| 1 | person |\n| 1 | organization |\n| 1 | contact information |\n| 1 | website |\n| 1 | domains / domain |\n| 1 | event organization staff |\n| 1 | observers |\n| 1 | NTSS staff |\n| 1 | trade show event |\n| 1 | fee |\n| 1 | keynote address |\n| 1 | evaluation |\n| 1 | proposals / proposal |\n| 1 | committee |\n| 1 | reviewers |\n| 1 | experts |\n| 1 | status |\n| 1 | products |\n| 1 | size |\n| 2 | selection of a theme |\n| 2 | activity of on site registration |\n| 2 | types of participants |\n| 2 | evaluation of their proposals |\n| 2 | status of a proposal |\n| 2 | size of the booth |\n| 2 | duration of the event |\n| 3 | create / creates |\n| 3 | promote |\n| 3 | organize |\n| 3 | run / runs |\n| 3 | contact |\n| 3 | invite / inviting |\n| 3 | register / registering |\n| 3 | set up |\n| 3 | distribute |\n| 3 | record |\n| 3 | received |\n| 3 | maintain |\n| 3 | is organized by |\n| 3 | provides |\n| 3 | belong to |\n| 3 | change |\n| 3 | added |\n| 3 | removed |\n| 3 | is attended by |\n| 3 | attend |\n| 3 | charges |\n| 3 | prepares |\n| 3 | give |\n| 3 | speak |\n| 3 | reviewed by |\n| 3 | come to |\n| 3 | exhibit |\n| 3 | pay for |\n| 3 | requested |\n| 3 | rented |\n| 3 | visit |\n| 4 | national |\n| 4 | international |\n| 4 | on site |\n| 4 | predefined |\n| 4 | new |\n| 4 | outdated |\n| 4 | invited |\n| 4 | selected |\n| 4 | pending review |\n| 4 | accepted |\n| 4 | rejected |\n| 4 | large |\n| 4 | medium |\n| 4 | small |\n| 5 | one or more |\n| 6 | has an organizer |\n| 6 | has contact information and possibly a website |\n| 6 | have to pay |\n| 9 | NTSS is a service provider |\n| 9 | a trade show can be regarded as an event |\n| 9 | an organizer can be a person or an organization |\n| 9 | the event organization staff, the invited and/or selected speakers, exhibitors, and observers are types of participants |",
+  "started_at": "2026-09-24T18:18:19.317Z",
+  "status": "done",
+  "tier_applied": "complex",
+  "tier_requested": "complex",
+  "truncated": false,
+  "version": "P4max"
+}

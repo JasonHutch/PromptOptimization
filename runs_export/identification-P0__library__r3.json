@@ -1,0 +1,107 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-23T22:11:48.457Z",
+  "n": 3,
+  "prompt_id": "identification-P0",
+  "response": "| rule | phrase |\n|------|--------|\n| 1 | library |\n| 1 | loan item |\n| 1 | customer |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject section |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape |\n| 1 | book |\n| 1 | title |\n| 1 | language |\n| 1 | level |\n| 1 | author(s) |\n| 1 | membership number |\n| 1 | bar code reader |\n| 1 | records |\n| 2 | title of language tape |\n| 2 | number of items (on loan) |\n| 2 | classification mark of section |\n| 3 | issues (loan items) |\n| 3 | kept (details) |\n| 3 | borrow (items) |\n| 3 | reserve (items) |\n| 3 | renew (loan) |\n| 3 | scanned (membership number) |\n| 3 | entered (manually) |\n| 3 | read (bar code) |\n| 3 | stamped (item) |\n| 3 | issued (item) |\n| 3 | search (item) |\n| 3 | update (records) |\n| 3 | extend (loan) |\n| 4 | unique (member number) |\n| 4 | valid (membership) |\n| 4 | daily (update) |\n| 4 | current (loan) |\n| 5 | up to a maximum of 8 items |\n| 5 | less than 8 |\n| 6 | customer has membership card |\n| 6 | customer has member number |\n| 6 | library has subject sections |\n| 6 | language tape has title, language, level |\n| 6 | book has title, author(s) |\n| 7 | library is made up of a number of subject sections |\n| 8 | membership card shows a unique member number |\n| 9 | a language tape is a loan item |\n| 9 | a book is a loan item |\n| 9 | a member is a customer |",
+  "score": {
+    "f1": 0.7155963302752294,
+    "fn": 17,
+    "fp": 14,
+    "missed": [
+      "1|details",
+      "1|current loan",
+      "1|book bar code",
+      "2|date of birth",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "2|update of records",
+      "3|shows / show",
+      "3|denoted / denote",
+      "3|identified / identify / identified by",
+      "4|French",
+      "4|beginner",
+      "5|two",
+      "5|a number of",
+      "6|has a title, and author(s)",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "n_gold": 56,
+    "n_pred": 53,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 2,
+        "fp": 3,
+        "tp": 0
+      },
+      "X of Y": {
+        "fn": 4,
+        "fp": 2,
+        "tp": 1
+      },
+      "adj/enum": {
+        "fn": 2,
+        "fp": 2,
+        "tp": 2
+      },
+      "containment": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 0
+      },
+      "noun": {
+        "fn": 3,
+        "fp": 0,
+        "tp": 21
+      },
+      "numeric": {
+        "fn": 2,
+        "fp": 0,
+        "tp": 2
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 1,
+        "fp": 4,
+        "tp": 1
+      },
+      "verb": {
+        "fn": 3,
+        "fp": 2,
+        "tp": 11
+      }
+    },
+    "precision": 0.7358490566037735,
+    "recall": 0.6964285714285714,
+    "spurious": [
+      "2|title of language tape",
+      "2|classification mark of section",
+      "3|issued (item)",
+      "3|update (records)",
+      "4|unique (member number)",
+      "4|current (loan)",
+      "6|customer has membership card",
+      "6|customer has member number",
+      "6|library has subject sections",
+      "6|book has title, author(s)",
+      "8|membership card shows a unique member number",
+      "9|a language tape is a loan item",
+      "9|a book is a loan item",
+      "9|a member is a customer"
+    ],
+    "tp": 39
+  },
+  "started_at": "2026-09-23T22:11:42.707Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P0"
+}

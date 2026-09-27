@@ -1,0 +1,105 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "ntss",
+  "trial": 4,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/ntss_trial04_P4_gemma-2.md",
+  "score": {
+    "precision": 0.7710843373493976,
+    "recall": 0.7441860465116279,
+    "f1": 0.7573964497041421,
+    "tp": 64,
+    "fp": 19,
+    "fn": 22,
+    "missed": [
+      "1|creation",
+      "1|promotion",
+      "1|fee",
+      "1|evaluation",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|contact",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|visit",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activities",
+      "1|size",
+      "1|duration",
+      "2|number of predefined domains",
+      "3|maintain",
+      "3|register to attend",
+      "3|creates",
+      "3|runs",
+      "3|invited",
+      "3|speak",
+      "3|invited",
+      "3|evaluate",
+      "3|comes",
+      "4|different",
+      "4|professional",
+      "4|different",
+      "4|possible",
+      "4|whole",
+      "5|two"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 39,
+        "fp": 3,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 17,
+        "fp": 9,
+        "fn": 5
+      },
+      "adj/enum": {
+        "tp": 8,
+        "fp": 5,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 83
+  }
+}

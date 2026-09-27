@@ -1,0 +1,129 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:16:50.228Z",
+  "n": 1,
+  "prompt_id": "classification-P1",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | NTSS | | |\n| C | BusinessCustomer | | |\n| C | TradeShow | | |\n| C | Event | | |\n| C | Design | | |\n| C | Account | | |\n| C | Person | | |\n| C | Organization | | |\n| C | Domain | | |\n| C | Participant | | |\n| C | NTSSStaff | | |\n| C | Speaker | | |\n| C | InvitedSpeaker | | |\n| C | SelectedSpeaker | | |\n| C | Exhibitor | | |\n| C | Observer | | |\n| C | Booth | | |\n| C | ConferenceRoom | | |\n| C | Seminar | | |\n| C | Reception | | |\n| C | TradeShowMaterial | | |\n| C | Proposal | | |\n| C | Committee | | |\n| C | Reviewer | | |\n| AC | Registration | Participant | TradeShow |\n| A | theme | Design | |\n| A | slogan | Design | |\n| A | location | Event | |\n| A | duration | Event | |\n| A | advertisement | TradeShow | |\n| A | contactInformation | Event | |\n| A | website | Event | |\n| A | serviceCharges | Account | |\n| A | paymentsReceived | Account | |\n| A | balance | Account | |\n| A | fee | Registration | |\n| A | keynoteAddress | InvitedSpeaker | |\n| A | evaluation | Proposal | |\n| A | status | Proposal | |\n| A | size | Booth | |\n| A | scope | TradeShow | |\n| V | national | scope | |\n| V | international | scope | |\n| V | pending | status | |\n| V | accepted | status | |\n| V | rejected | status | |\n| V | large | size | |\n| V | medium | size | |\n| V | small | size | |\n| I | ISA | TradeShow | Event |\n| I | ISA | NTSSStaff | Participant |\n| I | ISA | Speaker | Participant |\n| I | ISA | Exhibitor | Participant |\n| I | ISA | Observer | Participant |\n| I | ISA | InvitedSpeaker | Speaker |\n| I | ISA | SelectedSpeaker | Speaker |\n| AG | Part-of | Design | TradeShow |\n| AG | Part-of | ConferenceRoom | TradeShow |\n| AG | Part-of | Seminar | TradeShow |\n| AG | Part-of | Reception | TradeShow |\n| AG | Part-of | TradeShowMaterial | TradeShow |\n| AG | Part-of | Reviewer | Committee |\n| AS | create | NTSS | TradeShow |\n| AS | promote | NTSS | TradeShow |\n| AS | organize | NTSS | TradeShow |\n| AS | run | NTSS | TradeShow |\n| AS | contact | BusinessCustomer | NTSS |\n| AS | invite | NTSS | Speaker |\n| AS | register | Participant | TradeShow |\n| AS | setUp | NTSSStaff | Booth |\n| AS | setUp | NTSSStaff | ConferenceRoom |\n| AS | distribute | NTSSStaff | TradeShowMaterial |\n| AS | have | BusinessCustomer | Account |\n| AS | record | NTSS | Account |\n| AS | belongTo | Event | Domain |\n| AS | add | NTSS | Domain |\n| AS | remove | NTSS | Domain |\n| AS | attend | Participant | TradeShow |\n| AS | prepare | NTSSStaff | Event |\n| AS | give | InvitedSpeaker | Event |\n| AS | review | Reviewer | Proposal |\n| AS | exhibit | Exhibitor | TradeShow |\n| AS | pay | Exhibitor | Booth |\n| AS | request | Exhibitor | Booth |\n| AS | rent | Exhibitor | Booth |\n| AS | visit | Observer | TradeShow |\n| AS | organize | Person | Event |\n| AS | organize | Organization | Event |",
+  "score": {
+    "f1": 0.5714285714285714,
+    "fn": 17,
+    "fp": 46,
+    "missed": [
+      "A|type",
+      "A|type|speaker",
+      "A|conference room",
+      "A|domain",
+      "A|price",
+      "AC|review",
+      "AS|has|customer|account",
+      "AS|has|event|organizer",
+      "AS|attend|participant|event",
+      "AS|register|participant|event",
+      "AS|setup with|event|seminar",
+      "AS|setup with|event|booth",
+      "AS|submit|speaker|proposal",
+      "AS|reviewed by|proposal|committee",
+      "C|organizer",
+      "V|invited|type",
+      "V|selected|type"
+    ],
+    "n_gold": 59,
+    "n_pred": 88,
+    "per_label": {
+      "A": {
+        "fn": 5,
+        "fp": 2,
+        "tp": 14
+      },
+      "AC": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "AG": {
+        "fn": 0,
+        "fp": 5,
+        "tp": 1
+      },
+      "AS": {
+        "fn": 8,
+        "fp": 21,
+        "tp": 5
+      },
+      "C": {
+        "fn": 1,
+        "fp": 10,
+        "tp": 14
+      },
+      "I": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 4
+      },
+      "V": {
+        "fn": 2,
+        "fp": 5,
+        "tp": 3
+      }
+    },
+    "precision": 0.4772727272727273,
+    "recall": 0.711864406779661,
+    "spurious": [
+      "A|advertisement|trade show",
+      "A|scope|trade show",
+      "AG|part of|design|trade show",
+      "AG|part of|conference room|trade show",
+      "AG|part of|seminar|trade show",
+      "AG|part of|reception|trade show",
+      "AG|part of|trade show material|trade show",
+      "AS|contact|business customer|ntss",
+      "AS|invite|ntss|speaker",
+      "AS|register|participant|trade show",
+      "AS|set up|ntssstaff|booth",
+      "AS|set up|ntssstaff|conference room",
+      "AS|distribute|ntssstaff|trade show material",
+      "AS|have|business customer|account",
+      "AS|record|ntss|account",
+      "AS|belong to|event|domain",
+      "AS|add|ntss|domain",
+      "AS|remove|ntss|domain",
+      "AS|attend|participant|trade show",
+      "AS|prepare|ntssstaff|event",
+      "AS|give|invited speaker|event",
+      "AS|review|reviewer|proposal",
+      "AS|exhibit|exhibitor|trade show",
+      "AS|pay|exhibitor|booth",
+      "AS|request|exhibitor|booth",
+      "AS|visit|observer|trade show",
+      "AS|organize|person|event",
+      "AS|organize|organization|event",
+      "C|ntss",
+      "C|design",
+      "C|person",
+      "C|organization",
+      "C|ntssstaff",
+      "C|invited speaker",
+      "C|selected speaker",
+      "C|conference room",
+      "C|reception",
+      "C|trade show material",
+      "I|isa|ntssstaff|participant",
+      "I|isa|invited speaker|speaker",
+      "I|isa|selected speaker|speaker",
+      "V|national|scope",
+      "V|international|scope",
+      "V|large|size",
+      "V|medium|size",
+      "V|small|size"
+    ],
+    "tp": 42
+  },
+  "started_at": "2026-09-23T22:15:34.670Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P1"
+}

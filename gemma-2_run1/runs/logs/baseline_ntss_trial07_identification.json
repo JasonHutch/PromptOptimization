@@ -1,0 +1,146 @@
+{
+  "strategy": "baseline",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 7,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "9cb752ce6934e05474483cf8f5283bc45338d020f65b8e118812b0b183b903bd",
+  "prompt_path": "prompts/identification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/identification/ntss_trial07_gemma-2.md",
+  "score": {
+    "precision": 0.6125,
+    "recall": 0.5697674418604651,
+    "f1": 0.5903614457831327,
+    "tp": 49,
+    "fp": 31,
+    "fn": 37,
+    "missed": [
+      "1|service provider",
+      "1|design",
+      "1|creation",
+      "1|promotion",
+      "1|organizer / event organizer",
+      "1|person",
+      "1|organization",
+      "1|fee",
+      "1|evaluation",
+      "1|status",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "3|contact",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|give",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|request / requested",
+      "3|rent / rented",
+      "3|visit",
+      "4|invited",
+      "4|selected",
+      "4|pending",
+      "4|accepted",
+      "4|rejected",
+      "4|large",
+      "4|medium",
+      "4|small",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|professional services",
+      "1|Consumer Electronics Show (CES)",
+      "1|MacWorld Conference",
+      "1|Las Vegas Convention Center",
+      "1|Moscone Center",
+      "1|Consumer Electronics Association",
+      "1|Apple, Inc.",
+      "1|Technology",
+      "1|Consumer Electronics",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|exhibitors",
+      "3|maintain",
+      "3|create",
+      "3|runs",
+      "3|invited",
+      "3|selected",
+      "4|professional",
+      "4|further",
+      "5|2008",
+      "5|7-10",
+      "5|2008",
+      "5|14-18",
+      "5|2008",
+      "6|NTSS has",
+      "6|event organizer has",
+      "7|consist of",
+      "7|part of",
+      "8|containing",
+      "9|trade show is an event",
+      "9|trade show is attended"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 33,
+        "fp": 12,
+        "fn": 11
+      },
+      "X of Y": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1
+      },
+      "verb": {
+        "tp": 12,
+        "fp": 5,
+        "fn": 10
+      },
+      "adj/enum": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 8
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 80
+  },
+  "usage": {
+    "elapsed_seconds": 19.165,
+    "prompt_eval_count": 762,
+    "eval_count": 662,
+    "total_duration_ns": 19157345660
+  }
+}

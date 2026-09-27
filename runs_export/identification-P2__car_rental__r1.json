@@ -1,0 +1,119 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "car_rental",
+  "finished_at": "2026-09-23T22:32:27.130Z",
+  "n": 1,
+  "prompt_id": "identification-P2",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | rental locations |\n| 1 | metropolitan area |\n| 1 | vehicles |\n| 1 | passenger cars |\n| 1 | vehicle rentals |\n| 1 | reservation system |\n| 1 | makes |\n| 1 | cars |\n| 1 | rental fleet |\n| 1 | manufacturers |\n| 1 | models |\n| 1 | price classes |\n| 1 | customer |\n| 1 | make |\n| 1 | model |\n| 1 | rental plans |\n| 1 | daily unlimited miles plan |\n| 1 | weekend 10% discount plan |\n| 1 | gear change |\n| 1 | doors |\n| 1 | sedan |\n| 1 | hatchback |\n| 1 | rental prices |\n| 1 | options |\n| 1 | reservation |\n| 1 | salespersons |\n| 1 | reservation form |\n| 1 | file cabinet |\n| 1 | deposit |\n| 1 | contract |\n| 1 | block reservation |\n| 1 | invoice |\n| 1 | rentals |\n| 1 | credit card |\n| 1 | credit card processing company |\n| 1 | rental charge |\n| 1 | damage |\n| 1 | preventive maintenance |\n| 1 | repair |\n| 1 | maintenance |\n| 1 | disposal |\n| 1 | purchase |\n| 1 | depreciation |\n| 2 | makes of cars |\n| 2 | models of a different make |\n| 2 | depreciation of the rental cars |\n| 2 | number of rental locations |\n| 2 | number of different makes |\n| 2 | number of different rental plans |\n| 3 | taken from |\n| 3 | returned to |\n| 3 | branch out into |\n| 3 | select |\n| 3 | rent |\n| 3 | rented out |\n| 3 | make (reservations) |\n| 3 | process |\n| 3 | archive |\n| 3 | void |\n| 3 | show up |\n| 3 | sign |\n| 3 | satisfy |\n| 3 | open |\n| 3 | cover |\n| 3 | settle |\n| 3 | pay by |\n| 3 | processed through |\n| 3 | keep track of |\n| 3 | repair |\n| 4 | available |\n| 4 | rented out |\n| 4 | checked out |\n| 4 | voided |\n| 4 | automatic |\n| 4 | manual |\n| 4 | two |\n| 4 | four |\n| 4 | sedan |\n| 4 | hatchback |\n| 4 | in person |\n| 4 | through the phone |\n| 4 | daily unlimited miles plan |\n| 4 | weekend 10% discount plan |\n| 5 | a number of |\n| 5 | several |\n| 5 | a small number of |\n| 5 | 10% |\n| 5 | more than |\n| 5 | one |\n| 5 | more |\n| 5 | two |\n| 5 | four |\n| 6 | has several different makes of cars |\n| 6 | has several models |\n| 6 | has a number of different rental plans |",
+  "score": {
+    "f1": 0.6375000000000001,
+    "fn": 14,
+    "fp": 44,
+    "missed": [
+      "1|additional charge",
+      "1|company",
+      "2|models of car / model of car",
+      "2|time of reservation",
+      "2|period of time",
+      "3|reserving / reserve",
+      "3|checked out / check out",
+      "3|sent to",
+      "4|not available",
+      "4|purchase",
+      "4|repair",
+      "4|maintenance / preventive maintenance",
+      "4|disposal",
+      "4|opened / open"
+    ],
+    "n_gold": 65,
+    "n_pred": 95,
+    "per_rule": {
+      "X of Y": {
+        "fn": 3,
+        "fp": 4,
+        "tp": 2
+      },
+      "adj/enum": {
+        "fn": 6,
+        "fp": 7,
+        "tp": 7
+      },
+      "noun": {
+        "fn": 2,
+        "fp": 15,
+        "tp": 28
+      },
+      "numeric": {
+        "fn": 0,
+        "fp": 5,
+        "tp": 4
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 0
+      },
+      "verb": {
+        "fn": 3,
+        "fp": 10,
+        "tp": 10
+      }
+    },
+    "precision": 0.5368421052631579,
+    "recall": 0.7846153846153846,
+    "spurious": [
+      "1|metropolitan area",
+      "1|reservation system",
+      "1|makes",
+      "1|rental fleet",
+      "1|models",
+      "1|make",
+      "1|model",
+      "1|deposit",
+      "1|damage",
+      "1|preventive maintenance",
+      "1|repair",
+      "1|maintenance",
+      "1|disposal",
+      "1|purchase",
+      "1|depreciation",
+      "2|models of a different make",
+      "2|number of rental locations",
+      "2|number of different makes",
+      "2|number of different rental plans",
+      "3|branch out into",
+      "3|rent",
+      "3|rented out",
+      "3|void",
+      "3|show up",
+      "3|satisfy",
+      "3|open",
+      "3|settle",
+      "3|keep track of",
+      "3|repair",
+      "4|checked out",
+      "4|two",
+      "4|four",
+      "4|sedan",
+      "4|hatchback",
+      "4|daily unlimited miles plan",
+      "4|weekend 10% discount plan",
+      "5|a number of",
+      "5|a small number of",
+      "5|10%",
+      "5|more than",
+      "5|more",
+      "6|has several different makes of cars",
+      "6|has several models",
+      "6|has a number of different rental plans"
+    ],
+    "tp": 51
+  },
+  "started_at": "2026-09-23T22:32:01.965Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P2"
+}

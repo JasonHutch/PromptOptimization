@@ -1,0 +1,13 @@
+{
+  "score": {
+    "precision": 0.5245901639344263,
+    "recall": 0.48484848484848486,
+    "tp": 32,
+    "fp": 29,
+    "fn": 34,
+    "n_gold": 66,
+    "n_pred": 61,
+    "f1": 0.5039370078740156
+  },
+  "source_fixture": "responses/classification/P3/car_rental_r1.md"
+}

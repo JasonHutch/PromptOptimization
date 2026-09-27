@@ -1,0 +1,103 @@
+{
+  "strategy": "meta",
+  "activity": "classification",
+  "domain": "library",
+  "trial": 9,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "d3c0c61bc5ceebe7bbaacc74a778c355e57844b91818d1af3e7ec227668a355b",
+  "prompt_path": "prompts/classification/P4_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/classification/library_trial09_gemma-2.md",
+  "score": {
+    "precision": 0.3888888888888889,
+    "recall": 0.5185185185185185,
+    "f1": 0.4444444444444444,
+    "tp": 14,
+    "fp": 22,
+    "fn": 13,
+    "missed": [
+      "A|title|loan item",
+      "A|subject|book",
+      "A|language|language tape",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|member number|customer",
+      "A|classification mark|subject section",
+      "A|title|language tape",
+      "A|author|book",
+      "A|number of items|customer",
+      "A|on loan|customer",
+      "AS|reserved|loan item",
+      "AS|renewed|loan item",
+      "AS|issued|customer loan item",
+      "AS|kept|membership card",
+      "AS|shows|membership card",
+      "AS|denoted|subject section",
+      "AS|identified|loan item",
+      "AS|scanned|membership card",
+      "AS|entered|membership card",
+      "AS|read|loan item",
+      "AS|stamped|loan item",
+      "AS|supported|library",
+      "AS|searched|library",
+      "AS|updated|library",
+      "C|member",
+      "V|up to 8"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 6
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 1,
+        "fp": 14,
+        "fn": 3
+      },
+      "C": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 0
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "V": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 36
+  },
+  "usage": {
+    "elapsed_seconds": 13.181,
+    "prompt_eval_count": 1178,
+    "eval_count": 436,
+    "total_duration_ns": 13171909424
+  }
+}

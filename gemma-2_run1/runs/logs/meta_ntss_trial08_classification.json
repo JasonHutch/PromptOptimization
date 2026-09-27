@@ -1,0 +1,135 @@
+{
+  "strategy": "meta",
+  "activity": "classification",
+  "domain": "ntss",
+  "trial": 8,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "7127f8b00f910094de1f1bbac89fe568f685cd69ffd774a571fc5b35dc37462b",
+  "prompt_path": "prompts/classification/P4_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/classification/ntss_trial08_gemma-2.md",
+  "score": {
+    "precision": 0.4090909090909091,
+    "recall": 0.3050847457627119,
+    "f1": 0.34951456310679613,
+    "tp": 18,
+    "fp": 26,
+    "fn": 41,
+    "missed": [
+      "A|contact information",
+      "A|website",
+      "A|type",
+      "A|theme",
+      "A|slogan",
+      "A|location",
+      "A|duration",
+      "A|fee",
+      "A|keynote address",
+      "A|type|speaker",
+      "A|conference room",
+      "A|evaluation",
+      "A|domain",
+      "A|price",
+      "AC|registration",
+      "AC|review",
+      "AG|part of|reviewer|committee",
+      "AS|create|ntss|trade show",
+      "AS|promote|ntss|trade show",
+      "AS|organize|ntss|trade show",
+      "AS|run|ntss|trade show",
+      "AS|has|customer|account",
+      "AS|has|event|organizer",
+      "AS|attend|participant|event",
+      "AS|register|participant|event",
+      "AS|setup with|event|seminar",
+      "AS|setup with|event|booth",
+      "AS|submit|speaker|proposal",
+      "AS|reviewed by|proposal|committee",
+      "AS|rent|exhibitor|booth",
+      "C|seminar",
+      "C|committee",
+      "I|isa|trade show|event",
+      "I|isa|exhibitor|participant",
+      "I|isa|speaker|participant",
+      "I|isa|observer|participant",
+      "V|invited|type",
+      "V|selected|type",
+      "V|pending review|status",
+      "V|accepted|status",
+      "V|rejected|status"
+    ],
+    "spurious": [
+      "A|balance|account|v",
+      "AC|account|ntss|business customer",
+      "AS|attend|trade show|participant",
+      "AS|organize|event|organizer",
+      "AS|charge|trade show|participant",
+      "AS|pay|trade show|exhibitor",
+      "AS|request|trade show|exhibitor",
+      "AS|rent|trade show|exhibitor",
+      "C|service",
+      "C|design",
+      "C|theme",
+      "C|slogan",
+      "C|location",
+      "C|duration",
+      "C|advertisement",
+      "C|activity",
+      "C|service charge",
+      "C|payment",
+      "C|person",
+      "C|organization",
+      "C|contact information",
+      "C|website",
+      "C|staff",
+      "C|keynote address",
+      "C|product",
+      "C|service"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 14
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 6,
+        "fn": 13
+      },
+      "C": {
+        "tp": 13,
+        "fp": 18,
+        "fn": 2
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "V": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5
+      }
+    },
+    "n_gold": 59,
+    "n_pred": 44
+  },
+  "usage": {
+    "elapsed_seconds": 14.805,
+    "prompt_eval_count": 1541,
+    "eval_count": 476,
+    "total_duration_ns": 14794285998
+  }
+}

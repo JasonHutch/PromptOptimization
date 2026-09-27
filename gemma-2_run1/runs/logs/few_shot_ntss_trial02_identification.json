@@ -1,0 +1,110 @@
+{
+  "strategy": "few_shot",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 2,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "a3db7a980549d60daa3d4f5a7871f57aa7994c4da685698950dafedfb9ca10e4",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/few_shot/identification/ntss_trial02_gemma-2.md",
+  "score": {
+    "precision": 0.9016393442622951,
+    "recall": 0.6395348837209303,
+    "f1": 0.7482993197278911,
+    "tp": 55,
+    "fp": 6,
+    "fn": 31,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|keynote address",
+      "1|evaluation",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|contact",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|add / added",
+      "3|give",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|request / requested",
+      "3|rent / rented",
+      "3|visit",
+      "4|national",
+      "4|international",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "5|one or more",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activity",
+      "3|maintains",
+      "3|selected",
+      "3|evaluates",
+      "3|needs",
+      "5|a number of"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 36,
+        "fp": 1,
+        "fn": 8
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 12,
+        "fp": 4,
+        "fn": 10
+      },
+      "adj/enum": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 4
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 61
+  },
+  "usage": {
+    "elapsed_seconds": 13.595,
+    "prompt_eval_count": 1150,
+    "eval_count": 449,
+    "total_duration_ns": 13586063672
+  }
+}

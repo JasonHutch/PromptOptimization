@@ -1,0 +1,113 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:33:02.759Z",
+  "n": 1,
+  "prompt_id": "identification-P2",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | business customers |\n| 1 | trade shows |\n| 1 | national trade shows |\n| 1 | international trade shows |\n| 1 | services |\n| 1 | design |\n| 1 | professional services |\n| 1 | selection |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | activities |\n| 1 | creation |\n| 1 | promotion |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | on site registration |\n| 1 | booths |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | person |\n| 1 | organization |\n| 1 | contact information |\n| 1 | website |\n| 1 | domains |\n| 1 | predefined domains |\n| 1 | list |\n| 1 | new domains |\n| 1 | outdated domains |\n| 1 | event organization staff |\n| 1 | invited speakers |\n| 1 | selected speakers |\n| 1 | observers |\n| 1 | NTSS staff |\n| 1 | event organizer |\n| 1 | registration |\n| 1 | fee |\n| 1 | famous figures |\n| 1 | domain |\n| 1 | keynote address |\n| 1 | evaluation |\n| 1 | proposals |\n| 1 | committee |\n| 1 | reviewers |\n| 1 | experts |\n| 1 | status |\n| 1 | proposal |\n| 1 | products |\n| 1 | size |\n| 1 | booth |\n| 1 | purposes |\n| 1 | types of participants |\n| 2 | selection of a theme |\n| 2 | activity of on site registration |\n| 2 | list of predefined domains |\n| 2 | types of participants |\n| 2 | evaluation of their proposals |\n| 2 | committee of reviewers |\n| 2 | status of a proposal |\n| 2 | size of the booth |\n| 2 | duration of the event |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | invite |\n| 3 | register |\n| 3 | set up |\n| 3 | distribute |\n| 3 | record |\n| 3 | maintain |\n| 3 | belong to |\n| 3 | change |\n| 3 | added |\n| 3 | removed |\n| 3 | attended by |\n| 3 | attend |\n| 3 | charges |\n| 3 | prepare |\n| 3 | give |\n| 3 | speak at |\n| 3 | reviewed by |\n| 3 | exhibit |\n| 3 | come to |\n| 3 | pay for |\n| 3 | requested |\n| 3 | rented |\n| 3 | visit |\n| 3 | involves |\n| 4 | national |\n| 4 | international |\n| 4 | invited |\n| 4 | selected |\n| 4 | pending review |\n| 4 | accepted |\n| 4 | rejected |\n| 4 | large |\n| 4 | medium |\n| 4 | small |\n| 4 | new |\n| 4 | outdated |\n| 5 | one or more |\n| 6 | has an organizer |\n| 6 | has contact information |\n| 7 | includes (Promoting a trade show includes advertisement activities) |\n| 7 | includes (Organizing a trade show includes all activities) |\n| 7 | includes (status of a proposal includes pending review, accepted, and rejected) |\n| 9 | A trade show can be regarded as an event |\n| 9 | The invited speakers are famous figures in the domain |\n| 9 | reviewers, who are experts in the domain |",
+  "score": {
+    "f1": 0.7980769230769231,
+    "fn": 3,
+    "fp": 39,
+    "missed": [
+      "1|review / pending review",
+      "5|each",
+      "7|involves"
+    ],
+    "n_gold": 86,
+    "n_pred": 122,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 0,
+        "fp": 6,
+        "tp": 3
+      },
+      "adj/enum": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 10
+      },
+      "noun": {
+        "fn": 1,
+        "fp": 20,
+        "tp": 43
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 1,
+        "fp": 2,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 0,
+        "fp": 7,
+        "tp": 22
+      }
+    },
+    "precision": 0.680327868852459,
+    "recall": 0.9651162790697675,
+    "spurious": [
+      "1|international trade shows",
+      "1|selection",
+      "1|activities",
+      "1|predefined domains",
+      "1|list",
+      "1|new domains",
+      "1|outdated domains",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|NTSS staff",
+      "1|event organizer",
+      "1|registration",
+      "1|famous figures",
+      "1|domain",
+      "1|experts",
+      "1|proposal",
+      "1|size",
+      "1|booth",
+      "1|purposes",
+      "1|types of participants",
+      "2|selection of a theme",
+      "2|activity of on site registration",
+      "2|list of predefined domains",
+      "2|evaluation of their proposals",
+      "2|committee of reviewers",
+      "2|status of a proposal",
+      "3|maintain",
+      "3|change",
+      "3|attend",
+      "3|charges",
+      "3|speak at",
+      "3|come to",
+      "3|involves",
+      "4|new",
+      "4|outdated",
+      "7|includes (Promoting a trade show includes advertisement activities)",
+      "7|includes (status of a proposal includes pending review, accepted, and rejected)",
+      "9|The invited speakers are famous figures in the domain",
+      "9|reviewers, who are experts in the domain"
+    ],
+    "tp": 83
+  },
+  "started_at": "2026-09-23T22:32:27.317Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P2"
+}

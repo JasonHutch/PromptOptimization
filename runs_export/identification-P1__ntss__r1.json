@@ -1,0 +1,103 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "ntss",
+  "finished_at": "2026-09-23T22:12:52.508Z",
+  "n": 1,
+  "prompt_id": "identification-P1",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | business customers |\n| 1 | trade show |\n| 1 | services |\n| 1 | design |\n| 1 | professional services |\n| 1 | theme |\n| 1 | slogan |\n| 1 | location |\n| 1 | duration |\n| 1 | advertisement activities |\n| 1 | speakers |\n| 1 | participants |\n| 1 | exhibitors |\n| 1 | on site registration |\n| 1 | booths |\n| 1 | conference rooms |\n| 1 | seminars |\n| 1 | reception |\n| 1 | trade show materials |\n| 1 | account |\n| 1 | service charges |\n| 1 | payments |\n| 1 | account balances |\n| 1 | event |\n| 1 | organizer |\n| 1 | person |\n| 1 | organization |\n| 1 | contact information |\n| 1 | website |\n| 1 | domains |\n| 1 | event organization staff |\n| 1 | invited speakers |\n| 1 | selected speakers |\n| 1 | observers |\n| 1 | registration |\n| 1 | fee |\n| 1 | NTSS staff |\n| 1 | keynote address |\n| 1 | proposals |\n| 1 | committee of reviewers |\n| 1 | reviewers |\n| 1 | products |\n| 2 | design for the trade show |\n| 2 | selection of a theme |\n| 2 | status of a proposal |\n| 2 | size of the booth |\n| 2 | list of predefined domains |\n| 3 | create |\n| 3 | promote |\n| 3 | organize |\n| 3 | run |\n| 3 | contact |\n| 3 | invite |\n| 3 | register |\n| 3 | distributing |\n| 3 | record |\n| 3 | maintain |\n| 3 | attended by |\n| 3 | invited to |\n| 3 | exhibit |\n| 3 | pay for |\n| 3 | requested |\n| 3 | rented |\n| 3 | reviewed by |\n| 3 | organized by |\n| 4 | national |\n| 4 | international |\n| 4 | large |\n| 4 | medium |\n| 4 | small |\n| 4 | pending review |\n| 4 | accepted |\n| 4 | rejected |\n| 4 | famous |\n| 4 | predefined |\n| 5 | one or more |\n| 6 | has an organizer |\n| 6 | has contact information |\n| 6 | have to pay for the booths |\n| 7 | includes advertisement activities |\n| 7 | includes all activities before the trade show |\n| 9 | can be regarded as an event |",
+  "score": {
+    "f1": 0.8095238095238095,
+    "fn": 18,
+    "fp": 14,
+    "missed": [
+      "1|creation",
+      "1|promotion",
+      "1|evaluation",
+      "1|status",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|duration of the event",
+      "3|set up / setting up",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|prepare / prepares",
+      "3|give",
+      "3|visit",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "7|involves"
+    ],
+    "n_gold": 86,
+    "n_pred": 82,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "X of Y": {
+        "fn": 2,
+        "fp": 4,
+        "tp": 1
+      },
+      "adj/enum": {
+        "fn": 2,
+        "fp": 2,
+        "tp": 8
+      },
+      "noun": {
+        "fn": 5,
+        "fp": 3,
+        "tp": 39
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 1
+      },
+      "part-of": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 7,
+        "fp": 3,
+        "tp": 15
+      }
+    },
+    "precision": 0.8292682926829268,
+    "recall": 0.7906976744186046,
+    "spurious": [
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|registration",
+      "2|design for the trade show",
+      "2|selection of a theme",
+      "2|status of a proposal",
+      "2|list of predefined domains",
+      "3|maintain",
+      "3|invited to",
+      "3|organized by",
+      "4|famous",
+      "4|predefined",
+      "6|have to pay for the booths",
+      "7|includes advertisement activities"
+    ],
+    "tp": 68
+  },
+  "started_at": "2026-09-23T22:12:38.274Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P1"
+}

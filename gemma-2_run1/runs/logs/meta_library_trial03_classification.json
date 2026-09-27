@@ -1,0 +1,89 @@
+{
+  "strategy": "meta",
+  "activity": "classification",
+  "domain": "library",
+  "trial": 3,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "0ffd93e68e2c480a55f0a7b48f3abe943618965efd7c7b2893ddc956862e87da",
+  "prompt_path": "prompts/classification/P4_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/classification/library_trial03_gemma-2.md",
+  "score": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 27,
+    "missed": [
+      "A|bar code|loan item",
+      "A|title|loan item",
+      "A|name|customer",
+      "A|address|customer",
+      "A|date of birth|customer",
+      "A|subject|book",
+      "A|language|language tape",
+      "A|level|language tape",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "C|library",
+      "C|section",
+      "C|membership card",
+      "C|loan item",
+      "C|book",
+      "C|language tape",
+      "C|customer",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [],
+    "per_label": {
+      "A": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 12
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "C": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 0
+  },
+  "usage": {
+    "elapsed_seconds": 10.192,
+    "prompt_eval_count": 1166,
+    "eval_count": 333,
+    "total_duration_ns": 10184307379
+  }
+}

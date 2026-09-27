@@ -1,0 +1,93 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "library",
+  "trial": 5,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/library_trial05_P4_gemma-2.md",
+  "score": {
+    "precision": 0.8,
+    "recall": 0.6428571428571429,
+    "f1": 0.7128712871287128,
+    "tp": 36,
+    "fp": 9,
+    "fn": 20,
+    "missed": [
+      "1|customers / customer",
+      "1|current loan",
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|types of loan items",
+      "2|number of items",
+      "2|update of records",
+      "3|shows / show",
+      "3|extend",
+      "5|two",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "1|items",
+      "1|item",
+      "2|number of loan items",
+      "3|is valid",
+      "3|issued",
+      "3|updated",
+      "4|maximum",
+      "4|current",
+      "4|valid"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 18,
+        "fp": 2,
+        "fn": 6
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 4
+      },
+      "verb": {
+        "tp": 12,
+        "fp": 3,
+        "fn": 2
+      },
+      "adj/enum": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 0
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 45
+  }
+}

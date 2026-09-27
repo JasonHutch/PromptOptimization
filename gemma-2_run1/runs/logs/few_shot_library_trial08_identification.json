@@ -1,0 +1,106 @@
+{
+  "strategy": "few_shot",
+  "activity": "identification",
+  "domain": "library",
+  "trial": 8,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "f8af0a9ec0b9ad90985fb12a7f2353eb7a0969d7158b10ea097011afbe0bc14d",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/few_shot/identification/library_trial08_gemma-2.md",
+  "score": {
+    "precision": 0.7804878048780488,
+    "recall": 0.5714285714285714,
+    "f1": 0.6597938144329897,
+    "tp": 32,
+    "fp": 9,
+    "fn": 24,
+    "missed": [
+      "1|title language",
+      "1|current loan",
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "2|date of birth",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "2|number of items",
+      "2|update of records",
+      "3|shows / show",
+      "3|extend",
+      "3|read",
+      "4|French",
+      "4|beginner",
+      "4|daily",
+      "5|two",
+      "5|8 / maximum of 8 / up to a maximum of 8",
+      "5|less than 8",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "1|type",
+      "1|number",
+      "1|facility",
+      "3|supported",
+      "3|updated",
+      "4|on loan",
+      "4|issued",
+      "4|reserved",
+      "4|available"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 19,
+        "fp": 3,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5
+      },
+      "verb": {
+        "tp": 11,
+        "fp": 2,
+        "fn": 3
+      },
+      "adj/enum": {
+        "tp": 1,
+        "fp": 4,
+        "fn": 3
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 41
+  },
+  "usage": {
+    "elapsed_seconds": 9.194,
+    "prompt_eval_count": 821,
+    "eval_count": 309,
+    "total_duration_ns": 9187707125
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/classification/P3.md",
+  "domain": "library",
+  "trial": 8,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p3_classification/library_trial08_P3_gemma-2.md",
+  "score": {
+    "precision": 0.225,
+    "recall": 0.3333333333333333,
+    "f1": 0.26865671641791045,
+    "tp": 9,
+    "fp": 31,
+    "fn": 18,
+    "missed": [
+      "A|title|loan item",
+      "A|name|customer",
+      "A|address|customer",
+      "A|date of birth|customer",
+      "A|subject|book",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "C|customer",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|name|member|member",
+      "A|address|member|member",
+      "A|date of birth|member|member",
+      "A|title|books|books",
+      "A|author s|books|books",
+      "A|membership number|membership card|membership card",
+      "A|number of items|member|member",
+      "A|current loan|member|member",
+      "A|membership|member|member",
+      "A|number of subject sections|library|library",
+      "A|types of loan items|library|library",
+      "AG|made up of|subject sections|library",
+      "AG|part of|loan items|library",
+      "AS|borrow|member|loan items",
+      "AS|reserved|loan items",
+      "AS|renewed|loan items",
+      "AS|extend|current loan",
+      "AS|issued|member|loan items",
+      "AS|scanned|bar code reader|membership card",
+      "AS|entered|membership card",
+      "AS|read|bar code reader|bar code",
+      "AS|stamped|loan items",
+      "AS|searched|loan items",
+      "AS|identified|loan items",
+      "C|member",
+      "C|details",
+      "C|classification mark",
+      "C|bar code",
+      "V|french|title language|language tapes",
+      "V|beginner|level|language tapes",
+      "V|daily|update of records|library"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 3,
+        "fp": 11,
+        "fn": 9
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 11,
+        "fn": 4
+      },
+      "C": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 1
+      },
+      "I": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "V": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 40
+  },
+  "usage": {
+    "elapsed_seconds": 16.066,
+    "prompt_eval_count": 2609,
+    "eval_count": 473,
+    "total_duration_ns": 16052930372
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-24T14:03:29.317Z",
+  "n": 3,
+  "prompt_id": "classification-P3",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | library | | |\n| C | customer | | |\n| C | membership card | | |\n| C | subject section | | |\n| C | loan item | | |\n| C | language tape | | |\n| C | book | | |\n| A | name | customer | |\n| A | address | customer | |\n| A | date of birth | customer | |\n| A | member number | membership card | |\n| A | valid | membership card | |\n| A | classification mark | subject section | |\n| A | bar code | loan item | |\n| A | title language | language tape | |\n| A | level | language tape | |\n| A | title | book | |\n| A | author(s) | book | |\n| A | reserved | loan | |\n| A | renewed | loan | |\n| I | ISA | language tape | loan item |\n| I | ISA | book | loan item |\n| AG | Part-of | subject section | library |\n| AS | has | customer | membership card |\n| AS | borrow | customer | loan item |\n| AC | loan | customer | loan item |",
+  "score": {
+    "f1": 0.7547169811320754,
+    "fn": 7,
+    "fp": 6,
+    "missed": [
+      "A|title|loan item",
+      "A|subject|book",
+      "A|borrow|loan transaction",
+      "AC|loan transaction|customer|book",
+      "AS|borrow|customer|book",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item"
+    ],
+    "n_gold": 27,
+    "n_pred": 26,
+    "per_label": {
+      "A": {
+        "fn": 3,
+        "fp": 4,
+        "tp": 9
+      },
+      "AC": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 0
+      },
+      "AG": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "AS": {
+        "fn": 3,
+        "fp": 1,
+        "tp": 1
+      },
+      "C": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 7
+      },
+      "I": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      }
+    },
+    "precision": 0.7692307692307693,
+    "recall": 0.7407407407407407,
+    "spurious": [
+      "A|member number|membership card",
+      "A|classification mark|subject section",
+      "A|title|book",
+      "A|author s|book",
+      "AC|loan|customer|loan item",
+      "AS|borrow|customer|loan item"
+    ],
+    "tp": 20
+  },
+  "started_at": "2026-09-24T14:03:05.824Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P3"
+}

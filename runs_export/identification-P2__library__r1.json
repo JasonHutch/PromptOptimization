@@ -1,0 +1,85 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-23T22:32:01.786Z",
+  "n": 1,
+  "prompt_id": "identification-P2",
+  "response": "| rule | phrase |\n|------|--------|\n| 1 | library |\n| 1 | loan item / item |\n| 1 | customer |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number / membership number |\n| 1 | details |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject section / section |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape |\n| 1 | book |\n| 1 | title language |\n| 1 | level |\n| 1 | title |\n| 1 | author(s) |\n| 1 | loan |\n| 1 | bar code reader |\n| 1 | records |\n| 1 | update |\n| 2 | date of birth |\n| 2 | number of subject sections |\n| 2 | number of items on loan |\n| 2 | update of records |\n| 3 | issue / is issued (to) |\n| 3 | shows |\n| 3 | is denoted by |\n| 3 | is identified by |\n| 3 | borrow |\n| 3 | renew |\n| 3 | extend |\n| 3 | scan / is scanned |\n| 3 | enter / entered |\n| 3 | read / is read |\n| 3 | stamp / is stamped |\n| 3 | search / is searched |\n| 4 | beginner |\n| 4 | current |\n| 4 | valid |\n| 4 | reserved |\n| 4 | language tapes |\n| 4 | books |\n| 4 | via a bar code reader |\n| 4 | manually |\n| 4 | daily |\n| 5 | a number of |\n| 5 | up to a maximum of 8 |\n| 5 | 8 |\n| 5 | less than 8 |\n| 5 | two |\n| 6 | has a title language, and level |\n| 6 | has a title, and author(s) |\n| 7 | is made up of |\n| 9 | customer is known as a member |\n| 9 | language tapes and books are two types of loan items |",
+  "score": {
+    "f1": 0.8771929824561403,
+    "fn": 6,
+    "fp": 8,
+    "missed": [
+      "1|membership",
+      "1|book bar code",
+      "2|types of loan items",
+      "3|kept / keep",
+      "3|reserved / reserve",
+      "4|French"
+    ],
+    "n_gold": 56,
+    "n_pred": 58,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "X of Y": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 4
+      },
+      "adj/enum": {
+        "fn": 1,
+        "fp": 6,
+        "tp": 3
+      },
+      "noun": {
+        "fn": 2,
+        "fp": 1,
+        "tp": 22
+      },
+      "numeric": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 4
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 2,
+        "fp": 0,
+        "tp": 12
+      }
+    },
+    "precision": 0.8620689655172413,
+    "recall": 0.8928571428571429,
+    "spurious": [
+      "1|update",
+      "4|current",
+      "4|reserved",
+      "4|language tapes",
+      "4|books",
+      "4|via a bar code reader",
+      "4|manually",
+      "5|8"
+    ],
+    "tp": 50
+  },
+  "started_at": "2026-09-23T22:31:36.407Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P2"
+}

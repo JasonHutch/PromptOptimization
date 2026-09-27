@@ -1,0 +1,127 @@
+{
+  "strategy": "meta",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 3,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "6a5eab513f827a1a89623d22d154ed840d39c966c36e40639669ea350ed87350",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/identification/ntss_trial03_gemma-2.md",
+  "score": {
+    "precision": 0.7605633802816901,
+    "recall": 0.627906976744186,
+    "f1": 0.6878980891719745,
+    "tp": 54,
+    "fp": 17,
+    "fn": 32,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|fee",
+      "1|evaluation",
+      "1|committee",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|contact",
+      "3|invite / inviting",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|belong to",
+      "3|add / added",
+      "3|remove / removed",
+      "3|prepare / prepares",
+      "3|give",
+      "3|reviewed by",
+      "3|exhibit",
+      "4|national",
+      "4|international",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "5|one or more",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activity",
+      "2|number of participants",
+      "2|number of exhibitors",
+      "3|maintain",
+      "4|running",
+      "5|number of speakers",
+      "5|number of booths",
+      "5|number of proposals",
+      "6|event has a website",
+      "6|event belongs to one or more domains",
+      "6|trade show has participants",
+      "6|trade show has exhibitors",
+      "6|trade show has observers",
+      "7|trade show consists of activities",
+      "8|account holds balances",
+      "8|event contains contact information",
+      "8|event holds organizers"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 35,
+        "fp": 1,
+        "fn": 9
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 11,
+        "fp": 1,
+        "fn": 11
+      },
+      "adj/enum": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 4
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 2,
+        "fp": 5,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 71
+  },
+  "usage": {
+    "elapsed_seconds": 16.841,
+    "prompt_eval_count": 1109,
+    "eval_count": 561,
+    "total_duration_ns": 16832268673
+  }
+}

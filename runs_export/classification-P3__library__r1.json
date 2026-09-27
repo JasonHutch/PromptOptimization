@@ -1,0 +1,83 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-24T13:31:35.437Z",
+  "n": 1,
+  "prompt_id": "classification-P3",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | library | | |\n| C | customer | | |\n| C | membership card | | |\n| C | subject section | | |\n| C | loan item | | |\n| C | language tape | | |\n| C | book | | |\n| A | member number | membership card | |\n| A | valid | membership card | |\n| A | name | customer | |\n| A | address | customer | |\n| A | date of birth | customer | |\n| A | classification mark | subject section | |\n| A | bar code | loan item | |\n| A | title language | language tape | |\n| A | level | language tape | |\n| A | title | book | |\n| A | author(s) | book | |\n| A | status | loan | |\n| A | renew | loan | |\n| V | borrowed | status | |\n| V | reserved | status | |\n| AS | issues | library | membership card |\n| AS | borrow | customer | loan item |\n| AC | loan | customer | loan item |\n| AG | Part-of | subject section | library |\n| I | ISA | language tape | loan item |\n| I | ISA | book | loan item |",
+  "score": {
+    "f1": 0.6909090909090909,
+    "fn": 8,
+    "fp": 9,
+    "missed": [
+      "A|title|loan item",
+      "A|subject|book",
+      "A|borrow|loan transaction",
+      "A|reserve|loan transaction",
+      "AC|loan transaction|customer|book",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|hold|section|loan item"
+    ],
+    "n_gold": 27,
+    "n_pred": 28,
+    "per_label": {
+      "A": {
+        "fn": 4,
+        "fp": 5,
+        "tp": 8
+      },
+      "AC": {
+        "fn": 1,
+        "fp": 1,
+        "tp": 0
+      },
+      "AG": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "AS": {
+        "fn": 3,
+        "fp": 1,
+        "tp": 1
+      },
+      "C": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 7
+      },
+      "I": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "V": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 0
+      }
+    },
+    "precision": 0.6785714285714286,
+    "recall": 0.7037037037037037,
+    "spurious": [
+      "A|member number|membership card",
+      "A|classification mark|subject section",
+      "A|title|book",
+      "A|author s|book",
+      "A|status|loan",
+      "AC|loan|customer|loan item",
+      "AS|borrow|customer|loan item",
+      "V|borrowed|status",
+      "V|reserved|status"
+    ],
+    "tp": 19
+  },
+  "started_at": "2026-09-24T13:31:09.440Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P3"
+}

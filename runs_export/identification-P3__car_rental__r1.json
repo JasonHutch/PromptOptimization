@@ -1,0 +1,100 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "car_rental",
+  "finished_at": "2026-09-24T13:30:17.357Z",
+  "n": 1,
+  "prompt_id": "identification-P3",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | rental locations |\n| 1 | vehicles |\n| 1 | location |\n| 1 | additional charge |\n| 1 | passenger cars |\n| 1 | vehicle rentals |\n| 1 | makes |\n| 1 | cars |\n| 1 | rental fleet |\n| 1 | manufacturers |\n| 1 | models |\n| 1 | price classes |\n| 1 | customer |\n| 1 | rental plans |\n| 1 | gear change |\n| 1 | doors |\n| 1 | rental prices |\n| 1 | options |\n| 1 | reservations |\n| 1 | salespersons |\n| 1 | reservation form |\n| 1 | file cabinet |\n| 1 | deposit |\n| 1 | contract |\n| 1 | request |\n| 1 | block reservation |\n| 1 | invoices |\n| 1 | rentals |\n| 1 | employer |\n| 1 | credit card |\n| 1 | rental charge |\n| 1 | credit card processing company |\n| 1 | damage |\n| 1 | depreciation |\n| 2 | makes of cars |\n| 2 | forms of vehicle rentals |\n| 2 | models of a different make |\n| 2 | models of car |\n| 2 | time of reservation |\n| 2 | period of time |\n| 2 | depreciation of the rental cars |\n| 3 | taken from |\n| 3 | returned to |\n| 3 | grouped into |\n| 3 | select |\n| 3 | rent |\n| 3 | reserve |\n| 3 | make |\n| 3 | process |\n| 3 | archive |\n| 3 | show up |\n| 3 | sign |\n| 3 | honored |\n| 3 | satisfy |\n| 3 | handled |\n| 3 | checked out |\n| 3 | opened |\n| 3 | cover |\n| 3 | settle |\n| 3 | returned |\n| 3 | sent to |\n| 3 | pay by |\n| 3 | processed through |\n| 3 | repaired |\n| 3 | keep track of |\n| 3 | required |\n| 4 | available |\n| 4 | rented out |\n| 4 | voided |\n| 4 | automatic |\n| 4 | manual |\n| 4 | sedan |\n| 4 | hatchback |\n| 4 | in person |\n| 4 | through the phone |\n| 4 | purchase |\n| 4 | repair |\n| 4 | maintenance |\n| 4 | disposal |\n| 4 | preventive |\n| 5 | a number of |\n| 5 | a small number of |\n| 5 | two |\n| 5 | four |\n| 5 | one |\n| 6 | has makes of cars |\n| 6 | has models |\n| 6 | has rental plans |",
+  "score": {
+    "f1": 0.7450980392156863,
+    "fn": 8,
+    "fp": 31,
+    "missed": [
+      "1|sedan",
+      "1|hatchback",
+      "1|daily unlimited miles plan",
+      "1|weekend 10% discount plan / weekend savings plan",
+      "1|company",
+      "4|not available",
+      "4|opened / open",
+      "5|several"
+    ],
+    "n_gold": 65,
+    "n_pred": 88,
+    "per_rule": {
+      "X of Y": {
+        "fn": 0,
+        "fp": 2,
+        "tp": 5
+      },
+      "adj/enum": {
+        "fn": 2,
+        "fp": 3,
+        "tp": 11
+      },
+      "noun": {
+        "fn": 5,
+        "fp": 9,
+        "tp": 25
+      },
+      "numeric": {
+        "fn": 1,
+        "fp": 2,
+        "tp": 3
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 3,
+        "tp": 0
+      },
+      "verb": {
+        "fn": 0,
+        "fp": 12,
+        "tp": 13
+      }
+    },
+    "precision": 0.6477272727272727,
+    "recall": 0.8769230769230769,
+    "spurious": [
+      "1|rental locations",
+      "1|makes",
+      "1|rental fleet",
+      "1|models",
+      "1|deposit",
+      "1|request",
+      "1|employer",
+      "1|damage",
+      "1|depreciation",
+      "2|forms of vehicle rentals",
+      "2|models of a different make",
+      "3|grouped into",
+      "3|rent",
+      "3|show up",
+      "3|honored",
+      "3|satisfy",
+      "3|handled",
+      "3|opened",
+      "3|settle",
+      "3|returned",
+      "3|repaired",
+      "3|keep track of",
+      "3|required",
+      "4|sedan",
+      "4|hatchback",
+      "4|preventive",
+      "5|a number of",
+      "5|a small number of",
+      "6|has makes of cars",
+      "6|has models",
+      "6|has rental plans"
+    ],
+    "tp": 57
+  },
+  "started_at": "2026-09-24T13:29:36.292Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P3"
+}

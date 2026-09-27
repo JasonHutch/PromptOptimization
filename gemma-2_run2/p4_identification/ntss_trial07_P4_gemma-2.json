@@ -1,0 +1,111 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/identification/P4.md",
+  "domain": "ntss",
+  "trial": 7,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p4_identification/ntss_trial07_P4_gemma-2.md",
+  "score": {
+    "precision": 0.7294117647058823,
+    "recall": 0.7209302325581395,
+    "f1": 0.7251461988304093,
+    "tp": 62,
+    "fp": 23,
+    "fn": 24,
+    "missed": [
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|fee",
+      "1|evaluation",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|register / registering",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|add / added",
+      "3|remove / removed",
+      "3|attended by / attend",
+      "3|prepare / prepares",
+      "3|give",
+      "3|exhibit",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activities",
+      "1|invited speakers",
+      "1|selected speakers",
+      "1|accepted",
+      "1|rejected",
+      "1|exhibitors",
+      "1|booths",
+      "1|size",
+      "1|duration",
+      "2|status of a proposal",
+      "3|maintain",
+      "3|selected",
+      "3|evaluate",
+      "4|different",
+      "4|professional",
+      "4|ongoing",
+      "4|registered",
+      "4|on-site",
+      "4|whole",
+      "4|active",
+      "4|famous",
+      "4|different",
+      "5|two"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 39,
+        "fp": 9,
+        "fn": 5
+      },
+      "X of Y": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 2
+      },
+      "verb": {
+        "tp": 13,
+        "fp": 3,
+        "fn": 9
+      },
+      "adj/enum": {
+        "tp": 8,
+        "fp": 9,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 85
+  }
+}

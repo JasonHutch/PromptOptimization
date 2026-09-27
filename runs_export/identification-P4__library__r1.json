@@ -1,0 +1,76 @@
+{
+  "activity": "identification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-24T14:00:54.629Z",
+  "n": 1,
+  "prompt_id": "identification-P4",
+  "response": "| rule | phrase |\n|---|---|\n| 1 | library |\n| 1 | loan item / loan items |\n| 1 | customer |\n| 1 | member |\n| 1 | membership card |\n| 1 | member number / membership number |\n| 1 | details |\n| 1 | name |\n| 1 | address |\n| 1 | date of birth |\n| 1 | subject section |\n| 1 | classification mark |\n| 1 | bar code |\n| 1 | language tape |\n| 1 | book |\n| 1 | title language |\n| 1 | level |\n| 1 | title |\n| 1 | author(s) |\n| 1 | loan |\n| 1 | bar code reader |\n| 1 | records |\n| 1 | update |\n| 2 | date of birth |\n| 2 | types of loan items |\n| 2 | number of items |\n| 2 | update of records |\n| 3 | issue / issued |\n| 3 | shows |\n| 3 | kept |\n| 3 | denoted by |\n| 3 | identified by |\n| 3 | borrow |\n| 3 | reserved |\n| 3 | renewed |\n| 3 | extend |\n| 3 | scanned |\n| 3 | entered |\n| 3 | read |\n| 3 | stamped |\n| 3 | searched |\n| 4 | French |\n| 4 | beginner |\n| 4 | valid |\n| 4 | manually |\n| 4 | daily |\n| 5 | a number of |\n| 5 | two |\n| 5 | maximum of 8 |\n| 5 | less than 8 |\n| 6 | has a title language, and level |\n| 6 | has a title, and author(s) |\n| 7 | is made up of |\n| 9 | customer is known as a member |\n| 9 | language tapes and books are two types of loan items |",
+  "score": {
+    "f1": 0.9549549549549549,
+    "fn": 3,
+    "fp": 2,
+    "missed": [
+      "1|membership",
+      "1|book bar code",
+      "2|number of subject sections"
+    ],
+    "n_gold": 56,
+    "n_pred": 55,
+    "per_rule": {
+      "X is a Y": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "X of Y": {
+        "fn": 1,
+        "fp": 0,
+        "tp": 4
+      },
+      "adj/enum": {
+        "fn": 0,
+        "fp": 1,
+        "tp": 4
+      },
+      "noun": {
+        "fn": 2,
+        "fp": 1,
+        "tp": 22
+      },
+      "numeric": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 4
+      },
+      "part-of": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 1
+      },
+      "possession": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 2
+      },
+      "verb": {
+        "fn": 0,
+        "fp": 0,
+        "tp": 14
+      }
+    },
+    "precision": 0.9636363636363636,
+    "recall": 0.9464285714285714,
+    "spurious": [
+      "1|update",
+      "4|manually"
+    ],
+    "tp": 53
+  },
+  "started_at": "2026-09-24T14:00:15.006Z",
+  "status": "done",
+  "tier_applied": "default",
+  "tier_requested": "default",
+  "truncated": false,
+  "version": "P4"
+}

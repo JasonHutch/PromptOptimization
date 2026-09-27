@@ -1,0 +1,112 @@
+{
+  "model": "gemma2:latest",
+  "prompt": "prompts/classification/P3.md",
+  "domain": "library",
+  "trial": 7,
+  "temperature": 0.7,
+  "response": "gemma-2_run3/p3_classification/library_trial07_P3_gemma-2.md",
+  "score": {
+    "precision": 0.2549019607843137,
+    "recall": 0.48148148148148145,
+    "f1": 0.3333333333333333,
+    "tp": 13,
+    "fp": 38,
+    "fn": 14,
+    "missed": [
+      "A|title|loan item",
+      "A|subject|book",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "A|id|membership card",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|membership number|customer",
+      "A|classification mark|subject sections",
+      "A|title|books",
+      "A|author s|books",
+      "A|number of items|customer",
+      "AG|made up of|subject sections|library",
+      "AS|issues|membership card|customer",
+      "AS|shows|membership card|membership number",
+      "AS|kept|details|customer",
+      "AS|denoted|subject sections|classification mark",
+      "AS|borrow|customer|loan items",
+      "AS|reserved|loan items",
+      "AS|renewed|loan items",
+      "AS|extend|current loan",
+      "AS|scanned|bar code reader|membership number",
+      "AS|entered|membership number",
+      "AS|read|bar code reader|book bar code",
+      "AS|stamped|book bar code|loan items",
+      "AS|searched|records",
+      "AS|identified|bar code|loan items",
+      "C|member",
+      "C|membership number",
+      "C|details",
+      "C|name",
+      "C|address",
+      "C|date of birth",
+      "C|classification mark",
+      "C|title language",
+      "C|level",
+      "C|title",
+      "C|author s",
+      "C|current loan",
+      "C|bar code reader",
+      "C|membership",
+      "C|book bar code",
+      "C|records",
+      "I|customer is  member|member|customer",
+      "I|language tapes and books are types of loan items|loan items"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 6
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 14,
+        "fn": 4
+      },
+      "C": {
+        "tp": 7,
+        "fp": 16,
+        "fn": 0
+      },
+      "I": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 51
+  },
+  "usage": {
+    "elapsed_seconds": 18.119,
+    "prompt_eval_count": 2609,
+    "eval_count": 536,
+    "total_duration_ns": 18102504562
+  }
+}

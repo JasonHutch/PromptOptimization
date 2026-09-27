@@ -1,0 +1,124 @@
+{
+  "strategy": "cot",
+  "activity": "classification",
+  "domain": "library",
+  "trial": 8,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "5b114c5ae227a7346ade8cdb0552208ac40ba9354efcbbe31b3adae17f974e93",
+  "prompt_path": "prompts/classification/P4_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/cot/classification/library_trial08_gemma-2.md",
+  "score": {
+    "precision": 0.17777777777777778,
+    "recall": 0.2962962962962963,
+    "f1": 0.2222222222222222,
+    "tp": 8,
+    "fp": 37,
+    "fn": 19,
+    "missed": [
+      "A|bar code|loan item",
+      "A|title|loan item",
+      "A|name|customer",
+      "A|address|customer",
+      "A|date of birth|customer",
+      "A|subject|book",
+      "A|language|language tape",
+      "A|level|language tape",
+      "A|borrow|loan transaction",
+      "A|renew|loan transaction",
+      "A|reserve|loan transaction",
+      "AC|loan transaction|customer|book",
+      "AG|part of|library|section",
+      "AS|borrow|customer|book",
+      "AS|has|customer|membership card",
+      "AS|issue|library|membership card",
+      "AS|hold|section|loan item",
+      "I|isa|book|loan item",
+      "I|isa|language tape|loan item"
+    ],
+    "spurious": [
+      "A|number of items|8",
+      "A|current",
+      "AG|has membership number|customer|member number",
+      "AG|consists of|library|subject section",
+      "AG|contains|subject section|classification mark",
+      "AG|contains|loan item|bar code",
+      "AS|is issued|customer|loan item",
+      "AS|is known as|customer|member",
+      "AS|is denoted by|subject section|classification mark",
+      "AS|is identified by|loan item|bar code",
+      "AS|is made up of|library|subject section",
+      "AS|is borrowed|customer|loan item",
+      "AS|is reserved|customer|loan item",
+      "AS|is renewed|customer|loan item",
+      "AS|can be issued|loan item|customer",
+      "AS|can be searched|item|customer",
+      "C|member",
+      "C|member number",
+      "C|details",
+      "C|name",
+      "C|address",
+      "C|date of birth",
+      "C|classification mark",
+      "C|bar code",
+      "C|title",
+      "C|author",
+      "C|loan",
+      "C|reservation",
+      "C|renewal",
+      "C|bar code reader",
+      "C|membership",
+      "C|item",
+      "C|stamp",
+      "C|search",
+      "C|update",
+      "I|loan item is",
+      "V|number"
+    ],
+    "per_label": {
+      "A": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 11
+      },
+      "AC": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "AG": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 1
+      },
+      "AS": {
+        "tp": 0,
+        "fp": 10,
+        "fn": 4
+      },
+      "C": {
+        "tp": 7,
+        "fp": 19,
+        "fn": 0
+      },
+      "I": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "V": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "n_gold": 27,
+    "n_pred": 45
+  },
+  "usage": {
+    "elapsed_seconds": 15.57,
+    "prompt_eval_count": 1157,
+    "eval_count": 521,
+    "total_duration_ns": 15562918743
+  }
+}

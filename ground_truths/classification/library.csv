@@ -1,0 +1,28 @@
+label,element,arg1,arg2
+C,library,,
+C,section,,
+C,membership card,,
+C,loan item,,
+C,book,,
+C,language tape,,
+C,customer,,
+A,bar code,loan item,
+A,title,loan item,
+A,name,customer,
+A,address,customer,
+A,date of birth,customer,
+A,subject,book,
+A,language,language tape,
+A,level,language tape,
+A,borrow,loan transaction,
+A,renew,loan transaction,
+A,reserve,loan transaction,
+A,id,membership card,
+AS,borrow,customer,book
+AS,has,customer,membership card
+AS,issue,library,membership card
+AS,hold,section,loan item
+I,ISA,book,loan item
+I,ISA,language tape,loan item
+AG,Part-of,library,section
+AC,loan transaction,customer,book

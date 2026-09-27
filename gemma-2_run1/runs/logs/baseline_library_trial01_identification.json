@@ -1,0 +1,135 @@
+{
+  "strategy": "baseline",
+  "activity": "identification",
+  "domain": "library",
+  "trial": 1,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "4245f9bccdbb84e8ec6fdac812c6b189eb23c579ba744e873147d1a56e052c30",
+  "prompt_path": "prompts/identification/P0.md",
+  "response_path": "responses/experiments_gemma-2/baseline/identification/library_trial01_gemma-2.md",
+  "score": {
+    "precision": 0.4444444444444444,
+    "recall": 0.07142857142857142,
+    "f1": 0.12307692307692308,
+    "tp": 4,
+    "fp": 5,
+    "fn": 52,
+    "missed": [
+      "1|loan items / loan item / item / items",
+      "1|customers / customer",
+      "1|member",
+      "1|membership card",
+      "1|member number / membership number",
+      "1|details",
+      "1|name",
+      "1|address",
+      "1|date of birth",
+      "1|subject sections / subject section / section / sections",
+      "1|classification mark",
+      "1|bar code",
+      "1|language tapes / language tape",
+      "1|books / book",
+      "1|title language",
+      "1|level",
+      "1|title",
+      "1|author(s) / author / authors",
+      "1|current loan",
+      "1|bar code reader",
+      "1|membership",
+      "1|book bar code",
+      "1|records / record",
+      "2|date of birth",
+      "2|number of subject sections",
+      "2|types of loan items",
+      "2|number of items",
+      "2|update of records",
+      "3|shows / show",
+      "3|kept / keep",
+      "3|denoted / denote",
+      "3|borrow / borrowed",
+      "3|reserved / reserve",
+      "3|renewed / renew",
+      "3|extend",
+      "3|scanned / scan",
+      "3|entered / enter",
+      "3|read",
+      "3|stamped / stamp",
+      "3|searched / search",
+      "3|identified / identify / identified by",
+      "4|French",
+      "4|beginner",
+      "4|valid",
+      "5|8 / maximum of 8 / up to a maximum of 8",
+      "5|less than 8",
+      "5|a number of",
+      "6|has a title language",
+      "6|has a title, and author(s)",
+      "7|made up of",
+      "9|customer is known as a member",
+      "9|language tapes, and books [are] two types of loan items"
+    ],
+    "spurious": [
+      "2|classification mark of section, title language of tape, level of tape, title of book, author(s) of book",
+      "6|has, possesses",
+      "7|consist of, part of",
+      "8|containing,",
+      "9|A loan item is uniquely identified by a bar code."
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 23
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5
+      },
+      "verb": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 13
+      },
+      "adj/enum": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      }
+    },
+    "n_gold": 56,
+    "n_pred": 9
+  },
+  "usage": {
+    "elapsed_seconds": 7.106,
+    "prompt_eval_count": 433,
+    "eval_count": 237,
+    "total_duration_ns": 7099977981
+  }
+}

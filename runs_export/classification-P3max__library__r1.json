@@ -1,0 +1,15 @@
+{
+  "activity": "classification",
+  "continuations": 0,
+  "domain": "library",
+  "finished_at": "2026-09-24T18:19:00.693Z",
+  "n": 1,
+  "prompt_id": "classification-P3max",
+  "response": "| label | element | arg1 | arg2 |\n|---|---|---|---|\n| C | library | | |\n| C | customer | | |\n| C | membership card | | |\n| C | loan item | | |\n| C | book | | |\n| C | language tape | | |\n| C | subject section | | |\n| A | name | customer | |\n| A | address | customer | |\n| A | date of birth | customer | |\n| A | valid | customer | |\n| A | member number | membership card | |\n| A | bar code | loan item | |\n| A | title | book | |\n| A | author | book | |\n| A | title language | language tape | |\n| A | level | language tape | |\n| A | classification mark | subject section | |\n| I | ISA | book | loan item |\n| I | ISA | language tape | loan item |\n| AG | Part-of | subject section | library |\n| AS | issues | library | loan item |\n| AS | issued | customer | membership card |\n| AS | borrow | customer | loan item |\n| AS | searched | library | loan item |\n| AC | loan | customer | loan item |\n| A | reserved | loan | |\n| A | renewed | loan | |\n| A | stamped | loan | |\n| A | issued | loan | |",
+  "started_at": "2026-09-24T18:18:49.310Z",
+  "status": "done",
+  "tier_applied": "complex",
+  "tier_requested": "complex",
+  "truncated": false,
+  "version": "P3max"
+}

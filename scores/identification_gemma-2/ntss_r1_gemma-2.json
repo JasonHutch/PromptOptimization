@@ -1,0 +1,490 @@
+{
+  "score": {
+    "tp": 82,
+    "fp": 15,
+    "fn": 4,
+    "precision": 0.845360824742268,
+    "recall": 0.9534883720930233,
+    "f1": 0.8961748633879781,
+    "per_rule": {
+      "noun": {
+        "tp": 43,
+        "fp": 5,
+        "fn": 1
+      },
+      "X of Y": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 0
+      },
+      "verb": {
+        "tp": 22,
+        "fp": 3,
+        "fn": 0
+      },
+      "adj/enum": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 0
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1
+      },
+      "possession": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0
+      }
+    },
+    "matched": [
+      {
+        "gold": "1|NTSS / National Trade Show Services",
+        "pred": "1|NTSS staff",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|service provider",
+        "pred": "1|services",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|business customers / business customer / customers / customer",
+        "pred": "1|business customers",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|trade shows / trade show",
+        "pred": "1|trade shows",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|services / service",
+        "pred": "1|professional services",
+        "kind": "partial"
+      },
+      {
+        "gold": "1|design",
+        "pred": "1|design",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|theme",
+        "pred": "1|theme",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|slogan",
+        "pred": "1|slogan",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|location",
+        "pred": "1|location",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|duration",
+        "pred": "1|duration",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|advertisement / advertisement activities",
+        "pred": "1|advertisement activities",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|creation",
+        "pred": "1|creation",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|promotion",
+        "pred": "1|promotion",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|speakers / speaker",
+        "pred": "1|speakers",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|participants / participant",
+        "pred": "1|participants",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|exhibitors / exhibitor",
+        "pred": "1|exhibitors",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|observers / observer",
+        "pred": "1|observers",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|registration / on site registration",
+        "pred": "1|on site registration",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|booths / booth",
+        "pred": "1|booths",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|conference rooms / conference room",
+        "pred": "1|conference rooms",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|seminars / seminar",
+        "pred": "1|seminars",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|reception",
+        "pred": "1|reception",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|trade show materials",
+        "pred": "1|trade show materials",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|account",
+        "pred": "1|account",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|service charges / service charge",
+        "pred": "1|service charges",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|payments received / payments / payment",
+        "pred": "1|payments",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|balances / account balances / account balance",
+        "pred": "1|account balances",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|event / events / trade show event",
+        "pred": "1|event",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|organizer / event organizer",
+        "pred": "1|organizer",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|person",
+        "pred": "1|person",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|organization",
+        "pred": "1|organization",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|contact information",
+        "pred": "1|contact information",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|website",
+        "pred": "1|website",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|domains / domain / predefined domains",
+        "pred": "1|domains",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|organization staff / event organization staff",
+        "pred": "1|event organization staff",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|fee",
+        "pred": "1|fee",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|keynote address",
+        "pred": "1|keynote address",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|evaluation",
+        "pred": "1|evaluation",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|proposals / proposal",
+        "pred": "1|proposals",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|committee",
+        "pred": "1|committee",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|reviewers / reviewer",
+        "pred": "1|reviewers",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|status",
+        "pred": "1|status",
+        "kind": "exact"
+      },
+      {
+        "gold": "1|products / product",
+        "pred": "1|products",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|types of participants / types of",
+        "pred": "2|types of participants",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|size of the booth",
+        "pred": "2|size of the booth",
+        "kind": "exact"
+      },
+      {
+        "gold": "2|duration of the event",
+        "pred": "2|duration of the event",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|create / creates / creating",
+        "pred": "3|create",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|promote / promoting",
+        "pred": "3|promote",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|organize / organizing",
+        "pred": "3|organize",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|run / runs / running",
+        "pred": "3|run",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|contact",
+        "pred": "3|contact",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|invite / inviting",
+        "pred": "3|invite",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|register / registering",
+        "pred": "3|register",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|set up / setting up",
+        "pred": "3|set up",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|distribute / distributing",
+        "pred": "3|distribute",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|record",
+        "pred": "3|record",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|belong to",
+        "pred": "3|belong to",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|add / added",
+        "pred": "3|add",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|remove / removed",
+        "pred": "3|remove",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|attended by / attend",
+        "pred": "3|attend",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|prepare / prepares",
+        "pred": "3|prepare",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|give",
+        "pred": "3|give",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|reviewed by",
+        "pred": "3|reviewed by",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|exhibit",
+        "pred": "3|exhibit",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|pay / pay for",
+        "pred": "3|pay for",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|request / requested",
+        "pred": "3|request",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|rent / rented",
+        "pred": "3|rent",
+        "kind": "exact"
+      },
+      {
+        "gold": "3|visit",
+        "pred": "3|visit",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|national",
+        "pred": "4|national",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|international",
+        "pred": "4|international",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|invited",
+        "pred": "4|invited",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|selected",
+        "pred": "4|selected",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|pending",
+        "pred": "4|pending review",
+        "kind": "partial"
+      },
+      {
+        "gold": "4|accepted",
+        "pred": "4|accepted",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|rejected",
+        "pred": "4|rejected",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|large",
+        "pred": "4|large",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|medium",
+        "pred": "4|medium",
+        "kind": "exact"
+      },
+      {
+        "gold": "4|small",
+        "pred": "4|small",
+        "kind": "exact"
+      },
+      {
+        "gold": "5|one or more",
+        "pred": "5|one or more",
+        "kind": "exact"
+      },
+      {
+        "gold": "6|event has an organizer / has an organizer",
+        "pred": "6|an event has an organizer, which can be a person or an organization",
+        "kind": "partial"
+      },
+      {
+        "gold": "6|event has contact information / has contact information",
+        "pred": "6|an event has contact information and possibly a website",
+        "kind": "partial"
+      },
+      {
+        "gold": "9|trade show can be regarded as an event / can be regarded as",
+        "pred": "9|a trade show can be regarded as an event",
+        "kind": "exact"
+      }
+    ],
+    "missed": [
+      "1|review / pending review",
+      "5|each",
+      "7|involves",
+      "7|including"
+    ],
+    "spurious": [
+      "1|selection",
+      "1|activities",
+      "1|registration",
+      "1|size",
+      "1|booth",
+      "2|selection of a theme",
+      "2|evaluation of proposals",
+      "2|status of a proposal",
+      "3|maintain",
+      "3|charges",
+      "3|speak at",
+      "4|new",
+      "4|outdated",
+      "9|an organizer can be a person or an organization",
+      "9|the event organization staff, the invited and/or selected speakers, exhibitors, and observers are different types of participants"
+    ],
+    "n_gold": 86,
+    "n_pred": 97
+  },
+  "source_fixture": "responses/identification/P4/ntss_r1.md"
+}

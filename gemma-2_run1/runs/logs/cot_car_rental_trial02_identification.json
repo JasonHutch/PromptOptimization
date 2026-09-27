@@ -1,0 +1,150 @@
+{
+  "strategy": "cot",
+  "activity": "identification",
+  "domain": "car_rental",
+  "trial": 2,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "a4ee7092cec56993b7586cb42bc12c86dff24cad4e1d20f7cea0a66632c87309",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/cot/identification/car_rental_trial02_gemma-2.md",
+  "score": {
+    "precision": 0.4117647058823529,
+    "recall": 0.4307692307692308,
+    "f1": 0.4210526315789474,
+    "tp": 28,
+    "fp": 40,
+    "fn": 37,
+    "missed": [
+      "1|manufacturer / manufacturers",
+      "1|doors / door",
+      "1|sedan",
+      "1|hatchback",
+      "1|options / option",
+      "1|additional charge",
+      "1|other forms of vehicle rentals / other forms of vehicle",
+      "1|daily unlimited miles plan",
+      "1|weekend 10% discount plan / weekend savings plan",
+      "1|company",
+      "1|rental charge",
+      "2|makes of cars / makes of car",
+      "2|models of car / model of car",
+      "2|depreciation of the rental cars / depreciation",
+      "2|time of reservation",
+      "2|period of time",
+      "3|taken from",
+      "3|returned to / returned",
+      "3|reserving / reserve",
+      "3|sign",
+      "3|checked out / check out",
+      "3|sent to",
+      "4|not available",
+      "4|rented out",
+      "4|purchase",
+      "4|repair",
+      "4|maintenance / preventive maintenance",
+      "4|disposal",
+      "4|automatic",
+      "4|manual",
+      "4|in person",
+      "4|by phone / through the phone / phone",
+      "4|voided / void",
+      "4|opened / open",
+      "5|two",
+      "5|four",
+      "5|one or more"
+    ],
+    "spurious": [
+      "1|business model",
+      "1|business",
+      "1|costs",
+      "1|job market",
+      "1|labor cost",
+      "1|operating cost",
+      "1|business operation",
+      "1|improvement proposal",
+      "1|reservation system",
+      "1|make",
+      "1|model",
+      "1|deposit",
+      "1|preventive maintenance",
+      "1|damage",
+      "1|repair",
+      "1|disposal information",
+      "2|10% of",
+      "3|operate",
+      "3|reduce",
+      "3|branch out",
+      "3|use",
+      "3|display",
+      "3|let",
+      "3|have",
+      "3|suggest",
+      "3|rent",
+      "3|find",
+      "3|have",
+      "3|void",
+      "3|satisfy",
+      "3|handle",
+      "3|open",
+      "3|settle",
+      "3|send",
+      "3|keep track",
+      "4|unavailable",
+      "5|a number of",
+      "6|has",
+      "7|consists of",
+      "8|contains"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 19,
+        "fp": 16,
+        "fn": 11
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5
+      },
+      "verb": {
+        "tp": 7,
+        "fp": 18,
+        "fn": 6
+      },
+      "adj/enum": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 12
+      },
+      "numeric": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      }
+    },
+    "n_gold": 65,
+    "n_pred": 68
+  },
+  "usage": {
+    "elapsed_seconds": 16.657,
+    "prompt_eval_count": 1188,
+    "eval_count": 552,
+    "total_duration_ns": 16647300146
+  }
+}

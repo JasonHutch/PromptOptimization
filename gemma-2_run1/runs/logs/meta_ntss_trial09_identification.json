@@ -1,0 +1,112 @@
+{
+  "strategy": "meta",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 9,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "6a5eab513f827a1a89623d22d154ed840d39c966c36e40639669ea350ed87350",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/identification/ntss_trial09_gemma-2.md",
+  "score": {
+    "precision": 0.8309859154929577,
+    "recall": 0.686046511627907,
+    "f1": 0.751592356687898,
+    "tp": 59,
+    "fp": 12,
+    "fn": 27,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|fee",
+      "1|evaluation",
+      "1|committee",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|contact",
+      "3|prepare / prepares",
+      "3|give",
+      "3|reviewed by",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|visit",
+      "4|national",
+      "4|international",
+      "4|invited",
+      "4|selected",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activity",
+      "1|participant",
+      "1|invited speaker",
+      "1|selected speaker",
+      "2|number of participants",
+      "2|number of exhibitors",
+      "2|number of speakers",
+      "3|maintains",
+      "5|number of booths",
+      "5|duration of the event",
+      "6|has a website",
+      "7|consists of"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 37,
+        "fp": 4,
+        "fn": 7
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 15,
+        "fp": 1,
+        "fn": 7
+      },
+      "adj/enum": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 4
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 71
+  },
+  "usage": {
+    "elapsed_seconds": 16.029,
+    "prompt_eval_count": 1109,
+    "eval_count": 537,
+    "total_duration_ns": 16022223851
+  }
+}

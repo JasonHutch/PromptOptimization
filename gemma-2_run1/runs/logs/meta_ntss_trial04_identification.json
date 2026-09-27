@@ -1,0 +1,125 @@
+{
+  "strategy": "meta",
+  "activity": "identification",
+  "domain": "ntss",
+  "trial": 4,
+  "model": "gemma2:latest",
+  "temperature": 0.7,
+  "prompt_sha256": "6a5eab513f827a1a89623d22d154ed840d39c966c36e40639669ea350ed87350",
+  "prompt_path": "prompts/identification/P5_gemma-2.md",
+  "response_path": "responses/experiments_gemma-2/meta/identification/ntss_trial04_gemma-2.md",
+  "score": {
+    "precision": 0.7910447761194029,
+    "recall": 0.6162790697674418,
+    "f1": 0.6928104575163397,
+    "tp": 53,
+    "fp": 14,
+    "fn": 33,
+    "missed": [
+      "1|service provider",
+      "1|creation",
+      "1|promotion",
+      "1|person",
+      "1|organization",
+      "1|evaluation",
+      "1|review / pending review",
+      "2|types of participants / types of",
+      "2|size of the booth",
+      "2|duration of the event",
+      "3|contact",
+      "3|invite / inviting",
+      "3|register / registering",
+      "3|set up / setting up",
+      "3|distribute / distributing",
+      "3|add / added",
+      "3|remove / removed",
+      "3|prepare / prepares",
+      "3|give",
+      "3|exhibit",
+      "3|pay / pay for",
+      "3|request / requested",
+      "3|rent / rented",
+      "3|visit",
+      "4|national",
+      "4|international",
+      "5|each",
+      "5|one or more",
+      "6|event has an organizer / has an organizer",
+      "6|event has contact information / has contact information",
+      "7|involves",
+      "7|including",
+      "9|trade show can be regarded as an event / can be regarded as"
+    ],
+    "spurious": [
+      "1|activity",
+      "1|registration",
+      "2|number of participants",
+      "2|number of exhibitors",
+      "3|design",
+      "3|maintain",
+      "3|evaluate",
+      "4|registered",
+      "4|famous",
+      "5|several",
+      "6|NTSS has account",
+      "7|trade show consists of",
+      "8|event contains",
+      "9|trade show is an event"
+    ],
+    "per_rule": {
+      "noun": {
+        "tp": 37,
+        "fp": 2,
+        "fn": 7
+      },
+      "X of Y": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 3
+      },
+      "verb": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 14
+      },
+      "adj/enum": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 2
+      },
+      "numeric": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "possession": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "part-of": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2
+      },
+      "containment": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0
+      },
+      "X is a Y": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1
+      }
+    },
+    "n_gold": 86,
+    "n_pred": 67
+  },
+  "usage": {
+    "elapsed_seconds": 15.307,
+    "prompt_eval_count": 1109,
+    "eval_count": 507,
+    "total_duration_ns": 15299105298
+  }
+}
